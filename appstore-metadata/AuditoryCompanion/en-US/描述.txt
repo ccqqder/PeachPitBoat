@@ -1,0 +1,38 @@
+AuditoryCompanion: Your Personal Auditory Sanctuary
+
+AuditoryCompanion is not just a noise machine; it is a sophisticated audio engine designed for focus, relaxation, and immersive reading. By combining real-time DSP synthesis, a 108-sample mixing console, and an AI-powered reader, it creates a dynamic soundscape that adapts to your needs.
+
+Feature Highlights:
+
+1. SYNTH: Professional Noise Synthesis
+Step beyond static MP3 loops. Our engine generates colored noise in real-time.
+
+4 Colors: White, Pink, Brown, and Green noise.
+
+5-Dimension Control: Precisely fine-tune your sound with Volume, Brightness, Depth, Focus, and Stereo Width parameters.
+
+Visualizer: Watch your soundscape with a real-time 32-band FFT spectrum analyzer.
+
+2. SCENES: The Ambient Mixer
+Create your perfect environment using our high-fidelity sample library.
+
+108 Sounds: From "Heavy Rain" and "Fireplace" to "Space Station" and "Cat Purring."
+
+Dynamic Layering: Mix up to 3 Loop tracks and 4 Event voices (randomized specifically to prevent ear fatigue).
+
+Smart Presets: Start immediately with curated scenes like "Rainy Porch" or "Cozy Reading."
+
+3. READER: Immersive Audiobooks
+Rediscover classic literature with your ears, without pausing the ambience.
+
+Classic Library: Includes 34 curated works from "Walden" to "Tao Te Ching" and "The Galaxy Railways."
+
+Auto-Ducking: The core magic of AuditoryCompanion. When the AI voice reads, the background rain or noise gently lowers in volume; when the voice pauses, the ambience swells back up—just like a movie soundtrack.
+
+Clipboard Reader: Paste any text to have it read to you with our high-quality offline TTS models.
+
+Privacy First:
+
+On-Device Processing: All synthesis and AI Text-to-Speech (MeloTTS) happen locally on your iPhone. No audio is ever uploaded to the cloud.
+
+Offline Ready: Download your preferred language models once and use them anywhere.

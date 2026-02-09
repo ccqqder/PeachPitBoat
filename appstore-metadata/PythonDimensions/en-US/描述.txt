@@ -1,0 +1,45 @@
+"Points are vocabulary. Lines are syntax. Planes are logic. Construct your coding literacy in three dimensions."
+
+Whether you are a liberal arts student starting from scratch, a university student preparing for TQC+, or a CS major aiming for CPE, Python Dimensions helps you build a solid programming foundation through systematic practice and absolute privacy protection.
+
+Designed with a unique "Japanese Stationery" aesthetic, this app combines the warmth of traditional paper-and-ink design with cutting-edge On-Device AI and a built-in Python Compiler, allowing you to immerse yourself in coding anytime, anywhere—completely offline.
+
+【Key Features】
+
+3-Dimensional Training: Master Python Step-by-Step
+
+Point (MCQ): Master fundamentals and vocabulary through multiple-choice questions.
+
+Line (Cloze): Strengthen syntax structure by filling in key code segments.
+
+Plane (Parsons): Train algorithmic logic by rearranging code blocks.
+
+Your Personal On-Device AI Tutor
+
+Powered by advanced Local LLMs and RAG technology.
+
+The AI analyzes your mistakes to provide personalized hints and detailed explanations, guiding you to the solution without privacy risks.
+
+100% Privacy & Offline: All chats and computations run locally. No data is ever sent to the cloud!
+
+Portable Python Playground
+
+Write and run code instantly with the built-in Python 3.13 runtime.
+
+Includes 10 practical code templates and AI-powered code generation to bridge the gap between theory and practice.
+
+Smart Review & Analytics Dashboard
+
+Automatically tracks incorrect answers and visualizes weaknesses using Radar Charts and Knowledge Heatmaps across 8 dimensions.
+
+Tailored for Certification Exams
+
+Over 300 curated questions covering PCEP, TQC+, and CPE certifications.
+
+Boost exam prep with "Concept Cards" and a "Keyword Dictionary".
+
+【Support & Customization】
+
+Adaptive Difficulty: Switch between "Easy Mode" and "Normal Mode" to match your learning pace.
+
+AI Model Manager: Choose from 14 on-device AI models, including Vision-Language Models for image analysis, optimized for your device.

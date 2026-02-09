@@ -1,0 +1,98 @@
+baseURL = 'https://ccqqder.github.io/OliverPitBoat/'
+title = '核舟'
+theme = 'PaperMod'
+defaultContentLanguage = 'zh-tw'
+defaultContentLanguageInSubdir = false
+
+[pagination]
+pagerSize = 5
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+env = "production"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ccqqder"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# ------------------ Languages ------------------
+
+[languages]
+
+  [languages.zh-tw]
+    languageCode = 'zh-tw'
+    languageName = '繁體中文'
+    weight = 1
+    title = '核舟'
+    description = "核舟 — 興趣使然的開發者將自己做的小玩意丟進海里的記錄"
+
+    [languages.zh-tw.params.homeInfoParams]
+    Title = "核舟 — 數位古玩"
+    Content = "AI 算力以後會被壟斷嗎？AI能力還會持續突破嗎？不管答案是什麼都要越早使用越好。這裡記錄一個文科背景 Sysadmin 靠 AI 協助開發iOS App。"
+
+    [[languages.zh-tw.menu.main]]
+    identifier = "home"
+    name = "首頁"
+    url = "/"
+    weight = 10
+
+    [[languages.zh-tw.menu.main]]
+    identifier = "apps"
+    name = "App 矩陣"
+    url = "/apps/"
+    weight = 20
+
+    [[languages.zh-tw.menu.main]]
+    identifier = "blog"
+    name = "部落格"
+    url = "/posts/"
+    weight = 30
+
+    [[languages.zh-tw.menu.main]]
+    identifier = "about"
+    name = "關於"
+    url = "/about/"
+    weight = 40
+
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    weight = 2
+    title = 'The Miniature Boat'
+    description = "he Miniature Boat — A logbook of a hobbyist developer casting digital creations into the vast ocean."
+
+    [languages.en.params.homeInfoParams]
+    Title = "核舟 — The Miniature Boat"
+    Content = "Will AI compute be monopolized? Will AI capabilities keep breaking through? Regardless of the answer, the best time to start is now. This is a record of a humanities-background Sysadmin developing iOS apps with the assistance of AI."
+
+    [[languages.en.menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+    [[languages.en.menu.main]]
+    identifier = "apps"
+    name = "Apps"
+    url = "/apps/"
+    weight = 20
+
+    [[languages.en.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 30
+
+    [[languages.en.menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40

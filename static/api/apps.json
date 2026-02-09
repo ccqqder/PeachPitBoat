@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "id": "com.memode.ganttplanet",
+      "name": "甘特星球",
+      "icon_url": "https://ccqqder.github.io/OliverPitBoat/images/apps/gantt_icon.png",
+      "description": "3D 視覺化的專案管理工具，支援離線操作。",
+      "store_url": "#",
+      "is_promoted": true
+    },
+    {
+      "id": "com.memode.quietjapanese",
+      "name": "安靜日語",
+      "icon_url": "https://ccqqder.github.io/OliverPitBoat/images/apps/jp_icon.png",
+      "description": "無干擾的假名記憶卡片。",
+      "store_url": "#",
+      "is_promoted": true
+    }
+  ]
+}

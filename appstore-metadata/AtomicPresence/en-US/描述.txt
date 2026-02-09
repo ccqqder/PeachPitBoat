@@ -1,0 +1,39 @@
+Here is the full English version of the App Store description, refined to be technically accurate based on your codebase (matching the Level 3 HUD vs. Recording logic) and optimized for the App Store.
+
+App Store Description (English)
+Atomic Presence: Your Fortress of Digital Truth
+
+In an age dominated by deepfakes and sophisticated video manipulation, how do you prove your recorded words are truly yours? Atomic Presence is a cutting-edge technical defense tool designed for interviewees, journalists, and legal professionals. It empowers you with "Technical Self-Verification" to safeguard the integrity of your media.
+
+How It Works
+Atomic Presence utilizes a multi-layered cryptographic approach to ensure that any attempt to edit, delete, or splice your media is mathematically detectable.
+
+Cryptographic Hash Chain: The app generates a real-time SHA-256 hash sequence, updated at high frequency and encoded into dynamic QR codes. By capturing these codes in a recording, you create a continuous "digital heartbeat" that breaks if even a single frame is altered.
+
+On-Device Digital Signatures: Using the Curve25519 algorithm via Apple’s CryptoKit, the app signs your session data locally. This creates non-repudiable proof of origin tied specifically to your device.
+
+Audio Watermarking (FSK): In Witness Mode, the app embeds near-ultrasonic (18kHz/19kHz) frequency-shift keying signals into your audio. This forensic watermark persists even if the audio is separated from the video.
+
+Built-in Forensic Verifier: Analyze external or internal recordings frame-by-frame. The app uses the Vision framework to extract QR codes, re-calculate the hash chain, and verify signatures to provide a detailed "Verified" or "Tampered" report.
+
+Four Tiers of Protection
+Level 0: Screensaver Mode
+A low-pressure visual presence tool featuring a bouncing logo and starfield animation. Ideal for standby situations or simple time-stamping.
+
+Level 1: Alert Mode (Psychological Defense)
+Displays a real-time hash chain and dynamic QR code. Includes Picture-in-Picture (PiP) support, allowing you to keep the cryptographic chain visible while using other apps. Designed for external cameras to record your screen as proof of time and presence.
+
+Level 2: Witness Mode (Audio Integrity)
+Adds professional-grade audio recording (AAC or Lossless ALAC) with embedded FSK watermarking. Generates a signed .evidence.json file linking the audio checksum to the cryptographic session.
+
+Level 3: Sovereign Mode (Full-Spectrum Defense)
+The ultimate defense tool. Activates the front-facing camera with a real-time security HUD. While the video remains "clean" for maximum clarity, the app generates a localized digital signature and file checksum, ensuring the video file cannot be altered post-recording without breaking the signature.
+
+Privacy First
+100% On-Device: All hashing, signing, and video processing happen locally.
+
+No Data Collection: We do not collect, store, or transmit your recordings or identity.
+
+Offline Capability: Protect yourself without needing an internet connection.
+
+Defend your truth. Ensure your presence is Atomic.
