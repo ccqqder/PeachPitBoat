@@ -42,6 +42,8 @@ author: qqder339＠gmail.com
 
 假名私塾: [URL](https://apps.apple.com/us/app/%E5%81%87%E5%90%8D%E7%A7%81%E5%A1%BE/id6756785942)
 
+![](/OliverPitBoat/images/IMG_2433.JPG)
+
 ***
 
 # 開發時間軸
