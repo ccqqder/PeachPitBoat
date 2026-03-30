@@ -1,0 +1,38 @@
+:root {
+  /* Neutral: off-white to matte black (Braun chassis) */
+  --color-neutral: 245, 245, 240;
+  --color-neutral-50: 250, 250, 247;
+  --color-neutral-100: 245, 245, 240;
+  --color-neutral-200: 232, 232, 224;
+  --color-neutral-300: 210, 210, 200;
+  --color-neutral-400: 170, 170, 160;
+  --color-neutral-500: 139, 139, 133;
+  --color-neutral-600: 100, 100, 95;
+  --color-neutral-700: 70, 70, 66;
+  --color-neutral-800: 43, 43, 43;
+  --color-neutral-900: 25, 25, 25;
+
+  /* Primary: signal orange (Braun accent) */
+  --color-primary-50: 255, 243, 230;
+  --color-primary-100: 255, 224, 194;
+  --color-primary-200: 255, 194, 133;
+  --color-primary-300: 255, 163, 71;
+  --color-primary-400: 255, 133, 31;
+  --color-primary-500: 255, 102, 0;
+  --color-primary-600: 224, 82, 0;
+  --color-primary-700: 179, 66, 0;
+  --color-primary-800: 133, 51, 0;
+  --color-primary-900: 92, 36, 0;
+
+  /* Secondary: aluminium / metal grey */
+  --color-secondary-50: 240, 240, 245;
+  --color-secondary-100: 224, 224, 232;
+  --color-secondary-200: 200, 200, 210;
+  --color-secondary-300: 175, 175, 185;
+  --color-secondary-400: 150, 150, 160;
+  --color-secondary-500: 120, 120, 130;
+  --color-secondary-600: 95, 95, 105;
+  --color-secondary-700: 75, 75, 82;
+  --color-secondary-800: 55, 55, 60;
+  --color-secondary-900: 35, 35, 38;
+}

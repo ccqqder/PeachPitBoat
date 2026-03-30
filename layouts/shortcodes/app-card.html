@@ -1,10 +1,10 @@
-<div style="border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px;">
-    <span style="font-size: 3em;">{{ .Get "icon" }}</span>
+<div class="app-card">
+    <span class="icon">{{ .Get "icon" }}</span>
     <div>
-        <h3 style="margin: 0;">{{ .Get "name" }}</h3>
-        <p style="margin: 5px 0; opacity: 0.8;">{{ .Get "desc" }}</p>
+        <h3>{{ .Get "name" }}</h3>
+        <p>{{ .Get "desc" }}</p>
         {{ if ne (.Get "url") "#" }}
-        <a href="{{ .Get "url" }}" target="_blank" rel="noopener" style="background: #007AFF; color: white; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 0.9em; display: inline-block; margin-top: 8px;">App Store</a>
+        <a href="{{ .Get "url" }}" target="_blank" rel="noopener" class="store-btn">App Store</a>
         {{ end }}
     </div>
 </div>

@@ -1,0 +1,48 @@
+/* Braun Industrial Minimalism - Custom Overrides */
+
+/* App-card shortcode styling for Braun aesthetic */
+.app-card {
+  border: 1px solid rgba(var(--color-neutral-300), 1);
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(var(--color-neutral-800), 0.3);
+  transition: border-color 0.15s ease;
+}
+
+.app-card:hover {
+  border-color: rgba(var(--color-primary-500), 0.6);
+}
+
+.app-card .icon {
+  font-size: 3em;
+  line-height: 1;
+}
+
+.app-card h3 {
+  margin: 0;
+}
+
+.app-card p {
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+.app-card .store-btn {
+  background: rgba(var(--color-primary-500), 1);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-top: 8px;
+  transition: background 0.15s ease;
+}
+
+.app-card .store-btn:hover {
+  background: rgba(var(--color-primary-600), 1);
+}
