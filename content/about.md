@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: simple
 url: /about/
 summary: 核舟記
 ---

@@ -15,7 +15,6 @@ tags:
   - swiftUI
   - UIKit
 description: 分享我開發第一個app 假名私塾的經驗，正好也涵蓋我從聊天機器人改用ai agent的過程
-author: qqder339＠gmail.com
 ---
 
 # 前言

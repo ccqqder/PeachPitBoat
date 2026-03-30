@@ -11,8 +11,6 @@ tags:
   - On-Device AI
   - 重要不緊急
 description: 甘特星球是一款視覺化心智鞏固 App，圖表跟3D 星球都是一種視覺隱喻，不斷強化使用者面對自己最珍貴的終極目標。
-author: qqder339＠gmail.com
-ShowReadingTime: true
 ---
 
 ## 前言

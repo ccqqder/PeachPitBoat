@@ -5,8 +5,6 @@ draft: true
 tags: ["iOS App", "Python", "程式學習", "On-Device AI", "PCEP"]
 categories: ["The Workshop"]
 description: "Python 點線面是一款 Python 學習 App，結合三維訓練模式、裝置端 AI 家教與內建 Python 3.13 執行環境。"
-author: "Oliver"
-ShowReadingTime: true
 ---
 
 ## Python 點線面

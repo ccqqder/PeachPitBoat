@@ -5,8 +5,6 @@ draft: true
 tags: ["iOS App", "英語學習", "CEFR", "On-Device AI"]
 categories: ["The Workshop"]
 description: "英語N+1 是一款裝置端 AI 英語家教 App，透過 CEFR 分級測驗與 AI 生成文章，提供總是符合你程度的學習內容。"
-author: "Oliver"
-ShowReadingTime: true
 ---
 
 ## 英語N+1

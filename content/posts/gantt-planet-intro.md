@@ -5,8 +5,6 @@ draft: false
 categories:
   - The Observatory
 description: appstore 作為新時代的無名小站，以甘特星球當作範例
-author: qqder339＠gmail.com
-ShowReadingTime: true
 ---
 
 ![](/OliverPitBoat/images/gantt-planet-cover.jpg)

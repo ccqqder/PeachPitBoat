@@ -12,8 +12,6 @@ tags:
   - 紅樓夢
   - 詩讖
 description: 預測未來吉凶乃至人類命運，是人類社會自古以來的一大課題，LLM讓我們看到解決此問題的契機。
-author: qqder339@gmail.com
-ShowReadingTime: true
 ---
 
 ***

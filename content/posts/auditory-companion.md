@@ -5,8 +5,6 @@ draft: true
 tags: ["iOS App", "白噪音", "環境音", "TTS", "音頻引擎"]
 categories: ["The Workshop"]
 description: "聽覺旅伴是一款精密音頻引擎 App，結合即時 DSP 噪音合成、108 種環境音混音與沉浸式 TTS 有聲書朗讀。"
-author: "Oliver"
-ShowReadingTime: true
 ---
 
 ## 聽覺旅伴

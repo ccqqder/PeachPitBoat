@@ -1,6 +1,6 @@
 ---
 title: App 矩陣
-layout: page
+layout: simple
 url: /apps/
 summary: 我的 App 產品組合
 ---
