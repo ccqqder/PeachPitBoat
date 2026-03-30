@@ -1,0 +1,21 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 2
+title = "The Miniature Boat"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  dateFormat = "2 January 2006"
+  description = "The Miniature Boat — A logbook of a hobbyist developer casting digital creations into the vast ocean."
+
+[params.author]
+  name = "Oliver"
+  image = "img/author.gif"
+  headline = "核舟 — The Miniature Boat"
+  bio = "Will AI compute be monopolized? Will AI capabilities keep breaking through? Regardless of the answer, the best time to start is now. This is a record of a humanities-background Sysadmin developing iOS apps with the assistance of AI."
+  links = [
+    { github = "https://github.com/ccqqder" },
+    { email = "mailto:qqder339@gmail.com" },
+  ]

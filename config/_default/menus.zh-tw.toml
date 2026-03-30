@@ -1,0 +1,19 @@
+[[main]]
+  name = "首頁"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "App 矩陣"
+  pageRef = "apps"
+  weight = 20
+
+[[main]]
+  name = "部落格"
+  pageRef = "posts"
+  weight = 30
+
+[[main]]
+  name = "關於"
+  pageRef = "about"
+  weight = 40

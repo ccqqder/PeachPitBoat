@@ -1,0 +1,39 @@
+colorScheme = "braun"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+
+[header]
+  layout = "basic"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "profile"
+  showRecent = true
+  showRecentItems = 5
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+  cardView = false
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showBreadcrumbs = true
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+  showZenMode = false
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  groupByYear = true
