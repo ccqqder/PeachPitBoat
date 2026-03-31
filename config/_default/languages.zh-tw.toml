@@ -11,7 +11,7 @@ title = "核舟"
   description = "核舟 — 興趣使然的開發者將自己做的小玩意丟進海里的記錄"
 
 [params.author]
-  name = "Oliver"
+  name = "QQder"
   image = "img/author.gif"
   headline = "核舟 — 數位古玩"
   bio = "AI 算力以後會被壟斷嗎？AI能力還會持續突破嗎？不管答案是什麼都要越早使用越好。這裡記錄一個文科背景 Sysadmin 靠 AI 協助開發iOS App。"

@@ -21,6 +21,9 @@ export default defineConfig({
         label: "部落格文章",
         path: "content/posts",
         format: "md",
+        match: {
+          exclude: "*.{en,ja}",
+        },
         fields: [
           {
             type: "string",
@@ -88,6 +91,9 @@ export default defineConfig({
         label: "App 矩陣",
         path: "content/apps",
         format: "md",
+        match: {
+          exclude: "*.{en,ja}",
+        },
         ui: {
           allowedActions: {
             create: false,

@@ -19,7 +19,7 @@ enableCodeCopy = true
   showRecent = true
   showRecentItems = 5
   showMoreLink = true
-  showMoreLinkDest = "/OliverPitBoat/posts/"
+  showMoreLinkDest = "/posts/"
   cardView = false
 
 [article]
