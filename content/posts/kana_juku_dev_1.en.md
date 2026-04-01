@@ -164,4 +164,4 @@ But compared to myself: things that would have taken me one to two years could n
 
 The output settled at just beyond the edges of my own knowledge — I was actually the biggest bottleneck.
 
-\<End of Part 1>
+*End of Part 1*

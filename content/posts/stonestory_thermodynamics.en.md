@@ -99,13 +99,13 @@ Time and cost are no longer obstacles; extraction quality now depends on model c
 
 For example, I extracted:
 
-\- Key character profiles, personality dossiers, family genealogies;
+- Key character profiles, personality dossiers, family genealogies;
 
-\- Per-chapter snapshots of each character's economic, social, emotional, health, and interpersonal states across all 120 chapters;
+- Per-chapter snapshots of each character's economic, social, emotional, health, and interpersonal states across all 120 chapters;
 
-\- A basic spatial map of the Jia (賈) estate with spatial metadata;
+- A basic spatial map of the Jia (賈) estate with spatial metadata;
 
-\- All dialogue records, poetry corpora...
+- All dialogue records, poetry corpora...
 
 The approach was to start with broad, not-yet-rigorous extraction that at least achieves high coverage -- ensuring every piece of text is classified into some category.
 
@@ -117,15 +117,15 @@ This is admittedly arbitrary, but without making some such judgment the work can
 
 World rules include but are not limited to:
 
-\- Society: class hierarchy, power dynamics, master-servant relationships, marriage;
+- Society: class hierarchy, power dynamics, master-servant relationships, marriage;
 
-\- Economy: income and expenditure, debt, risk of property confiscation;
+- Economy: income and expenditure, debt, risk of property confiscation;
 
-\- Culture: Confucian propriety, festivals, feudal values;
+- Culture: Confucian propriety, festivals, feudal values;
 
-\- Psychology: character emotions, personality-driven behavior, internal conflict;
+- Psychology: character emotions, personality-driven behavior, internal conflict;
 
-\- Politics: imperial favor, court dynamics, external forces...
+- Politics: imperial favor, court dynamics, external forces...
 
 The artistic will is precisely what makes *Dream of the Red Chamber* -- apart from the fact that it lacks a definitive ending -- an ideal prediction target.
 
@@ -133,7 +133,7 @@ Cao Xueqin embedded hints about the characters' fates throughout the novel, from
 
 The most iconic example is the 判詞 (prophetic verses / judgment poems) of the 十二金釵 (Twelve Beauties of Jinling), which explicitly foreshadow the fates of the female lead and deuteragonist:
 
-### > 可嘆停機德，堪憐詠絮才。玉帶林中掛，金簪雪裡埋。
+> 可嘆停機德，堪憐詠絮才。玉帶林中掛，金簪雪裡埋。
 
 *(How lamentable, her virtue of halting the loom; how pitiable, her talent of chanting the willow catkins. A jade belt hangs in the forest; a golden hairpin lies buried in the snow.)*
 
@@ -155,17 +155,17 @@ made systematic, repeatable, modifiable, and exhaustively brute-forced.
 
 The simulation steps for each round are:
 
-1\. Process delayed effects -- check pending\_effects; apply any that have reached their due chapter.
+1. Process delayed effects -- check pending\_effects; apply any that have reached their due chapter.
 
-2\. Evaluate all laws -- check each law's premises to see if all are satisfied (skip those with confidence \< 0.3).
+2. Evaluate all laws -- check each law's premises to see if all are satisfied (skip those with confidence \< 0.3).
 
-3\. Conflict resolution -- simultaneously triggered laws may contradict each other; adjudicate which one wins.
+3. Conflict resolution -- simultaneously triggered laws may contradict each other; adjudicate which one wins.
 
-4\. Apply effects -- those with a delay go into the queue; those without directly modify state.
+4. Apply effects -- those with a delay go into the queue; those without directly modify state.
 
-5\. Snapshot -- compress the current state into a numerical vector.
+5. Snapshot -- compress the current state into a numerical vector.
 
-6\. chapter += 1
+6. chapter += 1
 
 A complete example -- the death of Lin Daiyu (林黛玉) in Chapter 98 -- is appended at the end of this article.
 
@@ -179,7 +179,7 @@ none of this is critically important, because each part can be improved and rege
 
 From a software engineering perspective, my goal is to make this engine work well at the interface level,
 
-### and continuously refine prediction results as more information is incorporated and the methodology improves.
+and continuously refine prediction results as more information is incorporated and the methodology improves.
 
 ### Current Results: Objective vs. Subjective Parallel Comparison
 
@@ -199,7 +199,7 @@ For instance, the novel already features some Western modern objects such as sel
 
 Exhaustively exploring such first-layer objective possibilities is a direction for future work, and might achieve an effect that is "within reason yet beyond expectation."
 
-\#### Artistic Choice
+#### Artistic Choice
 
 The second layer is the author Cao Xueqin's (曹雪芹) cultivation of this fictional world.
 
@@ -231,17 +231,17 @@ The result is that most plot events would not occur within the span of 120 chapt
 
 ## Methods for Improving Prediction Quality
 
-\- Re-extract text when LLM capabilities improve
+- Re-extract text when LLM capabilities improve
 
-\- More human intervention for fine-tuning and experimenting with different prompts
+- More human intervention for fine-tuning and experimenting with different prompts
 
-\- Enlist scholars of Redology (紅學, the academic study of *Dream of the Red Chamber*) or historians to assist with data cleaning and engine logic adjustments
+- Enlist scholars of Redology (紅學, the academic study of *Dream of the Red Chamber*) or historians to assist with data cleaning and engine logic adjustments
 
-\- Incorporate newly discovered or previously undigitized materials (if any) into training
+- Incorporate newly discovered or previously undigitized materials (if any) into training
 
-\- Experiment with alternative methodologies
+- Experiment with alternative methodologies
 
-\- Establish a fixed workflow and let AI agents continuously fine-tune and produce many versions; since there is no clear termination criterion, quality can only be judged manually
+- Establish a fixed workflow and let AI agents continuously fine-tune and produce many versions; since there is no clear termination criterion, quality can only be judged manually
 
 ## Conclusion
 
@@ -267,7 +267,7 @@ and I look forward to the social sciences -- not just computer science and the n
 
 Chapters 97-98, "The Death of Lin Daiyu" (黛玉之死) -- a complete walk-through of all six steps (the following content was generated by AI):
 
-\---
+---
 
 Example: Chapter 97 -- The Switcheroo Plot (掉包計) -> Burning Manuscripts and Severing Ties (焚稿斷情) -> Daiyu's Death
 
@@ -295,7 +295,7 @@ Why did Daiyu's health drop from an initial 0.35 to 0.12? Because this law has b
 
 ▎ At -0.017 per chapter, over a dozen chapters this amounts to a lethal chronic drain.
 
-\---
+---
 
 ① Process Delayed Effects
 
@@ -305,7 +305,7 @@ Check the pending\_effects queue. Suppose the following was triggered in Chapter
 
 Its effect, economy.spending\_pressure add 0.1, already came due and was executed in Chapter 33. The queue is now empty. Skip.
 
-\---
+---
 
 ② Evaluate All 369 Laws
 
@@ -349,7 +349,7 @@ relation.寶玉::黛玉.marriage\_probability > 0.7  -> 0.15 > 0.7  ❌
 
 This chapter also simultaneously triggers over a dozen other laws (economic decline, political risk, etc.), but the above are the ones directly relevant to Daiyu.
 
-\---
+---
 
 ③ Conflict Resolution
 
@@ -361,7 +361,7 @@ that would be a different evolutionary path.
 
 PSY\_E1\_DAIYU\_DECAY's effect is additive (sub), so it does not conflict with other laws. All effects are retained.
 
-\---
+---
 
 ④ Apply Effects
 
@@ -383,7 +383,7 @@ agent.林黛玉.health sub 0.017                    -> 0.02 -> 0.003
 
 At this point Daiyu's health = 0.003, approaching zero.
 
-\---
+---
 
 ⑤ Snapshot
 
@@ -411,7 +411,7 @@ politics\_vector: \[0.0, 0.60, 0.75]
 
 This vector will later be compared via Euclidean distance against the actual vector for Chapter 97 in actual\_checkpoints.json.
 
-\---
+---
 
 ⑥ chapter = 98
 
