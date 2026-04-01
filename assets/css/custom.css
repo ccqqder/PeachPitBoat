@@ -1,6 +1,1041 @@
-/* Braun Industrial Minimalism - Custom Overrides */
+/* Braun Industrial Minimalism - Custom Overrides
+   ================================================
+   Skeuomorphic precision instruments inspired by
+   Dieter Rams' Braun devices — tactile buttons,
+   recessed LCD panels, embossed silkscreen labels,
+   and anodized aluminium surfaces.
+   ================================================ */
 
-/* App-card shortcode styling for Braun aesthetic */
+/* ============================================================
+   SHARED — Both Modes
+   ============================================================ */
+
+/* --- Global Transition Smoothness --- */
+a, button, summary, input,
+.app-card, .store-btn,
+.pagination a,
+#scroll-to-top a,
+#appearance-switcher,
+#search-button {
+  transition: all 0.15s ease;
+}
+
+/* ============================================================
+   LIGHT MODE — Off-White Braun Chassis
+   RAL 9002 injection-molded plastic housing,
+   aluminium panel accents, signal-orange indicators.
+   ============================================================ */
+
+/* --- Header: Brushed Aluminium Top Panel --- */
+html:not(.dark) header {
+  border-bottom: 1px solid rgba(var(--color-neutral-300), 0.9);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-50), 1) 0%,
+    rgba(var(--color-neutral-100), 1) 40%,
+    rgba(var(--color-neutral-200), 0.6) 100%
+  );
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6),
+    0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Nav Links: Silkscreen Device Labels --- */
+html:not(.dark) header nav a,
+html:not(.dark) header nav button {
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Active nav indicator — signal orange LED dot */
+html:not(.dark) header nav a[aria-current="page"]::after,
+html:not(.dark) header nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(var(--color-primary-500), 1);
+  box-shadow: 0 0 4px rgba(var(--color-primary-500), 0.5);
+}
+
+/* --- Header Icon Buttons: Aluminium Micro-Buttons --- */
+html:not(.dark) #appearance-switcher,
+html:not(.dark) #search-button,
+html:not(.dark) .a11y-toggle {
+  padding: 6px;
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-100), 1) 0%,
+    rgba(var(--color-neutral-200), 1) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-300), 0.8);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+html:not(.dark) #appearance-switcher:hover,
+html:not(.dark) #search-button:hover,
+html:not(.dark) .a11y-toggle:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-200), 1) 0%,
+    rgba(var(--color-neutral-300), 0.8) 100%
+  );
+}
+
+html:not(.dark) #appearance-switcher:active,
+html:not(.dark) #search-button:active,
+html:not(.dark) .a11y-toggle:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Footer: Stamped Aluminium Base Plate --- */
+html:not(.dark) footer {
+  border-top: 1px solid rgba(var(--color-neutral-300), 0.9);
+  background: linear-gradient(
+    0deg,
+    rgba(var(--color-neutral-200), 0.5) 0%,
+    rgba(var(--color-neutral-100), 0.3) 100%
+  );
+}
+
+html:not(.dark) footer p {
+  color: rgba(var(--color-neutral-500), 1);
+  letter-spacing: 0.08em;
+  font-size: 0.78em;
+  text-transform: uppercase;
+}
+
+/* --- Profile / Hero: Recessed Display Well --- */
+html:not(.dark) article:has(> header > img.rounded-full) {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-200), 0.4) 0%,
+    rgba(var(--color-neutral-100), 0.2) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-300), 0.7);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+/* --- Article List: Precision Scribed Dividers --- */
+html:not(.dark) article {
+  border-bottom: 1px solid rgba(var(--color-neutral-300), 0.5);
+  padding-bottom: 1.5rem;
+}
+
+html:not(.dark) article:last-child {
+  border-bottom: none;
+}
+
+/* --- Article Cards: Raised Instrument Panels --- */
+html:not(.dark) .article-link--card {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-50), 1) 0%,
+    rgba(var(--color-neutral-100), 1) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-300), 0.8);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) .article-link--card:hover {
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  border-color: rgba(var(--color-primary-400), 0.6);
+}
+
+/* --- Headings: Industrial Silkscreen Print --- */
+html:not(.dark) h1 {
+  color: rgba(var(--color-neutral-900), 1);
+  letter-spacing: -0.01em;
+}
+
+html:not(.dark) h2,
+html:not(.dark) h3 {
+  color: rgba(var(--color-neutral-800), 1);
+}
+
+/* --- Tags/Badges: Embossed Hardware Labels --- */
+html:not(.dark) span.rounded-md,
+html:not(.dark) a span.rounded-md {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-100), 1) 0%,
+    rgba(var(--color-neutral-200), 1) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-300), 0.8) !important;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+html:not(.dark) span.rounded-md:hover,
+html:not(.dark) a:hover span.rounded-md {
+  border-color: rgba(var(--color-primary-400), 0.7) !important;
+  box-shadow:
+    0 1px 3px rgba(var(--color-primary-500), 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* --- Code Blocks: Recessed LCD Display --- */
+html:not(.dark) pre {
+  background: rgba(var(--color-neutral-900), 0.96) !important;
+  color: rgba(var(--color-neutral-100), 1);
+  border: 2px solid rgba(var(--color-neutral-700), 0.5);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+html:not(.dark) code:not(pre code) {
+  background: rgba(var(--color-neutral-200), 0.7);
+  border: 1px solid rgba(var(--color-neutral-300), 0.6);
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: rgba(var(--color-primary-700), 1);
+  font-size: 0.9em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Blockquotes: Ventilation Grille Side Panel --- */
+html:not(.dark) blockquote {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-neutral-200), 0.4) 0%,
+    rgba(var(--color-neutral-100), 0.2) 100%
+  );
+  border-left: 4px solid rgba(var(--color-primary-500), 0.8);
+  border-radius: 0 4px 4px 0;
+  padding: 0.75rem 1rem;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.04),
+    inset 4px 0 8px -4px rgba(var(--color-primary-500), 0.08);
+}
+
+/* --- Pagination: Physical Button Row --- */
+html:not(.dark) .pagination a,
+html:not(.dark) ul.flex.flex-row a[class*="rounded"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-50), 1) 0%,
+    rgba(var(--color-neutral-200), 1) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-300), 1);
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html:not(.dark) .pagination a:hover,
+html:not(.dark) ul.flex.flex-row a[class*="rounded"]:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-100), 1) 0%,
+    rgba(var(--color-neutral-300), 0.8) 100%
+  );
+  border-color: rgba(var(--color-primary-400), 0.6);
+}
+
+html:not(.dark) .pagination a:active,
+html:not(.dark) ul.flex.flex-row a[class*="rounded"]:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 2px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Active pagination: pressed + LED indicator */
+html:not(.dark) .pagination .active,
+html:not(.dark) .pagination [aria-current="page"],
+html:not(.dark) ul.flex.flex-row a[class*="bg-primary"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-primary-500), 1) 0%,
+    rgba(var(--color-primary-600), 1) 100%
+  ) !important;
+  color: white !important;
+  border-color: rgba(var(--color-primary-700), 1) !important;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.15),
+    0 0 6px rgba(var(--color-primary-500), 0.25);
+}
+
+/* --- Links: Signal Orange Accent --- */
+html:not(.dark) .prose a {
+  text-decoration-color: rgba(var(--color-primary-300), 0.6);
+  text-underline-offset: 3px;
+}
+
+html:not(.dark) .prose a:hover {
+  color: rgba(var(--color-primary-600), 1);
+  text-decoration-color: rgba(var(--color-primary-500), 1);
+}
+
+/* --- Tables: Engraved Data Grid --- */
+html:not(.dark) table {
+  border: 1px solid rgba(var(--color-neutral-300), 0.8);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+html:not(.dark) th {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-200), 0.8) 0%,
+    rgba(var(--color-neutral-300), 0.5) 100%
+  );
+  border-bottom: 2px solid rgba(var(--color-neutral-300), 1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: rgba(var(--color-neutral-600), 1);
+}
+
+html:not(.dark) td {
+  border-bottom: 1px solid rgba(var(--color-neutral-200), 0.8);
+}
+
+/* --- Search Input: Recessed Display Slot --- */
+html:not(.dark) #search-query {
+  border: 2px solid rgba(var(--color-neutral-300), 1);
+  background: rgba(var(--color-neutral-50), 1);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+html:not(.dark) #search-query:focus {
+  border-color: rgba(var(--color-primary-400), 0.8);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.06),
+    0 0 0 2px rgba(var(--color-primary-500), 0.15);
+}
+
+/* --- Search Modal: Device Control Panel --- */
+html:not(.dark) #search-modal {
+  background: rgba(var(--color-neutral-50), 1);
+  border: 1px solid rgba(var(--color-neutral-300), 0.8);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* --- Scroll-to-top: Raised Circular Button --- */
+html:not(.dark) #scroll-to-top a {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-100), 1) 0%,
+    rgba(var(--color-neutral-200), 1) 100%
+  ) !important;
+  border: 1px solid rgba(var(--color-neutral-300), 0.9);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) #scroll-to-top a:hover {
+  border-color: rgba(var(--color-primary-400), 0.6);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) #scroll-to-top a:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* --- TOC: Recessed Instrument Side Panel --- */
+html:not(.dark) details.toc-right,
+html:not(.dark) details.toc-inside {
+  background: rgba(var(--color-neutral-100), 0.5);
+  border: 1px solid rgba(var(--color-neutral-300), 0.6);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.06),
+    0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+html:not(.dark) details.toc-right > summary,
+html:not(.dark) details.toc-inside > summary {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-200), 0.6) 0%,
+    rgba(var(--color-neutral-300), 0.3) 100%
+  ) !important;
+  border-bottom: 1px solid rgba(var(--color-neutral-300), 0.5);
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+html:not(.dark) #TableOfContents a {
+  color: rgba(var(--color-neutral-600), 1);
+  border-left: 2px solid transparent;
+  padding-left: 8px;
+}
+
+html:not(.dark) #TableOfContents a:hover {
+  color: rgba(var(--color-primary-600), 1);
+  border-left-color: rgba(var(--color-primary-500), 0.5);
+}
+
+html:not(.dark) #TableOfContents a.active {
+  color: rgba(var(--color-primary-600), 1);
+  border-left-color: rgba(var(--color-primary-500), 1);
+  font-weight: 600;
+}
+
+/* --- HR: Machine-Scribed Divider --- */
+html:not(.dark) hr {
+  border-color: rgba(var(--color-neutral-300), 0.6);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* --- Images: Recessed Display Frame --- */
+html:not(.dark) .prose img {
+  border: 2px solid rgba(var(--color-neutral-300), 0.7);
+  border-radius: 4px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+/* --- Prev/Next Article Nav: Directional Buttons --- */
+html:not(.dark) .flex.justify-between.pt-3 a {
+  padding: 8px 14px;
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-50), 1) 0%,
+    rgba(var(--color-neutral-200), 0.8) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-300), 0.7);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) .flex.justify-between.pt-3 a:hover {
+  border-color: rgba(var(--color-primary-400), 0.6);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) .flex.justify-between.pt-3 a:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Share Buttons: Grid of Push Buttons --- */
+html:not(.dark) section.flex.flex-row.flex-wrap a[class*="rounded"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-100), 1) 0%,
+    rgba(var(--color-neutral-250), 1) 100%
+  ) !important;
+  border: 1px solid rgba(var(--color-neutral-300), 0.8) !important;
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) section.flex.flex-row.flex-wrap a[class*="rounded"]:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-primary-400), 1) 0%,
+    rgba(var(--color-primary-500), 1) 100%
+  ) !important;
+  border-color: rgba(var(--color-primary-600), 0.8) !important;
+  box-shadow:
+    0 2px 6px rgba(var(--color-primary-500), 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+html:not(.dark) section.flex.flex-row.flex-wrap a[class*="rounded"]:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* --- "Show More" / Primary Border Buttons --- */
+html:not(.dark) a[class*="border-primary"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-50), 1) 0%,
+    rgba(var(--color-neutral-200), 0.8) 100%
+  );
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) a[class*="border-primary"]:hover {
+  box-shadow:
+    0 2px 4px rgba(var(--color-primary-500), 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  border-color: rgba(var(--color-primary-500), 0.8) !important;
+}
+
+html:not(.dark) a[class*="border-primary"]:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Date/Metadata: Engraved Silkscreen --- */
+html:not(.dark) .text-neutral-500,
+html:not(.dark) time {
+  letter-spacing: 0.03em;
+}
+
+/* --- Dropdown Menus: Elevated Control Panel --- */
+html:not(.dark) .menuhide > div,
+html:not(.dark) .menuhide > li {
+  background: rgba(var(--color-neutral-50), 0.98) !important;
+  border: 1px solid rgba(var(--color-neutral-300), 0.7);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+
+/* ============================================================
+   DARK MODE — Matte Black Anodized Braun Device
+   Black anodized aluminium housing, recessed LCD displays,
+   amber/orange indicator LEDs, deep tactile shadows.
+   ============================================================ */
+
+/* --- Header: Dark Anodized Aluminium Panel --- */
+html.dark header {
+  border-bottom: 1px solid rgba(var(--color-neutral-700), 0.7);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-800), 1) 0%,
+    rgba(var(--color-neutral-900), 0.95) 100%
+  );
+  box-shadow:
+    0 1px 0 rgba(var(--color-neutral-700), 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Nav Links: Silkscreen on Dark Surface --- */
+html.dark header nav a,
+html.dark header nav button {
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Active nav indicator — amber LED dot */
+html.dark header nav a[aria-current="page"]::after,
+html.dark header nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(var(--color-primary-400), 1);
+  box-shadow: 0 0 6px rgba(var(--color-primary-500), 0.6);
+}
+
+/* --- Header Icon Buttons: Dark Aluminium Micro-Buttons --- */
+html.dark #appearance-switcher,
+html.dark #search-button,
+html.dark .a11y-toggle {
+  padding: 6px;
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-700), 1) 0%,
+    rgba(var(--color-neutral-800), 1) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-600), 0.4);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.2);
+}
+
+html.dark #appearance-switcher:hover,
+html.dark #search-button:hover,
+html.dark .a11y-toggle:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-600), 1) 0%,
+    rgba(var(--color-neutral-700), 1) 100%
+  );
+  border-color: rgba(var(--color-primary-500), 0.4);
+}
+
+html.dark #appearance-switcher:active,
+html.dark #search-button:active,
+html.dark .a11y-toggle:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Footer: Stamped Dark Base Plate --- */
+html.dark footer {
+  border-top: 1px solid rgba(var(--color-neutral-700), 0.5);
+  background: linear-gradient(
+    0deg,
+    rgba(var(--color-neutral-900), 0.7) 0%,
+    rgba(var(--color-neutral-800), 0.3) 100%
+  );
+}
+
+html.dark footer p {
+  color: rgba(var(--color-neutral-500), 1);
+  letter-spacing: 0.08em;
+  font-size: 0.78em;
+  text-transform: uppercase;
+}
+
+/* --- Profile / Hero: Deep Recessed LCD Well --- */
+html.dark article:has(> header > img.rounded-full) {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-900), 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-700), 0.4);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* --- Article List: Precision Dividers --- */
+html.dark article {
+  border-bottom: 1px solid rgba(var(--color-neutral-700), 0.3);
+  padding-bottom: 1.5rem;
+}
+
+html.dark article:last-child {
+  border-bottom: none;
+}
+
+/* --- Article Cards: Dark Instrument Panels --- */
+html.dark .article-link--card {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-800), 0.6) 0%,
+    rgba(var(--color-neutral-900), 0.4) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-700), 0.4);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(var(--color-neutral-700), 0.15);
+}
+
+html.dark .article-link--card:hover {
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--color-neutral-700), 0.15);
+  border-color: rgba(var(--color-primary-500), 0.4);
+}
+
+/* --- Headings: Silkscreen on Dark Surface --- */
+html.dark h1 {
+  color: rgba(var(--color-neutral-100), 1);
+  letter-spacing: -0.01em;
+}
+
+html.dark h2,
+html.dark h3 {
+  color: rgba(var(--color-neutral-200), 1);
+}
+
+/* --- Tags/Badges: Dark Embossed Labels --- */
+html.dark span.rounded-md,
+html.dark a span.rounded-md {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-700), 0.6) 0%,
+    rgba(var(--color-neutral-800), 0.8) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-600), 0.35) !important;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+html.dark span.rounded-md:hover,
+html.dark a:hover span.rounded-md {
+  border-color: rgba(var(--color-primary-500), 0.5) !important;
+  box-shadow:
+    0 1px 4px rgba(var(--color-primary-500), 0.15),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.15);
+}
+
+/* --- Code Blocks: Deep LCD Display --- */
+html.dark pre {
+  background: rgba(0, 0, 0, 0.65) !important;
+  border: 2px solid rgba(var(--color-neutral-700), 0.4);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(var(--color-neutral-700), 0.15);
+}
+
+html.dark code:not(pre code) {
+  background: rgba(var(--color-neutral-800), 0.8);
+  border: 1px solid rgba(var(--color-neutral-700), 0.4);
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: rgba(var(--color-primary-300), 1);
+  font-size: 0.9em;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Blockquotes: Dark Ventilation Panel --- */
+html.dark blockquote {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-neutral-800), 0.5) 0%,
+    rgba(var(--color-neutral-900), 0.3) 100%
+  );
+  border-left: 4px solid rgba(var(--color-primary-500), 0.6);
+  border-radius: 0 4px 4px 0;
+  padding: 0.75rem 1rem;
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.25),
+    inset 4px 0 8px -4px rgba(var(--color-primary-500), 0.06);
+}
+
+/* --- Pagination: Dark Physical Button Row --- */
+html.dark .pagination a,
+html.dark ul.flex.flex-row a[class*="rounded"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-700), 1) 0%,
+    rgba(var(--color-neutral-800), 1) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-600), 0.4);
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.2);
+  font-weight: 600;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html.dark .pagination a:hover,
+html.dark ul.flex.flex-row a[class*="rounded"]:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-600), 1) 0%,
+    rgba(var(--color-neutral-700), 1) 100%
+  );
+  border-color: rgba(var(--color-primary-500), 0.4);
+}
+
+html.dark .pagination a:active,
+html.dark ul.flex.flex-row a[class*="rounded"]:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Active pagination: pressed + amber LED glow */
+html.dark .pagination .active,
+html.dark .pagination [aria-current="page"],
+html.dark ul.flex.flex-row a[class*="bg-primary"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-primary-500), 1) 0%,
+    rgba(var(--color-primary-700), 1) 100%
+  ) !important;
+  color: white !important;
+  border-color: rgba(var(--color-primary-800), 1) !important;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(var(--color-primary-500), 0.3);
+}
+
+/* --- Links: Signal Orange on Dark --- */
+html.dark .prose a {
+  text-decoration-color: rgba(var(--color-primary-700), 0.5);
+  text-underline-offset: 3px;
+}
+
+html.dark .prose a:hover {
+  color: rgba(var(--color-primary-400), 1);
+  text-decoration-color: rgba(var(--color-primary-500), 0.8);
+}
+
+/* --- Tables: Dark Engraved Grid --- */
+html.dark table {
+  border: 1px solid rgba(var(--color-neutral-700), 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+html.dark th {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-800), 0.9) 0%,
+    rgba(var(--color-neutral-900), 0.7) 100%
+  );
+  border-bottom: 2px solid rgba(var(--color-neutral-700), 0.5);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: rgba(var(--color-neutral-400), 1);
+}
+
+html.dark td {
+  border-bottom: 1px solid rgba(var(--color-neutral-800), 0.6);
+}
+
+/* --- Search Input: Deep Recessed Display Slot --- */
+html.dark #search-query {
+  border: 2px solid rgba(var(--color-neutral-700), 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+html.dark #search-query:focus {
+  border-color: rgba(var(--color-primary-500), 0.5);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 0 0 2px rgba(var(--color-primary-500), 0.1);
+}
+
+/* --- Search Modal: Dark Control Panel --- */
+html.dark #search-modal {
+  background: rgba(var(--color-neutral-900), 0.98);
+  border: 1px solid rgba(var(--color-neutral-700), 0.5);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(var(--color-neutral-700), 0.2);
+}
+
+/* --- Scroll-to-top: Dark Raised Button --- */
+html.dark #scroll-to-top a {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-700), 1) 0%,
+    rgba(var(--color-neutral-800), 1) 100%
+  ) !important;
+  border: 1px solid rgba(var(--color-neutral-600), 0.4);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.2);
+}
+
+html.dark #scroll-to-top a:hover {
+  border-color: rgba(var(--color-primary-500), 0.4);
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.2);
+}
+
+html.dark #scroll-to-top a:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* --- TOC: Recessed Dark Instrument Panel --- */
+html.dark details.toc-right,
+html.dark details.toc-inside {
+  background: rgba(var(--color-neutral-900), 0.5);
+  border: 1px solid rgba(var(--color-neutral-700), 0.35);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 1px 4px rgba(0, 0, 0, 0.25),
+    0 1px 0 rgba(var(--color-neutral-700), 0.1);
+}
+
+html.dark details.toc-right > summary,
+html.dark details.toc-inside > summary {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-800), 0.6) 0%,
+    rgba(var(--color-neutral-900), 0.4) 100%
+  ) !important;
+  border-bottom: 1px solid rgba(var(--color-neutral-700), 0.3);
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+html.dark #TableOfContents a {
+  color: rgba(var(--color-neutral-400), 1);
+  border-left: 2px solid transparent;
+  padding-left: 8px;
+}
+
+html.dark #TableOfContents a:hover {
+  color: rgba(var(--color-primary-400), 1);
+  border-left-color: rgba(var(--color-primary-500), 0.4);
+}
+
+html.dark #TableOfContents a.active {
+  color: rgba(var(--color-primary-400), 1);
+  border-left-color: rgba(var(--color-primary-500), 0.8);
+  font-weight: 600;
+}
+
+/* --- HR: Dark Precision Divider --- */
+html.dark hr {
+  border-color: rgba(var(--color-neutral-700), 0.4);
+  box-shadow: 0 1px 0 rgba(var(--color-neutral-700), 0.1);
+}
+
+/* --- Images: Dark Recessed Display Frame --- */
+html.dark .prose img {
+  border: 2px solid rgba(var(--color-neutral-700), 0.4);
+  border-radius: 4px;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Prev/Next Article Nav: Dark Directional Buttons --- */
+html.dark .flex.justify-between.pt-3 a {
+  padding: 8px 14px;
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-700), 1) 0%,
+    rgba(var(--color-neutral-800), 0.9) 100%
+  );
+  border: 1px solid rgba(var(--color-neutral-600), 0.35);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.15);
+}
+
+html.dark .flex.justify-between.pt-3 a:hover {
+  border-color: rgba(var(--color-primary-500), 0.4);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.15);
+}
+
+html.dark .flex.justify-between.pt-3 a:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Share Buttons: Dark Push Button Grid --- */
+html.dark section.flex.flex-row.flex-wrap a[class*="rounded"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-700), 1) 0%,
+    rgba(var(--color-neutral-800), 1) 100%
+  ) !important;
+  border: 1px solid rgba(var(--color-neutral-600), 0.35) !important;
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--color-neutral-600), 0.15);
+}
+
+html.dark section.flex.flex-row.flex-wrap a[class*="rounded"]:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-primary-500), 1) 0%,
+    rgba(var(--color-primary-600), 1) 100%
+  ) !important;
+  border-color: rgba(var(--color-primary-700), 0.6) !important;
+  box-shadow:
+    0 2px 8px rgba(var(--color-primary-500), 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+html.dark section.flex.flex-row.flex-wrap a[class*="rounded"]:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* --- "Show More" / Primary Border Buttons --- */
+html.dark a[class*="border-primary"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-800), 0.8) 0%,
+    rgba(var(--color-neutral-900), 0.6) 100%
+  );
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(var(--color-neutral-700), 0.15);
+}
+
+html.dark a[class*="border-primary"]:hover {
+  box-shadow:
+    0 2px 6px rgba(var(--color-primary-500), 0.2),
+    inset 0 1px 0 rgba(var(--color-neutral-700), 0.15);
+  border-color: rgba(var(--color-primary-500), 0.6) !important;
+}
+
+html.dark a[class*="border-primary"]:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Date/Metadata: Engraved Dark Silkscreen --- */
+html.dark .text-neutral-500,
+html.dark time {
+  letter-spacing: 0.03em;
+}
+
+/* --- Dropdown Menus: Dark Elevated Panel --- */
+html.dark .menuhide > div,
+html.dark .menuhide > li {
+  background: rgba(var(--color-neutral-800), 0.98) !important;
+  border: 1px solid rgba(var(--color-neutral-700), 0.5);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(var(--color-neutral-700), 0.2);
+}
+
+
+/* ============================================================
+   APP-CARD (shared by both modes, dark-mode-aware)
+   ============================================================ */
+
+/* App-card shortcode: Instrument Panel Card */
 .app-card {
   border: 1px solid rgba(var(--color-neutral-300), 1);
   padding: 20px;
@@ -9,12 +1044,45 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  background: rgba(var(--color-neutral-800), 0.3);
-  transition: border-color 0.15s ease;
 }
 
-.app-card:hover {
+/* Dark mode card: recessed instrument panel */
+html.dark .app-card {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-800), 0.4) 0%,
+    rgba(var(--color-neutral-900), 0.3) 100%
+  );
+  border-color: rgba(var(--color-neutral-700), 0.4);
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(var(--color-neutral-700), 0.1);
+}
+
+html.dark .app-card:hover {
+  border-color: rgba(var(--color-primary-500), 0.5);
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(var(--color-primary-500), 0.15);
+}
+
+/* Light mode card: raised embossed panel */
+html:not(.dark) .app-card {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-neutral-50), 1) 0%,
+    rgba(var(--color-neutral-200), 0.4) 100%
+  );
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+html:not(.dark) .app-card:hover {
   border-color: rgba(var(--color-primary-500), 0.6);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .app-card .icon {
@@ -31,18 +1099,40 @@
   opacity: 0.8;
 }
 
+/* Store Button: Tactile Push Button */
 .app-card .store-btn {
-  background: rgba(var(--color-primary-500), 1);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-primary-400), 1) 0%,
+    rgba(var(--color-primary-600), 1) 100%
+  );
   color: white;
-  padding: 6px 14px;
+  padding: 8px 18px;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.88em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   display: inline-block;
   margin-top: 8px;
-  transition: background 0.15s ease;
+  border: 1px solid rgba(var(--color-primary-700), 0.5);
+  box-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .app-card .store-btn:hover {
-  background: rgba(var(--color-primary-600), 1);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-primary-500), 1) 0%,
+    rgba(var(--color-primary-700), 1) 100%
+  );
+  box-shadow:
+    0 2px 6px rgba(var(--color-primary-500), 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.app-card .store-btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
 }
