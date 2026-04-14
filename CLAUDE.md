@@ -65,7 +65,7 @@ layouts/shortcodes/
   "apps": [{
     "id": "com.memode.appname",
     "name": "Display Name",
-    "icon_url": "https://ccqqder.github.io/OliverPitBoat/images/apps/icon.png",
+    "icon_url": "https://ccqqder.github.io/PeachPitBoat/images/apps/icon.png",
     "description": "Short description",
     "store_url": "#",
     "is_promoted": true
@@ -97,7 +97,7 @@ ShowReadingTime: true
 - **No tracking/cookies** — no analytics, no cookie banners
 - **Design aesthetic:** Terminal Chic / Neo-Brutalism — minimal, fast (<1s load), no popups
 - **Output formats:** HTML + RSS + JSON (JSON enables PaperMod search)
-- **baseURL:** `https://ccqqder.github.io/OliverPitBoat/` — all absolute URLs use this prefix
+- **baseURL:** `https://ccqqder.github.io/PeachPitBoat/` — all absolute URLs use this prefix
 
 ## i18n / Multilingual
 

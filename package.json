@@ -1,5 +1,5 @@
 {
-  "name": "oliverpitboat",
+  "name": "peachpitboat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ccqqder/OliverPitBoat.git"
+    "url": "git+https://github.com/ccqqder/PeachPitBoat.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/ccqqder/OliverPitBoat/issues"
+    "url": "https://github.com/ccqqder/PeachPitBoat/issues"
   },
-  "homepage": "https://github.com/ccqqder/OliverPitBoat#readme",
+  "homepage": "https://github.com/ccqqder/PeachPitBoat#readme",
   "dependencies": {
     "@tinacms/cli": "^2.1.5",
     "tinacms": "^3.4.1"

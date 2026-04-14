@@ -33,11 +33,11 @@
 
 最佳做法是做一個專屬產品頁，例如：
 
-`https://ccqqder.github.io/OliverPitBoat/apps/gantt-planet/`
+`https://ccqqder.github.io/PeachPitBoat/apps/gantt-planet/`
 
 如果暫時不做專屬 landing page，次佳可先用：
 
-`https://ccqqder.github.io/OliverPitBoat/posts/gantt-planet/`
+`https://ccqqder.github.io/PeachPitBoat/posts/gantt-planet/`
 
 ## 2. Support URL
 
@@ -65,7 +65,7 @@
 
 建立專用支援頁，例如：
 
-`https://ccqqder.github.io/OliverPitBoat/support/gantt-planet/`
+`https://ccqqder.github.io/PeachPitBoat/support/gantt-planet/`
 
 ## 3. Privacy Policy URL
 
@@ -95,11 +95,11 @@ Apple 要求它連到你公司或開發者的隱私政策，而且所有 App 都
 
 建立專用隱私頁，例如：
 
-`https://ccqqder.github.io/OliverPitBoat/legal/gantt-planet-privacy/`
+`https://ccqqder.github.io/PeachPitBoat/legal/gantt-planet-privacy/`
 
 ## 4. 最佳實務
 
-最好的做法是三個 URL 都放在同一個主網域 `OliverPitBoat` 下，並互相連結：
+最好的做法是三個 URL 都放在同一個主網域 `PeachPitBoat` 下，並互相連結：
 
 - `Marketing URL` 連到 `Support URL`、`Privacy Policy URL`
 - `Support URL` 連到 `Marketing URL`、`Privacy Policy URL`
@@ -116,16 +116,16 @@ Apple 要求它連到你公司或開發者的隱私政策，而且所有 App 都
 針對 `甘特星球`，建議如下：
 
 - `Marketing URL`
-  - `https://ccqqder.github.io/OliverPitBoat/apps/gantt-planet/`
+  - `https://ccqqder.github.io/PeachPitBoat/apps/gantt-planet/`
 - `Support URL`
-  - `https://ccqqder.github.io/OliverPitBoat/support/gantt-planet/`
+  - `https://ccqqder.github.io/PeachPitBoat/support/gantt-planet/`
 - `Privacy Policy URL`
-  - `https://ccqqder.github.io/OliverPitBoat/legal/gantt-planet-privacy/`
+  - `https://ccqqder.github.io/PeachPitBoat/legal/gantt-planet-privacy/`
 
 如果目前尚未建立專屬產品頁，可暫時改為：
 
 - `Marketing URL`
-  - `https://ccqqder.github.io/OliverPitBoat/posts/gantt-planet/`
+  - `https://ccqqder.github.io/PeachPitBoat/posts/gantt-planet/`
 
 但仍不建議把 `Privacy Policy URL` 指到一般文章。
 
