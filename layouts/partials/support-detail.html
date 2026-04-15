@@ -6,8 +6,6 @@
 
 {{ $supportTitleSuffix := cond $isEn "Support" (cond $isJa "サポート" "支援") }}
 {{ $introText := cond $isEn "Use this page for bug reports, usage questions, and privacy requests." (cond $isJa "不具合報告・利用上の質問・プライバシー関連のお問い合わせは、このページから入口を辿ってください。" "問題回報、使用疑問與隱私相關詢問都可以從這裡找到對應入口。") }}
-{{ $entryTitle := cond $isEn "Official URLs" (cond $isJa "公式URL" "對外網址") }}
-{{ $entryDesc := cond $isEn "Use these canonical URLs when referencing the app from App Store Connect or other channels." (cond $isJa "App Store Connect などから参照する際は、以下の正規URLをご利用ください。" "從 App Store Connect 或其他頁面轉貼時，可以直接使用這些網址。") }}
 {{ $contactTitle := cond $isEn "Contact" (cond $isJa "お問い合わせ" "聯絡方式") }}
 {{ $reportTitle := cond $isEn "When Reporting a Bug, Please Include" (cond $isJa "不具合報告時にお知らせいただきたい情報" "回報問題時建議附上") }}
 {{ $relatedTitle := cond $isEn "Related Links" (cond $isJa "関連リンク" "相關連結") }}
@@ -38,13 +36,8 @@
     </section>
   {{ else }}
     {{ $app := index $matches 0 }}
-    {{ $baseURL := strings.TrimSuffix "/" site.BaseURL }}
-    {{ $supportURL := strings.TrimPrefix "/" $app.support_url | relURL }}
     {{ $privacyURL := strings.TrimPrefix "/" $app.privacy_url | relURL }}
     {{ $marketingURL := strings.TrimPrefix "/" $app.marketing_url | relURL }}
-    {{ $supportAbs := printf "%s/%s" $baseURL (strings.TrimPrefix "/" $app.support_url) }}
-    {{ $privacyAbs := printf "%s/%s" $baseURL (strings.TrimPrefix "/" $app.privacy_url) }}
-    {{ $marketingAbs := printf "%s/%s" $baseURL (strings.TrimPrefix "/" $app.marketing_url) }}
     {{ $displayName := cond $isEn $app.name $app.name_zh }}
 
     <header class="pp-header">
@@ -54,21 +47,6 @@
 
     <section class="pp-intro prose dark:prose-invert">
       {{ .Content }}
-    </section>
-
-    <section class="pp-panel">
-      <h2 class="pp-panel__title">{{ $entryTitle }}</h2>
-      <p class="pp-panel__desc">{{ $entryDesc }}</p>
-      <ul class="pp-panel__list">
-        <li><a href="{{ $app.store_url }}">App Store：{{ $app.store_url }}</a></li>
-        <li><a href="{{ $supportURL }}">{{ $supportLabel }}：{{ $supportAbs }}</a></li>
-        <li><a href="{{ $marketingURL }}">{{ $productLabel }}：{{ $marketingAbs }}</a></li>
-        <li><a href="{{ $privacyURL }}">{{ $privacyLabel }}：{{ $privacyAbs }}</a></li>
-        {{ with $app.terms_url }}
-          {{ $termsAbs := printf "%s/%s" $baseURL (strings.TrimPrefix "/" .) }}
-          <li><a href="{{ strings.TrimPrefix "/" . | relURL }}">{{ $termsLabel }}：{{ $termsAbs }}</a></li>
-        {{ end }}
-      </ul>
     </section>
 
     <section class="pp-panel-grid">
