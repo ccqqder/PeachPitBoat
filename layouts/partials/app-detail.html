@@ -20,12 +20,12 @@
     {{ partial "breadcrumbs.html" . }}
   {{ end }}
 
-  {{ if eq (len $matches) 0 }}
+  {{ if or (eq .Kind "section") (eq .Kind "home") (eq (len $matches) 0) }}
     <header class="pp-header">
       <h1 class="pp-header__title">{{ .Title | emojify }}</h1>
+      {{ with .Params.summary }}<p class="pp-header__summary">{{ . }}</p>{{ end }}
     </header>
     <section class="pp-intro prose dark:prose-invert">
-      <p>找不到這個 app 的資料映射，請檢查 <code>data/app_url_matrix.yaml</code>。</p>
       {{ .Content }}
     </section>
   {{ else }}

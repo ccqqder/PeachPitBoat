@@ -434,7 +434,37 @@
     - 人物の性格と関係ネットワーク：登場人物の反応はセリフだけでなく内面の動機に駆動される。
     - 端末内 AI の解釈：キャラクターの心理や場面の緊張を端末上で分析。
     - 詩詞とオブジェクト図鑑：読書体験を、検索可能で没入感のあるコレクションへと拡張。
-  screenshots: []
+  screenshots:
+    - src: /images/screenshots/stonestory/01_chapter_list-zh.png
+      alt: 章節列表
+      caption: 把原著拆成可探索的章節流，每一章都能重新進入。
+      caption_en: The novel split into an explorable chapter stream; each one is re-enterable.
+      caption_ja: 原作を探索可能な章ストリームに分解。各章に何度でも入り直せる。
+    - src: /images/screenshots/stonestory/02_entity_characters-zh.png
+      alt: 角色圖鑑
+      caption: 角色不再只是名字，而是可比較、可觀察的實體。
+      caption_en: Characters become entities you can compare and observe, not just names.
+      caption_ja: 登場人物を、名前ではなく比較・観察できるエンティティとして扱う。
+    - src: /images/screenshots/stonestory/04_entity_relationships-zh.png
+      alt: 關係網路
+      caption: 關係網把人物間的牽動可視化，看見誰影響誰。
+      caption_en: The relationship graph visualises how characters pull at each other.
+      caption_ja: 関係ネットワークで、人物間の牽引関係を可視化。
+    - src: /images/screenshots/stonestory/11_agent_detail-zh.png
+      alt: 角色細節
+      caption: 個別角色的內心、外觀與物品細節一併整理。
+      caption_en: Inner life, appearance, and possessions organised per character.
+      caption_ja: 各キャラクターの内面・外見・所持品を一つにまとめて整理。
+    - src: /images/screenshots/stonestory/20_place_detail-zh.png
+      alt: 場景細節
+      caption: 場景資訊整合人物、事件與詩詞，把地點變成故事節點。
+      caption_en: Places become story nodes — integrating characters, events, and poetry.
+      caption_ja: 場所が物語のノードになる。人物・出来事・詩詞を一つに束ねる。
+    - src: /images/screenshots/stonestory/09_true_ending-zh.png
+      alt: 真結局
+      caption: 原著結局以可探索的方式呈現，讓你重新經過一次。
+      caption_en: The novel's ending, presented as something you can walk through again.
+      caption_ja: 原作の結末を、もう一度たどり直せる形で提示。
   article_links:
     - title: 社會科學的聖杯，大語言讖判詞
       url: /posts/stonestory_fate/
