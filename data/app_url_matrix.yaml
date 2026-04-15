@@ -94,7 +94,27 @@
     - 手書き認識と画像認識：最も直感的な方法で字形を覚えられる。
     - 音声認識と AI 補助：発音練習にも理解のサポートにも使える。
     - オフライン AI コア：端末内で動作し、プライバシーと学習のリズムを守る。
-  screenshots: []
+  screenshots:
+    - src: /images/screenshots/kana-juku/reference-zh.png
+      alt: 五十音總覽
+      caption: 五十音一覽表，字形與輸入練習的起點。
+      caption_en: The kana overview, the starting point for glyph and input practice.
+      caption_ja: 五十音一覧、字形と入力練習の出発点。
+    - src: /images/screenshots/kana-juku/detail-zh.png
+      alt: 假名字形細節
+      caption: 每個假名都有筆順與形狀拆解，方便逐字掌握。
+      caption_en: Stroke order and shape breakdown for each kana.
+      caption_ja: 仮名ごとに筆順と形を分解して提示。
+    - src: /images/screenshots/kana-juku/quiz-zh.png
+      alt: 假名小測驗
+      caption: 隨機出題的小測驗，把記憶轉成反應速度。
+      caption_en: Randomised quizzes that turn memory into recognition speed.
+      caption_ja: ランダム出題の小テストで、記憶を反応速度に変える。
+    - src: /images/screenshots/kana-juku/about-zh.png
+      alt: 關於頁面
+      caption: 關於頁說明設計理念與隱私原則。
+      caption_en: The about page covering design philosophy and privacy principles.
+      caption_ja: デザイン理念とプライバシー方針を紹介する About ページ。
   article_links:
     - title: 開發筆記（一）
       url: /posts/kana_juku_dev_1/
@@ -389,7 +409,7 @@
   icon: /images/apps/stone-story.jpg
   store_url: https://apps.apple.com/app/id6759855416
   marketing_url: /apps/stonestory/
-  privacy_url: /legal/stonestory/privacy/
+  privacy_url: /privacy/stonestory/
   support_url: /support/stonestory/
   terms_url: null
   legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/stonestory/privacy.html
