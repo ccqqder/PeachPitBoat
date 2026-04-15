@@ -1,0 +1,248 @@
+- slug: python-dimensions
+  shipped: true
+  asset_slug: python-dimensions
+  name: Python Dimensions
+  name_zh: Python 點線面
+  icon: /images/apps/python-dimensions.jpg
+  store_url: https://apps.apple.com/app/id6759192089
+  marketing_url: /apps/python-dimensions/
+  privacy_url: /legal/python-dimensions/privacy/
+  support_url: /support/python-dimensions/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/python-dimensions/privacy.html
+  tagline: 三維度 Python 學習工具，內建端側 AI 助教與 Python 3.13 執行環境。
+  description: 無論你是零基礎初學者、準備考取 TQC+ 的大學生，還是正在衝刺 CPE 的資工生，Python 點線面都能幫助你建立扎實的程式基礎。
+  features:
+    - 三維度題型訓練：選擇題、克漏字、程式碼排列一次打通。
+    - 端側 AI 助教：離線 LLM 搭配 RAG，根據錯題提供提示。
+    - 內建 Python 3.13 執行環境：可以直接練習與驗證程式碼。
+    - 300+ 題庫與雷達圖能力分析：支援 PCEP、TQC+、CPE 準備。
+    - 多模型本地學習環境：可依裝置能力選擇適合的 AI 組態。
+  screenshots:
+    - src: /images/screenshots/python-dimensions/practice.png
+      alt: Python 點線面練習模式
+      caption: 三種練習維度，循序漸進建立語法與邏輯感。
+    - src: /images/screenshots/python-dimensions/cloze.png
+      alt: Python 點線面填空題
+      caption: 從下拉選單補全語法，練熟常用方法與關鍵字。
+    - src: /images/screenshots/python-dimensions/parsons.png
+      alt: Python 點線面程式碼排序
+      caption: 以拖曳方式重建正確程式流程，訓練完整邏輯。
+    - src: /images/screenshots/python-dimensions/playground.png
+      alt: Python 點線面遊樂場
+      caption: 內建遊樂場可直接執行 Python 程式碼並查看輸出。
+  article_links: []
+
+- slug: kana-juku
+  shipped: true
+  asset_slug: kana-juku
+  name: Kana Juku
+  name_zh: 假名私塾
+  icon: /images/apps/kana-juku.jpg
+  store_url: https://apps.apple.com/app/id6756785942
+  marketing_url: /apps/kana-juku/
+  privacy_url: /legal/kana-juku/privacy/
+  support_url: /support/kana-juku/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/kana-juku/privacy.html
+  tagline: 專為中文母語者設計的五十音學習工具，內建客製化鍵盤與端側 AI。
+  description: 假名私塾把假名字形、筆順、輸入與 AI 輔助結合成一個適合中文使用者的日語入門系統。
+  features:
+    - 客製化五十音鍵盤：不依賴系統日文鍵盤，所見即所得。
+    - 手寫辨識與影像辨識：用最直覺的方式記住字形。
+    - 語音辨識與 AI 輔助：拿來練習發音與理解都很合適。
+    - 離線 AI 中樞：本地執行，保留隱私與學習節奏。
+  screenshots: []
+  article_links:
+    - title: 開發筆記（一）
+      url: /posts/kana_juku_dev_1/
+
+- slug: english-n-plus-1
+  shipped: true
+  asset_slug: english-plus-one
+  name: English N+1
+  name_zh: 英語N+1
+  icon: /images/apps/english-plus-one.jpg
+  store_url: https://apps.apple.com/app/id6757358263
+  marketing_url: /apps/english-n-plus-1/
+  privacy_url: /legal/english-n-plus-1/privacy/
+  support_url: /support/english-n-plus-1/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/english-n-plus-1/privacy.html
+  tagline: 離線 AI 英語外教，依你的 CEFR 程度動態生成剛好多一點挑戰的內容。
+  description: 英語 N+1 以 Krashen 的 i+1 理論為核心，結合裝置端 AI 與 CEFR 分級，提供真正貼近目前程度的閱讀與複習材料。
+  features:
+    - CEFR 分級測驗：用 10 題快速定位 A1 到 C2 的大致程度。
+    - AI 生成文章：依主題與難度即時生成可閱讀內容。
+    - 單字收藏、分級字庫與閃卡複習：把新詞自動排進復習節奏。
+    - 硬體自適應模型選擇：根據設備能力推薦最佳本地模型。
+    - 完全離線學習：不需網路即可閱讀、生成與複習。
+  screenshots:
+    - src: /images/screenshots/english-plus-one/home-zh.png
+      alt: 英語N+1 首頁
+      caption: 首頁會顯示目前程度，並可直接挑選主題生成文章。
+    - src: /images/screenshots/english-plus-one/placement-test-zh.png
+      alt: 英語N+1 分級測驗
+      caption: 用少量題目快速估計 CEFR 等級，避免不必要的挫折。
+    - src: /images/screenshots/english-plus-one/flashcard-review-zh.png
+      alt: 英語N+1 單字複習
+      caption: 收藏過的單字會進入閃卡式複習流程。
+    - src: /images/screenshots/english-plus-one/model-load-zh.png
+      alt: 英語N+1 模型選擇
+      caption: 根據記憶體與裝置能力載入合適的本地模型。
+  article_links: []
+
+- slug: gantt-planet
+  shipped: true
+  asset_slug: gantt-planet
+  name: Gantt Planet
+  name_zh: 甘特星球
+  icon: /images/apps/gantt-planet.jpg
+  store_url: https://apps.apple.com/app/id6757654373
+  marketing_url: /apps/gantt-planet/
+  privacy_url: /legal/gantt-planet/privacy/
+  support_url: /support/gantt-planet/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/gantt-planet/privacy.html
+  tagline: 3D 視覺化習慣養成加上 AI 樹洞，把自律變成一場安靜的星際冒險。
+  description: 甘特星球把目標管理、情緒沉澱與藝術收集系統綁成一個不靠伺服器也能長期陪伴你的個人宇宙。
+  features:
+    - 多維度時間軸：把重要但不緊急的人生項目排進可長期追蹤的節奏。
+    - 3D 星球視圖：以寶石、軌道與礦坑視覺化你的成長進度。
+    - AI 樹洞：本地模型提供私密對話與反思陪伴。
+    - 藝術圖鑑收集：完成目標後逐步解鎖插畫作品與收藏回饋。
+  screenshots:
+    - src: /images/screenshots/gantt-planet/timeline-zh.png
+      alt: 甘特星球時間軸主畫面
+      caption: 以日曆中線統整今天需要關注的所有項目。
+    - src: /images/screenshots/gantt-planet/timeline-scrolled-zh.png
+      alt: 甘特星球時間軸篩選畫面
+      caption: 從每日到每年的頻率都能放進同一條時間軸裡查看。
+    - src: /images/screenshots/gantt-planet/geo-view-zh.png
+      alt: 甘特星球 3D 星球畫面
+      caption: 3D 星球視圖讓習慣養成變成可感知的地景。
+    - src: /images/screenshots/gantt-planet/tree-hole-zh.png
+      alt: 甘特星球 AI 樹洞
+      caption: 在完全離線的前提下與樹洞對話、整理心事。
+    - src: /images/screenshots/gantt-planet/art-collection-zh.png
+      alt: 甘特星球藝術圖鑑
+      caption: 完成任務即可解鎖藝術圖鑑與更多收藏。
+  article_links:
+    - title: 開發者考量與生態位
+      url: /posts/gantt-planet-intro/
+
+- slug: auditory-companion
+  shipped: true
+  asset_slug: auditory-companion
+  name: AuditoryCompanion
+  name_zh: 聽覺旅伴
+  icon: /images/apps/auditory-companion.jpg
+  store_url: https://apps.apple.com/app/id6759191303
+  marketing_url: /apps/auditory-companion/
+  privacy_url: /legal/auditory-companion/privacy/
+  support_url: /support/auditory-companion/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/auditory-companion/privacy.html
+  tagline: DSP 即時合成噪音、108 種環境音，外加沉浸式 TTS 朗讀，全部裝置端運算。
+  description: 聽覺旅伴把白噪音、環境音混音和朗讀功能收進同一個精密音訊引擎，專注與放鬆都能用。
+  features:
+    - 噪音合成器：即時 DSP 合成白、粉紅、棕、藍四種噪音色彩。
+    - 場景混音台：用 108 個音頻樣本打造自己的聲景配方。
+    - 沉浸式 READER：支援本地 TTS 朗讀與背景音自動閃避。
+    - 完全離線音訊處理：不需上傳文本即可朗讀、混音與播放。
+  screenshots:
+    - src: /images/screenshots/auditory-companion/synthesis.png
+      alt: 聽覺旅伴噪音合成器
+      caption: 可微調色彩、亮度與深度的 DSP 噪音合成器。
+    - src: /images/screenshots/auditory-companion/scenes.png
+      alt: 聽覺旅伴場景混音
+      caption: 把循環聲與事件聲堆疊成自己的環境音場。
+    - src: /images/screenshots/auditory-companion/reader.png
+      alt: 聽覺旅伴閱讀模式
+      caption: 在閱讀模式中直接用本地 TTS 朗讀文本。
+    - src: /images/screenshots/auditory-companion/focus-player.png
+      alt: 聽覺旅伴專注播放器
+      caption: 全螢幕播放器將專注聲景與朗讀整合成一個介面。
+  article_links: []
+
+- slug: atomic-presence
+  shipped: true
+  asset_slug: atomic-presence
+  name: Atomic Presence
+  name_zh: 原子受訪
+  icon: /images/apps/atomic-presence.jpg
+  store_url: https://apps.apple.com/app/id6759192866
+  marketing_url: /apps/atomic-presence/
+  privacy_url: /legal/atomic-presence/privacy/
+  support_url: /support/atomic-presence/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/atomic-presence/privacy.html
+  tagline: 面對 Deepfake 與惡意剪輯，以密碼學雜湊鏈與數位簽章捍衛你的真實性。
+  description: 原子受訪是為受訪者、記者與法律存證情境設計的技術防禦工具，核心是讓錄影與錄音具有可驗證的完整性。
+  features:
+    - Hash Chain：即時將雜湊序列編碼成動態 QR。
+    - 數位簽章：用裝置端金鑰對錄製內容簽名。
+    - 音訊浮水印：在錄音中嵌入可驗證的近超音波訊號。
+    - 內建驗證器：回頭逐幀比對、驗證完整性。
+  screenshots:
+    - src: /images/screenshots/atomic-presence/info-zh.png
+      alt: 原子受訪資訊頁
+      caption: 快速理解不同防護等級與驗證思路。
+    - src: /images/screenshots/atomic-presence/level-selector-zh.png
+      alt: 原子受訪等級選擇
+      caption: 依風險情境切換不同保護強度。
+    - src: /images/screenshots/atomic-presence/running-zh.png
+      alt: 原子受訪運行畫面
+      caption: 錄影時即時輸出可供事後驗證的視覺訊號。
+    - src: /images/screenshots/atomic-presence/verification-zh.png
+      alt: 原子受訪驗證畫面
+      caption: 回頭檢驗素材是否遭到刪改或重組。
+  article_links: []
+
+- slug: sown-echoes
+  shipped: true
+  asset_slug: meme-lives
+  name: Sown Echoes
+  name_zh: 回聲種子
+  icon: /images/apps/meme-lives.jpg
+  store_url: https://apps.apple.com/app/id6759969494
+  marketing_url: /apps/sown-echoes/
+  privacy_url: /legal/sown-echoes/privacy/
+  support_url: /support/sown-echoes/
+  terms_url: /legal/sown-echoes/terms/
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/sown-echoes/privacy.html
+  tagline: 把思想、價值觀與人生經歷留下來，做成可被未來 AI 理解的數位遺產。
+  description: 回聲種子把記錄、分析與對話整合成一套個人知識與人格保存工具，核心仍然是裝置端優先與隱私保留。
+  features:
+    - 密碼學身份：用助記詞建立自己的 Meme ID。
+    - 語音與文字記錄：搭配裝置端 Whisper 轉寫。
+    - AI 鏡像與數位分身：整理價值觀與人生敘事後再與之對話。
+    - 雙軌分享：內容可私有保存，也可選擇性公開貢獻。
+  screenshots: []
+  article_links: []
+
+- slug: stonestory
+  shipped: true
+  asset_slug: stone-story
+  name: StoneStory
+  name_zh: 紅樓夢模擬器
+  icon: /images/apps/stone-story.jpg
+  store_url: https://apps.apple.com/app/id6759855416
+  marketing_url: /apps/stonestory/
+  privacy_url: /legal/stonestory/privacy/
+  support_url: /support/stonestory/
+  terms_url: null
+  legacy_legal_source: /Users/Drops/Data/qqder339/qqder339-legal/stonestory/privacy.html
+  tagline: 把《紅樓夢》做成可互動的 AI 敘事模擬，讓文學不再只是靜態閱讀。
+  description: 紅樓夢模擬器把角色、場景與事件抽成可運作的敘事系統，讓你不只是在看經典，而是在和經典一起運轉。
+  features:
+    - 768 個原著場景：把故事推進拆成可回放、可探索的事件流。
+    - 角色性格與關係網：讓人物反應不只是台詞，而是有內在驅動。
+    - 端側 AI 詮釋：在裝置上分析角色內心與場景張力。
+    - 詩詞與物件圖鑑：把閱讀延伸成可查詢、可沉浸的收藏體驗。
+  screenshots: []
+  article_links:
+    - title: 社會科學的聖杯，大語言讖判詞
+      url: /posts/stonestory_fate/
+    - title: 熱力學與藝術選擇
+      url: /posts/stonestory_thermodynamics/

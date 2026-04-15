@@ -1,0 +1,91 @@
+{{ define "main" }}
+  {{ $slug := .Params.app_slug | default .File.ContentBaseName }}
+  {{ $matches := where site.Data.app_url_matrix "slug" $slug }}
+  <article class="max-w-4xl mx-auto">
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+
+    {{ if eq (len $matches) 0 }}
+      <header>
+        <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+          {{ .Title | emojify }}
+        </h1>
+      </header>
+      <section class="max-w-full mt-6 prose dark:prose-invert">
+        <p>找不到這個 app 的支援資料映射，請檢查 <code>data/app_url_matrix.yaml</code>。</p>
+        {{ .Content }}
+      </section>
+    {{ else }}
+      {{ $app := index $matches 0 }}
+      {{ $baseURL := strings.TrimSuffix "/" site.BaseURL }}
+      {{ $supportURL := strings.TrimPrefix "/" $app.support_url | relURL }}
+      {{ $privacyURL := strings.TrimPrefix "/" $app.privacy_url | relURL }}
+      {{ $marketingURL := strings.TrimPrefix "/" $app.marketing_url | relURL }}
+      {{ $supportAbsoluteURL := printf "%s/%s" $baseURL (strings.TrimPrefix "/" $app.support_url) }}
+      {{ $privacyAbsoluteURL := printf "%s/%s" $baseURL (strings.TrimPrefix "/" $app.privacy_url) }}
+      {{ $marketingAbsoluteURL := printf "%s/%s" $baseURL (strings.TrimPrefix "/" $app.marketing_url) }}
+      <header>
+        <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+          {{ $app.name_zh }} 支援
+        </h1>
+        <p class="mt-3 text-lg text-neutral-700 dark:text-neutral-300">
+          問題回報、使用疑問與隱私相關詢問都可以從這裡找到對應入口。
+        </p>
+      </header>
+
+      <section class="max-w-full mt-8 prose dark:prose-invert">
+        {{ .Content }}
+      </section>
+
+      <section class="mt-8 rounded-2xl border border-neutral-200 bg-white/70 p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-900/70">
+        <h2 class="mt-0 text-xl font-bold text-neutral-900 dark:text-neutral">支援入口</h2>
+        <p class="mt-3 text-sm leading-7 text-neutral-700 dark:text-neutral-300">
+          如果你是從 App Store Connect 或其他頁面跳進來，下面這些網址可以直接對照與轉貼。
+        </p>
+        <ul class="mb-0 mt-4 text-neutral-700 dark:text-neutral-300">
+          <li><a href="{{ $app.store_url }}">App Store：{{ $app.store_url }}</a></li>
+          <li><a href="{{ $supportURL }}">支援頁：{{ $supportAbsoluteURL }}</a></li>
+          <li><a href="{{ $marketingURL }}">產品頁：{{ $marketingAbsoluteURL }}</a></li>
+          <li><a href="{{ $privacyURL }}">隱私權政策：{{ $privacyAbsoluteURL }}</a></li>
+          {{ with $app.terms_url }}
+            {{ $termsAbsoluteURL := printf "%s/%s" $baseURL (strings.TrimPrefix "/" .) }}
+            <li><a href="{{ strings.TrimPrefix "/" . | relURL }}">服務條款：{{ $termsAbsoluteURL }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+
+      <section class="mt-8 grid gap-4">
+        <div class="rounded-2xl border border-neutral-200 bg-white/70 p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-900/70">
+          <h2 class="mt-0 text-xl font-bold text-neutral-900 dark:text-neutral">聯絡方式</h2>
+          <p class="mb-0 text-neutral-700 dark:text-neutral-300">
+            Email:
+            <a href="mailto:qqder339@gmail.com?subject=[{{ $app.name_zh }}]%20Support%20Request">qqder339@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-200 bg-white/70 p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-900/70">
+          <h2 class="mt-0 text-xl font-bold text-neutral-900 dark:text-neutral">回報問題時建議附上</h2>
+          <ul class="mb-0 text-neutral-700 dark:text-neutral-300">
+            <li>裝置型號與 iOS 版本</li>
+            <li>App 版本號</li>
+            <li>問題發生步驟與預期行為</li>
+            <li>若方便，附上螢幕截圖或錄影</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-200 bg-white/70 p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-900/70">
+          <h2 class="mt-0 text-xl font-bold text-neutral-900 dark:text-neutral">相關連結</h2>
+          <ul class="mb-0 text-neutral-700 dark:text-neutral-300">
+            <li><a href="{{ $app.store_url }}">App Store</a></li>
+            <li><a href="{{ $marketingURL }}">產品頁</a></li>
+            <li><a href="{{ $privacyURL }}">隱私權政策</a></li>
+            {{ with $app.terms_url }}
+              <li><a href="{{ strings.TrimPrefix "/" . | relURL }}">服務條款</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </section>
+    {{ end }}
+  </article>
+{{ end }}

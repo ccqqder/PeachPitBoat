@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Sown Echoes</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sown Echoes Privacy Policy / 回聲種子隱私權政策</h1>
+        <p><strong>Last Updated / 最後更新日期:</strong> 2026-03-29</p>
+
+        <hr>
+
+        <h2>English</h2>
+
+        <h3>1. Overview</h3>
+        <p><strong>Sown Echoes</strong> (回聲種子, hereinafter referred to as "this App") is an iOS application developed by <strong>Chengche Lee</strong> that lets users record their thoughts, values, and life experiences as structured data for AI training and digital immortality. We adhere to a strict privacy-first policy.</p>
+        <p><strong>In short: All core processing happens entirely on your device. We do NOT collect, store, or transmit any personal data to external servers. No user data is collected.</strong></p>
+
+        <h3>2. Data Collection and Usage</h3>
+
+        <h4>Data We Do NOT Collect</h4>
+        <p>This App does not collect:</p>
+        <ul>
+            <li>Personally Identifiable Information (PII) such as name, email, or phone number</li>
+            <li>Location data (location is user-entered text only, no GPS tracking)</li>
+            <li>Device Identifiers (IDFA, IDFV)</li>
+            <li>Usage analytics or tracking data</li>
+            <li>Any form of user behavior tracking</li>
+        </ul>
+
+        <h4>Locally Stored Data</h4>
+        <p>The following data is stored strictly on your device using Apple's SwiftData framework:</p>
+        <ul>
+            <li><strong>Text &amp; Voice Entries:</strong> Your personal records, stored in the app's local database.</li>
+            <li><strong>Questionnaire Responses:</strong> Answers to structured self-exploration questions.</li>
+            <li><strong>Inscriptions:</strong> Personal motto, epitaph, and other deeply personal texts.</li>
+            <li><strong>AI Analysis Results:</strong> Values radar, persona summaries, and word clouds, all generated on-device.</li>
+            <li><strong>Digital Twin Conversations:</strong> Echo chat history, processed entirely on-device.</li>
+            <li><strong>Cryptographic Identity:</strong> BIP-39 mnemonic phrase and Ed25519 private key, securely stored in iOS Keychain.</li>
+        </ul>
+
+        <h3>3. Cryptographic Identity</h3>
+        <p>This App uses a cryptographic identity system instead of traditional accounts:</p>
+        <ul>
+            <li><strong>BIP-39 Mnemonic:</strong> A 12-word recovery phrase generated locally on your device.</li>
+            <li><strong>Ed25519 Key Pair:</strong> Derived from the mnemonic using BIP-32 key derivation, stored in iOS Keychain.</li>
+            <li><strong>Meme ID:</strong> A SHA-256 truncated public key hash used as your pseudonymous identifier.</li>
+            <li><strong>No Account Required:</strong> No email, no password, no server-side registration.</li>
+        </ul>
+        <p><strong>Your mnemonic phrase is the only way to recover your identity. We cannot recover it for you. No user data is collected.</strong></p>
+
+        <h3>4. iCloud Sync</h3>
+        <p>This App uses Apple iCloud for two purposes:</p>
+        <ul>
+            <li><strong>Private Database:</strong> Encrypted backup of your personal records. Only accessible by your Apple ID. Apple manages iCloud encryption and security.</li>
+            <li><strong>Keychain Sync:</strong> Securely syncs your cryptographic identity to your other devices via iCloud Keychain.</li>
+        </ul>
+        <p><strong>The developer has no access to your iCloud data.</strong></p>
+
+        <h3>5. Public Contributions (Optional)</h3>
+        <p>You may optionally choose to publish your writings to the Human Wisdom Library under a CC-BY-SA 4.0 license. When you do:</p>
+        <ul>
+            <li><strong>PII Stripping:</strong> Personal names, phone numbers, emails, national ID numbers, credit card numbers, and addresses are automatically removed before publication.</li>
+            <li><strong>Date Coarsening:</strong> Timestamps are reduced to month-level granularity.</li>
+            <li><strong>PII Audit:</strong> A defense-in-depth audit scans stripped content for any residual personal information.</li>
+            <li><strong>No GPS:</strong> No precise geographic location is ever recorded or published.</li>
+            <li><strong>Withdrawal:</strong> If you have established an identity, you can withdraw your public contributions at any time.</li>
+            <li><strong>Quality Gate:</strong> On-device AI validates content quality before publication.</li>
+        </ul>
+        <p>Public contributions are stored in Apple's CloudKit Public Database and may be used for AI model training. You can browse the published dataset at <a href="https://huggingface.co/datasets/qqder/memelives-open-contributions" target="_blank">huggingface.co/datasets/qqder/memelives-open-contributions</a>.</p>
+
+        <h3>6. On-Device AI Processing</h3>
+        <p>All AI features operate on-device with a three-tier fallback system:</p>
+        <ul>
+            <li><strong>Apple Foundation Models</strong> (iOS 26+): Apple's built-in on-device models.</li>
+            <li><strong>Local LLM</strong> (MLX): Optional downloadable models (Qwen 0.5B–3B) stored in App Group container.</li>
+            <li><strong>Stub Fallback:</strong> Basic functionality without AI when no model is available.</li>
+        </ul>
+        <p>AI features include: speech-to-text (Whisper), values analysis, persona summarization, digital twin chat (Echo), and content quality assessment.</p>
+        <p><strong>No AI processing is performed on external servers. No user data is collected.</strong></p>
+
+        <h3>7. Device Permissions</h3>
+        <p>This App requires the following device permissions, all used exclusively for local functionality:</p>
+        <ul>
+            <li><strong>Microphone:</strong> Used to record voice entries for on-device Whisper transcription. Audio is stored only on your device and never uploaded.</li>
+            <li><strong>Speech Recognition:</strong> Used for on-device voice-to-text conversion. All processing happens locally.</li>
+        </ul>
+
+        <h3>8. Third-Party Services</h3>
+        <p>This App does <strong>NOT</strong> use any third-party analytics, advertising, or tracking frameworks. No Google Analytics, No Facebook SDK, No Firebase, No Ads, No Crash Reporting services.</p>
+
+        <h3>9. Data Export</h3>
+        <p>You can export your data in multiple formats (SFT JSONL, Digital Twin JSON, Personal Backup). All exports are generated on-device and saved to your local Files. PII is automatically stripped from training-format exports.</p>
+
+        <h3>10. Children's Privacy</h3>
+        <p>This App is not designed for children under 13 and does not knowingly collect information from children. Public contributions require users to confirm they are at least 16 years of age.</p>
+
+        <h3>11. Information for Users in the European Economic Area (EEA)</h3>
+        <p>This App is not currently available on the App Store in any EU/EEA country. However, if you access the App or the public dataset from within the EEA, the following provisions apply in accordance with the General Data Protection Regulation (EU) 2016/679 ("GDPR"):</p>
+
+        <h4>Data Controller</h4>
+        <p>The data controller for public contributions stored in CloudKit Public Database is:<br>
+        <strong>Chengche Lee</strong><br>
+        Email: <a href="mailto:qqder339@gmail.com">qqder339@gmail.com</a></p>
+
+        <h4>EU Representative (Art. 27 GDPR)</h4>
+        <p>This App is currently not available in any EU/EEA territory. Accordingly, no EU representative has been designated at this time. If and when the App becomes available in EU/EEA countries, a designated EU representative will be appointed and their name and contact information will be published in this section.</p>
+
+        <h4>Legal Basis for Processing</h4>
+        <ul>
+            <li><strong>Public Contributions:</strong> Consent (Article 6(1)(a) GDPR) — you explicitly choose to publish each contribution.</li>
+            <li><strong>Local Data Processing:</strong> Not subject to GDPR, as all processing occurs on-device and no personal data is transmitted to the developer.</li>
+            <li><strong>iCloud Sync:</strong> Apple acts as a data processor under its own GDPR compliance framework. The developer has no access to your iCloud data.</li>
+        </ul>
+
+        <h4>Your Rights Under GDPR</h4>
+        <p>Where GDPR applies, you have the following rights:</p>
+        <ul>
+            <li><strong>Right of Access (Art. 15):</strong> Export all your data via Settings → Data Management (JSON or Markdown format).</li>
+            <li><strong>Right to Rectification (Art. 16):</strong> Edit your entries directly within the App at any time.</li>
+            <li><strong>Right to Erasure (Art. 17):</strong> Delete all records via Settings → Data Management, or withdraw individual public contributions via Settings → Contributions.</li>
+            <li><strong>Right to Data Portability (Art. 20):</strong> Export your data in machine-readable JSON format via Settings → Data Management.</li>
+            <li><strong>Right to Restrict Processing (Art. 18):</strong> Set any entry to "Private" to prevent it from being published.</li>
+            <li><strong>Right to Withdraw Consent (Art. 7):</strong> Withdraw public contributions at any time. Note: contributions already included in published HuggingFace dataset releases remain under CC-BY-SA 4.0 license.</li>
+        </ul>
+
+        <h4>Data Retention</h4>
+        <p>Local data is retained until you delete it. Public contributions are retained in CloudKit Public Database until you withdraw them. Withdrawn contributions are permanently deleted from CloudKit. Published dataset snapshots on HuggingFace are versioned and immutable.</p>
+
+        <h4>Data Breach Notification (Art. 33/34 GDPR)</h4>
+        <p>In the event of a personal data breach affecting public contributions, the data controller will notify the relevant supervisory authority within 72 hours of becoming aware of the breach, where feasible and where notification is required under Art. 33 GDPR. If the breach is likely to result in a high risk to the rights and freedoms of data subjects, affected users will be notified without undue delay via the app's support email and/or an in-app notification. To report a suspected breach or for breach-related inquiries, please contact: <a href="mailto:qqder339@gmail.com">qqder339@gmail.com</a>.</p>
+
+        <h4>International Data Transfers</h4>
+        <p>Public contributions are stored in Apple's CloudKit infrastructure. Apple complies with GDPR data transfer requirements under its own Data Processing Addendum. The HuggingFace dataset is hosted in the EU (France). No additional cross-border transfers are performed by the developer.</p>
+
+        <h4>Pseudonymous Data</h4>
+        <p>Public contributions are pseudonymous: your Meme ID (a cryptographic hash) links your contributions but cannot be traced to your real identity without possession of your BIP-39 mnemonic phrase. Under GDPR, pseudonymous data remains personal data.</p>
+
+        <h4>Right to Lodge a Complaint</h4>
+        <p>You have the right to lodge a complaint with a supervisory authority in the EU Member State of your habitual residence, place of work, or place of the alleged infringement.</p>
+
+        <h3>12. Changes to This Policy</h3>
+        <p>Any changes to this privacy policy will be communicated through app updates. Continued use of this App constitutes acceptance of the updated policy.</p>
+
+        <h3>13. Contact Us</h3>
+        <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
+        <p>Email: <a href="mailto:qqder339@gmail.com?subject=[SownEchoes]%20Privacy%20Policy%20Inquiry">qqder339@gmail.com</a></p>
+
+        <hr>
+
+        <h2>繁體中文</h2>
+
+        <h3>1. 概述</h3>
+        <p><strong>Sown Echoes</strong>（回聲種子，以下簡稱「本應用」）是一款由 <strong>Chengche Lee</strong> 開發的 iOS 應用程式，讓使用者能夠記錄個人思想、價值觀和生命經歷，作為 AI 訓練與數位永生的結構化資料。我們奉行嚴格的隱私優先政策。</p>
+        <p><strong>簡單來說：所有核心處理皆在您的裝置上完成。我們不會收集、儲存或傳輸任何個人資料至外部伺服器。不收集任何使用者資料。</strong></p>
+
+        <h3>2. 資料收集與使用</h3>
+
+        <h4>我們不收集的資料</h4>
+        <p>本應用不會收集以下資料：</p>
+        <ul>
+            <li>個人身份資訊（姓名、電子郵件、電話號碼等）</li>
+            <li>位置資訊（位置為使用者自行輸入的文字，不使用 GPS 追蹤）</li>
+            <li>裝置識別碼（IDFA、IDFV）</li>
+            <li>使用行為分析資料</li>
+            <li>任何形式的追蹤資料</li>
+        </ul>
+
+        <h4>本地儲存的資料</h4>
+        <p>以下資料僅使用 Apple SwiftData 框架儲存在您的裝置上：</p>
+        <ul>
+            <li><strong>文字與語音記錄：</strong> 您的個人記錄，儲存於應用程式本地資料庫。</li>
+            <li><strong>問卷回答：</strong> 結構化自我探索問題的回答。</li>
+            <li><strong>銘文：</strong> 座右銘、墓誌銘等深度個人文字。</li>
+            <li><strong>AI 分析結果：</strong> 價值觀雷達、人格摘要和文字雲，全部在裝置上產生。</li>
+            <li><strong>數位分身對話：</strong> Echo 聊天記錄，完全在裝置上處理。</li>
+            <li><strong>密碼學身份：</strong> BIP-39 助記詞和 Ed25519 私鑰，安全儲存於 iOS 鑰匙圈。</li>
+        </ul>
+
+        <h3>3. 密碼學身份</h3>
+        <p>本應用使用密碼學身份系統取代傳統帳號：</p>
+        <ul>
+            <li><strong>BIP-39 助記詞：</strong> 在您的裝置上本地產生的 12 字復原短語。</li>
+            <li><strong>Ed25519 金鑰對：</strong> 使用 BIP-32 金鑰衍生從助記詞產生，儲存於 iOS 鑰匙圈。</li>
+            <li><strong>Meme ID：</strong> SHA-256 截斷的公鑰雜湊值，作為您的假名識別碼。</li>
+            <li><strong>不需要帳號：</strong> 不需要電子郵件、密碼或伺服器端註冊。</li>
+        </ul>
+        <p><strong>您的助記詞是復原身份的唯一方式。我們無法為您復原。不收集任何使用者資料。</strong></p>
+
+        <h3>4. iCloud 同步</h3>
+        <p>本應用使用 Apple iCloud 進行兩項用途：</p>
+        <ul>
+            <li><strong>私人資料庫：</strong> 加密備份您的個人記錄。僅您的 Apple ID 可存取。Apple 管理 iCloud 的加密和安全性。</li>
+            <li><strong>鑰匙圈同步：</strong> 透過 iCloud 鑰匙圈安全同步您的密碼學身份至您的其他裝置。</li>
+        </ul>
+        <p><strong>開發者無法存取您的 iCloud 資料。</strong></p>
+
+        <h3>5. 公開貢獻（選擇性）</h3>
+        <p>您可以選擇將作品以 CC-BY-SA 4.0 授權發布至 Human Wisdom Library。當您這麼做時：</p>
+        <ul>
+            <li><strong>PII 移除：</strong> 個人姓名、電話號碼、電子郵件、身分證號碼、信用卡號碼和地址會在發布前自動移除。</li>
+            <li><strong>時間粗化：</strong> 時間戳記降低至月份粒度。</li>
+            <li><strong>PII 審計：</strong> 深度防禦審計掃描已清除的內容，檢查是否有殘留的個人資訊。</li>
+            <li><strong>無 GPS：</strong> 不會記錄或發布任何精確地理位置。</li>
+            <li><strong>撤回：</strong> 如果您已建立身份，可以隨時撤回您的公開貢獻。</li>
+            <li><strong>品質閘門：</strong> 裝置上的 AI 在發布前驗證內容品質。</li>
+        </ul>
+        <p>公開貢獻儲存於 Apple CloudKit 公開資料庫，可能被用於 AI 模型訓練。您可以在 <a href="https://huggingface.co/datasets/qqder/memelives-open-contributions" target="_blank">huggingface.co/datasets/qqder/memelives-open-contributions</a> 瀏覽已發布的資料集。</p>
+
+        <h3>6. 裝置端 AI 處理</h3>
+        <p>所有 AI 功能使用三層降級系統在裝置上運行：</p>
+        <ul>
+            <li><strong>Apple Foundation Models</strong>（iOS 26+）：Apple 內建的裝置端模型。</li>
+            <li><strong>本機 LLM</strong>（MLX）：可選下載的模型（Qwen 0.5B–3B），儲存於 App Group 容器。</li>
+            <li><strong>Stub 後備：</strong> 無可用模型時的基本功能。</li>
+        </ul>
+        <p>AI 功能包括：語音轉文字（Whisper）、價值觀分析、人格摘要、數位分身對話（Echo）及內容品質評估。</p>
+        <p><strong>所有 AI 處理皆不在外部伺服器上執行。不收集任何使用者資料。</strong></p>
+
+        <h3>7. 裝置權限</h3>
+        <p>本應用需要以下裝置權限，所有權限僅用於本地功能：</p>
+        <ul>
+            <li><strong>麥克風：</strong> 用於錄製語音記錄，進行裝置端 Whisper 轉錄。音訊僅儲存在您的裝置上，不會上傳。</li>
+            <li><strong>語音辨識：</strong> 用於裝置端語音轉文字。所有處理在本地完成。</li>
+        </ul>
+
+        <h3>8. 第三方服務</h3>
+        <p>本應用 <strong>不使用</strong> 任何第三方分析、廣告或追蹤框架。無 Google Analytics、無 Facebook SDK、無 Firebase、無廣告、無崩潰報告服務。</p>
+
+        <h3>9. 資料匯出</h3>
+        <p>您可以將資料匯出為多種格式（SFT JSONL、Digital Twin JSON、個人備份）。所有匯出在裝置上產生並儲存至本地檔案。訓練格式匯出會自動移除 PII。</p>
+
+        <h3>10. 兒童隱私</h3>
+        <p>本應用不針對 13 歲以下兒童設計，也不會故意收集兒童的個人資訊。公開貢獻要求使用者確認年滿 16 歲。</p>
+
+        <h3>11. 歐洲經濟區 (EEA) 使用者資訊</h3>
+        <p>本應用目前未在任何 EU/EEA 國家的 App Store 上架。但若您從 EEA 境內存取本應用或公開資料集，以下條款依據《一般資料保護規範》(EU) 2016/679（「GDPR」）適用：</p>
+
+        <h4>資料控制者</h4>
+        <p>儲存於 CloudKit 公開資料庫之公開貢獻的資料控制者為：<br>
+        <strong>Chengche Lee</strong><br>
+        電子郵件：<a href="mailto:qqder339@gmail.com">qqder339@gmail.com</a></p>
+
+        <h4>EU 代表（GDPR 第 27 條）</h4>
+        <p>本應用目前未在任何 EU/EEA 地區上架，因此尚未指定 EU 代表。如本應用日後在 EU/EEA 國家正式上架，將指定一名 EU 代表，並於本節公布其姓名及聯絡資訊。</p>
+
+        <h4>處理的法律依據</h4>
+        <ul>
+            <li><strong>公開貢獻：</strong> 同意（GDPR 第 6(1)(a) 條）—— 您明確選擇發布每一筆貢獻。</li>
+            <li><strong>本地資料處理：</strong> 不受 GDPR 管轄，因為所有處理都在裝置上進行，且無個人資料傳輸至開發者。</li>
+            <li><strong>iCloud 同步：</strong> Apple 依據其自身的 GDPR 合規框架擔任資料處理者。開發者無法存取您的 iCloud 資料。</li>
+        </ul>
+
+        <h4>您在 GDPR 下的權利</h4>
+        <p>在 GDPR 適用的情況下，您享有以下權利：</p>
+        <ul>
+            <li><strong>存取權（第 15 條）：</strong> 透過「設定 → 資料管理」匯出您的所有資料（JSON 或 Markdown 格式）。</li>
+            <li><strong>更正權（第 16 條）：</strong> 隨時在應用程式內直接編輯您的記錄。</li>
+            <li><strong>刪除權（第 17 條）：</strong> 透過「設定 → 資料管理」刪除所有記錄，或透過「設定 → 貢獻作品」撤回個別公開貢獻。</li>
+            <li><strong>資料可攜權（第 20 條）：</strong> 透過「設定 → 資料管理」以機器可讀的 JSON 格式匯出您的資料。</li>
+            <li><strong>限制處理權（第 18 條）：</strong> 將任何記錄設為「私人」以防止其被發布。</li>
+            <li><strong>撤回同意權（第 7 條）：</strong> 隨時撤回公開貢獻。注意：已納入 HuggingFace 已發布資料集版本的貢獻仍受 CC-BY-SA 4.0 授權。</li>
+        </ul>
+
+        <h4>資料保留</h4>
+        <p>本地資料保留至您刪除為止。公開貢獻保留於 CloudKit 公開資料庫直到您撤回為止。已撤回的貢獻會從 CloudKit 永久刪除。HuggingFace 上已發布的資料集快照為版本化且不可變更。</p>
+
+        <h4>個人資料外洩通知（GDPR 第 33/34 條）</h4>
+        <p>若發生影響公開貢獻的個人資料外洩事件，資料控制者將在察覺後 72 小時內（於可行且 GDPR 第 33 條要求通知的情況下）通知相關監管機構。若外洩事件可能對資料當事人的權利與自由造成高度風險，將透過本應用客服電子郵件及（或）應用程式內通知，在無不當延遲的情況下通知受影響的使用者。如需通報疑似資料外洩或進行相關查詢，請聯絡：<a href="mailto:qqder339@gmail.com">qqder339@gmail.com</a>。</p>
+
+        <h4>國際資料傳輸</h4>
+        <p>公開貢獻儲存於 Apple 的 CloudKit 基礎設施。Apple 依據其自身的資料處理附錄遵守 GDPR 資料傳輸要求。HuggingFace 資料集託管於 EU（法國）。開發者不進行任何額外的跨境傳輸。</p>
+
+        <h4>假名化資料</h4>
+        <p>公開貢獻為假名化資料：您的 Meme ID（密碼學雜湊值）關聯您的貢獻，但在未持有您的 BIP-39 助記詞的情況下無法追溯至您的真實身份。依據 GDPR，假名化資料仍屬個人資料。</p>
+
+        <h4>向監管機構投訴的權利</h4>
+        <p>您有權向您慣常居住地、工作地或涉嫌侵權行為發生地的 EU 會員國監管機構提出投訴。</p>
+
+        <h3>12. 政策變更</h3>
+        <p>本隱私權政策如有任何變更，將透過應用程式更新通知您。持續使用本應用程式即表示您接受更新後的政策。</p>
+
+        <h3>13. 聯絡我們</h3>
+        <p>如果您對本隱私權政策有任何疑問，歡迎透過以下方式聯絡我們：</p>
+        <p>電子郵件：<a href="mailto:qqder339@gmail.com?subject=[SownEchoes]%20隱私權政策諮詢">qqder339@gmail.com</a></p>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2026 Chengche Lee. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

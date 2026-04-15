@@ -26,7 +26,7 @@ summary: 我的 App 產品組合
 | 產品線           | 離線成長                                                                                    | 離線成長                                                                     | 離線成長                                                                                    |
 | 類別            | 語言學習                                                                                    | 語言學習                                                                     | 自省沉澱                                                                                    |
 | app store url | [Link](https://apps.apple.com/tw/app/%E5%81%87%E5%90%8D%E7%A7%81%E5%A1%BE/id6756785942) | [Link](https://apps.apple.com/tw/app/%E8%8B%B1%E8%AA%9En-1/id6757358263) | [Link](https://apps.apple.com/tw/app/%E7%94%98%E7%89%B9%E6%98%9F%E7%90%83/id6757654373) |
-| 相關文章          | [開發筆記(一)](/posts/kana_juku_dev_1/)                                        |                                                                          | [產品頁](/posts/gantt-planet/), [介紹](/posts/gantt-planet-intro/)                      |
+| 相關文章          | [開發筆記(一)](/posts/kana_juku_dev_1/)                                        |                                                                          | [產品頁](/apps/gantt-planet/), [介紹](/posts/gantt-planet-intro/)                        |
 
 ## 已上架(續)
 
