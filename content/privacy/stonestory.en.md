@@ -28,8 +28,11 @@ This app does not collect:
 
 The following data is stored strictly on your device and never transmitted externally:
 
-- **Reading Progress**: Your current chapter and reading history
-- **User Settings**: Font, theme, reading preferences, etc.
+- **Reading Progress**: Your current chapter and bookmarks
+- **Character Customization**: Your adjustments to character personalities
+- **User Settings**: Font, theme, language, and other interface preferences
+- **Downloaded Content**: Character portraits and scene images you've chosen to download
+- **Offline AI Model**: The Qwen2.5 model file you've chosen to download (stored locally for in-app use only)
 
 ## 4. Third-Party Services
 
@@ -37,9 +40,13 @@ This app does **NOT** use any third-party analytics or advertising frameworks (N
 
 ## 5. Network Access
 
-This app requires **no network connection** to use all features. The only network access is:
+Core reading and simulation features work **fully offline** and require no network connection. The following features initiate network requests only when you explicitly trigger them:
 
-- **External Links**: Opens browser when tapping relevant links
+- **Downloading Character Portraits / Scene Images**: The first time you view a character or scene, the app fetches the corresponding image from a public CDN and caches it locally
+- **Downloading the Offline AI Model**: When you choose to download the Qwen2.5 model in Settings, the app fetches the file from the model's public release source
+- **External Links**: Opens the system browser when you tap relevant links
+
+These network requests transmit only the URL of the file you've chosen. No personally identifiable information is attached, and no data is collected in return.
 
 ## 6. Contact Us
 
