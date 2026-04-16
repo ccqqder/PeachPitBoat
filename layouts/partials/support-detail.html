@@ -5,21 +5,7 @@
 {{ $matches := where site.Data.app_url_matrix "slug" $slug }}
 
 {{ $supportTitleSuffix := cond $isEn "Support" (cond $isJa "サポート" "支援") }}
-{{ $introText := cond $isEn "Use this page for bug reports, usage questions, and privacy requests." (cond $isJa "不具合報告・利用上の質問・プライバシー関連のお問い合わせは、このページから入口を辿ってください。" "問題回報、使用疑問與隱私相關詢問都可以從這裡找到對應入口。") }}
-{{ $contactTitle := cond $isEn "Contact" (cond $isJa "お問い合わせ" "聯絡方式") }}
-{{ $reportTitle := cond $isEn "When Reporting a Bug, Please Include" (cond $isJa "不具合報告時にお知らせいただきたい情報" "回報問題時建議附上") }}
-{{ $relatedTitle := cond $isEn "Related Links" (cond $isJa "関連リンク" "相關連結") }}
-{{ $storeLabel := "App Store" }}
-{{ $supportLabel := cond $isEn "Support Page" (cond $isJa "サポートページ" "支援頁") }}
-{{ $productLabel := cond $isEn "Product Page" (cond $isJa "プロダクトページ" "產品頁") }}
-{{ $privacyLabel := cond $isEn "Privacy Policy" (cond $isJa "プライバシーポリシー" "隱私權政策") }}
-{{ $termsLabel := cond $isEn "Terms of Service" (cond $isJa "利用規約" "服務條款") }}
-{{ $report := slice
-  (cond $isEn "Device model and iOS version" (cond $isJa "端末モデルとiOSのバージョン" "裝置型號與 iOS 版本"))
-  (cond $isEn "App version" (cond $isJa "アプリのバージョン" "App 版本號"))
-  (cond $isEn "Steps to reproduce and expected behaviour" (cond $isJa "再現手順と期待する動作" "問題發生步驟與預期行為"))
-  (cond $isEn "Screenshot or screen recording if possible" (cond $isJa "可能であればスクリーンショットや録画" "若方便，附上螢幕截圖或錄影"))
-}}
+{{ $introText := cond $isEn "Bug reports, usage questions, and privacy requests all start from this page." (cond $isJa "不具合報告・利用上の質問・プライバシー関連のお問い合わせは、このページから始められます。" "問題回報、使用疑問與隱私相關詢問都可以從這裡開始。") }}
 
 <article class="pp-container pp-container--narrow">
   {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
@@ -36,8 +22,6 @@
     </section>
   {{ else }}
     {{ $app := index $matches 0 }}
-    {{ $privacyURL := strings.TrimPrefix "/" $app.privacy_url | relURL }}
-    {{ $marketingURL := strings.TrimPrefix "/" $app.marketing_url | relURL }}
     {{ $displayName := cond $isEn $app.name $app.name_zh }}
 
     <header class="pp-header">
@@ -47,35 +31,6 @@
 
     <section class="pp-intro prose dark:prose-invert">
       {{ .Content }}
-    </section>
-
-    <section class="pp-panel-grid">
-      <div class="pp-panel pp-panel--sub">
-        <h2 class="pp-panel__title">{{ $contactTitle }}</h2>
-        <p class="pp-panel__desc" style="margin-bottom:0;">
-          Email:
-          <a href="mailto:qqder339@gmail.com?subject=[{{ $displayName }}]%20Support%20Request">qqder339@gmail.com</a>
-        </p>
-      </div>
-
-      <div class="pp-panel pp-panel--sub">
-        <h2 class="pp-panel__title">{{ $reportTitle }}</h2>
-        <ul class="pp-panel__list">
-          {{ range $report }}<li>{{ . }}</li>{{ end }}
-        </ul>
-      </div>
-
-      <div class="pp-panel pp-panel--sub">
-        <h2 class="pp-panel__title">{{ $relatedTitle }}</h2>
-        <ul class="pp-panel__list">
-          <li><a href="{{ $app.store_url }}">{{ $storeLabel }}</a></li>
-          <li><a href="{{ $marketingURL }}">{{ $productLabel }}</a></li>
-          <li><a href="{{ $privacyURL }}">{{ $privacyLabel }}</a></li>
-          {{ with $app.terms_url }}
-            <li><a href="{{ strings.TrimPrefix "/" . | relURL }}">{{ $termsLabel }}</a></li>
-          {{ end }}
-        </ul>
-      </div>
     </section>
   {{ end }}
 </article>
