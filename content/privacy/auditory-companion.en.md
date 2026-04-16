@@ -32,11 +32,11 @@ The following data is stored strictly on your device and never transmitted exter
 - **Reading Content**: Articles, clipboard text, and other reading materials (processed locally only)
 - **User Settings**: Volume levels, sound preferences, auto-ducking settings, etc.
 
-## 4. Offline AI Features
+## 4. On-Device AI Features
 
-Text-to-Speech (TTS) features operate entirely on-device:
+Text-to-Speech (TTS) and audio processing run on-device:
 
-- **AI Voice Reading**: Uses iOS built-in or local TTS engine; all speech synthesis runs on-device
+- **AI Voice Reading**: Uses iOS built-in TTS, or an optional downloadable MeloTTS on-device model; all speech synthesis runs on-device
 - **Auto-Ducking**: DSP signal processing runs entirely locally, analyzing voice and background audio in real-time to automatically adjust volume
 
 ## 5. Third-Party Services
@@ -45,9 +45,12 @@ This app does **NOT** use any third-party analytics or advertising frameworks (N
 
 ## 6. Network Access
 
-This app requires **no network connection** to use all features. The only network access is:
+Core features (noise synthesis, scene mixing, iOS built-in TTS reading) operate **fully offline**. Network access occurs only when you explicitly trigger it:
 
-- **External Links**: Opens browser when tapping relevant links
+- **Downloading the MeloTTS model** (Optional): When you choose to download the on-device TTS model in Settings, the app fetches the model files from a public HuggingFace source and stores them in the App Group
+- **External Links**: Opens the system browser when tapping relevant links
+
+These requests transmit only the URL of the file you chose to download; no personally identifiable information is attached.
 
 ## 7. Contact Us
 

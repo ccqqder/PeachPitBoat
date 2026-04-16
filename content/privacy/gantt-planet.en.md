@@ -51,10 +51,11 @@ This app does **NOT** use any third-party analytics or advertising frameworks (N
 Network access is restricted to:
 
 - **Downloading AI Models** (Optional, one-time): Only connects when you explicitly choose to download
+- **Downloading Art Collection Stickers** (On-demand): When you unlock art rewards, the app fetches matching images from a public GitHub repository and caches them locally for offline use
 - **Weather Information** (Optional): If you enable real weather, only minimal regional data is sent to retrieve weather
 - **External Links**: Opens browser when tapping relevant links
 
-Other than the above, the app does not initiate network connections.
+These requests transmit only the URL of the resource you chose or triggered; no personally identifiable information is attached.
 
 ## 7. Contact Us
 
