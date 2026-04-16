@@ -189,7 +189,6 @@ html:not(.dark) a span.rounded-md {
   font-weight: 500;
 }
 
-html:not(.dark) span.rounded-md:hover,
 html:not(.dark) a:hover span.rounded-md {
   border-color: rgba(var(--color-primary-400), 0.7) !important;
   box-shadow:
@@ -695,7 +694,6 @@ html.dark a span.rounded-md {
   font-weight: 500;
 }
 
-html.dark span.rounded-md:hover,
 html.dark a:hover span.rounded-md {
   border-color: rgba(var(--color-primary-500), 0.5) !important;
   box-shadow:
@@ -1059,13 +1057,6 @@ html.dark .app-card {
     0 1px 0 rgba(var(--color-neutral-700), 0.1);
 }
 
-html.dark .app-card:hover {
-  border-color: rgba(var(--color-primary-500), 0.5);
-  box-shadow:
-    inset 0 1px 3px rgba(0, 0, 0, 0.2),
-    0 0 8px rgba(var(--color-primary-500), 0.15);
-}
-
 /* Light mode card: raised embossed panel */
 html:not(.dark) .app-card {
   background: linear-gradient(
@@ -1075,13 +1066,6 @@ html:not(.dark) .app-card {
   );
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
-}
-
-html:not(.dark) .app-card:hover {
-  border-color: rgba(var(--color-primary-500), 0.6);
-  box-shadow:
-    0 3px 6px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
@@ -1202,7 +1186,6 @@ html.dark .pp-app-item {
   background: rgba(var(--color-neutral-900), 0.7);
   border-color: rgba(var(--color-neutral-700), 1);
 }
-.pp-app-item:hover { border-color: rgba(var(--color-primary-500), 0.6); }
 
 .pp-app-item__media {
   display: flex;
@@ -1240,14 +1223,20 @@ html.dark .pp-app-icon { border-color: rgba(var(--color-neutral-700), 1); }
 }
 .pp-tag {
   display: inline-block;
-  border: 1px solid rgba(var(--color-neutral-400), 1);
-  border-radius: 999px;
-  padding: 0.2rem 0.75rem;
-  font-size: 0.75rem;
+  background: rgba(var(--color-neutral-200), 0.7);
+  color: rgba(var(--color-neutral-700), 1);
+  border-radius: 0.375rem;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  opacity: 0.85;
+  letter-spacing: 0.02em;
+  cursor: default;
+  user-select: none;
 }
-html.dark .pp-tag { border-color: rgba(var(--color-neutral-600), 1); }
+html.dark .pp-tag {
+  background: rgba(var(--color-neutral-700), 0.5);
+  color: rgba(var(--color-neutral-300), 1);
+}
 
 .pp-actions {
   display: flex;
