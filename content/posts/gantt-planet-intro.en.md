@@ -76,7 +76,7 @@ Well, there are plenty of things more important — they just have nothing to do
 
 And so it clicked: I wasn't going to build a regular business Gantt chart. I was going to build a **life Gantt chart**.
 
-![](/images/gantt-planet-chart.png)
+![](/images/gantt-planet-chart-en.png)
 
 ## The Next Step
 
@@ -121,7 +121,7 @@ So I built a 3D version of the Gantt chart, using a mine shaft and gemstones as 
 
 An even more radical approach would have been to keep only the planet version, but considering usability, review difficulty, and how intuitive it would be to understand, I decided to keep both views.
 
-![](/images/gantt-planet-3d.png)
+![](/images/gantt-planet-3d-en.png)
 
 ![3D Planet View](/images/screenshots/gantt-planet/geo-view-en.png)
 *The 3D planet Gantt chart — mine shafts and gemstones as visual representations of life goals*
