@@ -28,11 +28,10 @@ This app does not collect:
 
 The following data is stored strictly on your device and never transmitted externally:
 
-- **Reading Progress**: Your current chapter and bookmarks
-- **Character Customization**: Your adjustments to character personalities
-- **User Settings**: Font, theme, language, and other interface preferences
-- **Downloaded Content**: Character portraits and scene images you've chosen to download
-- **Offline AI Model**: The Qwen2.5 model file you've chosen to download (stored locally for in-app use only)
+- **Traveler Profile**: The name, personality traits, speech style, background, and optional avatar image you configure in Traveler Mode
+- **Interface Preferences**: Your selected display language (Traditional Chinese / English / Japanese) and chosen offline AI model
+- **Downloaded Content**: Character portraits and scene images cached after you view them in the app
+- **Offline AI Model**: The Qwen 2.5 model file you've chosen to download (stored in an App Group container for in-app use only)
 
 ## 4. Third-Party Services
 

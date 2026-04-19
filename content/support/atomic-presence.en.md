@@ -20,10 +20,10 @@ A: Ensure sufficient screen brightness during recording, and keep the camera 30�
 A: Watermark verification may fail if: the audio was heavily compressed (e.g., forwarded via WhatsApp), the audio was truncated, or there was excessive background noise. Record in a quiet environment and use the original audio file for verification.
 
 **Q: The digital signature is invalid on a new device?**  
-A: Digital signatures are bound to the device key used during recording. If you switch devices, existing signatures can still be verified on the original device or with the exported public key — but the new device has a different key. It's recommended to export and save the public key before important recordings.
+A: Each device's signing key is stored in the iOS Keychain, and a new device generates a different key. You do NOT need to manually export the public key — every `.evidence.json` written by the app already embeds the public key used for that recording's signature, so any verifier who holds the evidence file can verify it regardless of which device they're on.
 
 **Q: The app crashed during recording — is the file still there?**  
-A: When the app crashes unexpectedly, some already-recorded segments may be preserved in a temporary folder. Reopen the app and check the recording history for any incomplete recordings.
+A: When the app crashes unexpectedly, partial recordings may remain in the Documents directory. Reopen the app, tap the **VERIFY** button at the top of the main screen, and check the three tabs (Level 1 / Level 2 / Level 3) for any recoverable files.
 
 **Q: Hash chain verification shows "integrity broken" but I didn't edit the recording?**  
 A: Possible causes include: the app was interrupted by the system during recording, low battery, or a write error due to insufficient storage. Ensure sufficient battery and storage before recording.

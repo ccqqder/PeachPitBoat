@@ -13,29 +13,40 @@ showReadingTime: false
 
 ## FAQ
 
-**Q: The app loads very slowly and stays on the launch screen for a long time?**  
-A: On first launch, the app needs to build a content index, which may take 10–30 seconds. Subsequent launches will be noticeably faster. If every launch is slow, please email us with your device model.
+**Q: The app launches slowly or stalls on the splash screen.**  
+A: If you've downloaded the offline AI model (Standard 1.9 GB or High-Quality 4 GB), the app loads it into memory on launch; this may take several seconds on older devices. The first time you enter a chapter, the bundled database (characters, events, poems) is loaded — this is normal. If launch is unusually slow, please email us with your device model and iOS version.
 
-**Q: Poetry or passages display garbled text?**  
-A: This may be a font loading issue. Try switching fonts in Settings, or force-quit and relaunch the app. If the problem persists, please send us a screenshot.
+**Q: Poetry or passages show garbled text, missing glyphs, or blank boxes.**  
+A: Three fonts are bundled in the app (LXGW WenKai TC, Noto Serif TC, Iansui) — no download or switching is required. If anomalies persist, please force-quit the app and relaunch, then send us a screenshot so we can fix it in the next release.
 
-**Q: Reading progress isn't being saved correctly?**  
-A: Reading progress is auto-saved when you exit a chapter. Avoid closing the app directly from the app switcher (this may interrupt the save). It's recommended to return to the home screen first, then close.
+**Q: Is reading progress saved?**  
+A: In the current version (v1.1.1), **chapter playback progress is retained only within the current app session** — you can return to a chapter during the same session. However, if you force-quit the app or restart your device, chapter playback will start from the beginning. Persistent cross-session bookmarks are planned for a future release.
 
-**Q: A specific chapter or passage won't play?**  
-A: Some audio reading features require iOS's built-in TTS support. Please ensure the relevant voice packs are downloaded in iOS Settings > Accessibility > Spoken Content.
+**Q: Character portraits or scene images won't load.**  
+A: Portraits and scene images are downloaded on-demand the first time you view them, and cached locally. If they won't load:
+1. Verify your network connection
+2. Swipe away from the screen and return to trigger a retry
+3. Or go to **Settings → Clear Art Cache** and re-enter with a stable network
+
+**Q: The offline AI chat doesn't respond.**  
+A: First-time use requires downloading a Qwen 2.5 model under **Settings → Model Management**. Choose one based on your device:
+- **Small 1.5B** (~0.9 GB) — iPhone 15 / iPad Air
+- **Standard 3B** (~1.9 GB, default) — iPhone 15 Pro / iPad Pro
+- **High-Quality 7B** (~4.0 GB) — iPhone 16 Pro / iPad Pro M-series
+
+Ensure sufficient free space on your device. Once downloaded, the chat runs fully offline.
 
 **Q: Can the app be used offline?**  
-A: Yes. All content is built into the app and requires absolutely no internet connection.
+A: Yes. Chapter playback, True Endings, personality system, poem/object collections, and on-device AI chat (after model download) all work offline. Only character portraits, scene images, and the AI model file require an internet connection on first retrieval.
 
 ---
 
 ## Troubleshooting
 
-1. **Force quit and relaunch the app**
+1. **Force-quit and relaunch the app**
 2. **Check iOS version** ≥ 17.0
-3. If a specific chapter behaves abnormally, note the chapter name and email us
-4. **Uninstall and reinstall** (reading progress may be erased)
+3. If a specific chapter misbehaves, note its name and email us
+4. **Uninstall and reinstall** (your Traveler profile and downloaded images will be cleared)
 
 ---
 

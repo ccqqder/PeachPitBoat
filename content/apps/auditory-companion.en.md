@@ -25,7 +25,7 @@ Think of it as a small personal sound workstation. The synthesizer handles spect
 
 That's also why it resonates with "people who need background sound." You get to find the configuration you can actually sit with for hours, rather than accepting whatever soundfield someone else prepared.
 
-The detail work shows up clearly: the synthesizer puts four noise colors (white, pink, brown, blue) and multiple parameters directly in your hands, going well past an on/off switch. The scene mixer lets you layer hundreds of audio samples into stackable scenes instead of playing one file. The reader wraps on-device TTS, automatic background-audio ducking, and a full-screen player into a single flow.
+The detail work shows up clearly: the synthesizer puts four noise colors (white, pink, brown, green) and multiple parameters directly in your hands, going well past an on/off switch. The scene mixer lets you layer hundreds of audio samples into stackable scenes instead of playing one file. The reader wraps on-device TTS, automatic background-audio ducking, and a full-screen player into a single flow.
 
 ## Keeping sound and reading data on-device is practically significant
 
