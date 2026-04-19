@@ -1,0 +1,29 @@
+[[main]]
+  name = "首页"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Apps"
+  pageRef = "apps"
+  weight = 20
+
+[[main]]
+  name = "博客"
+  pageRef = "posts"
+  weight = 30
+
+[[main]]
+  name = "关于"
+  pageRef = "about"
+  weight = 40
+
+[[footer]]
+  name = "支持"
+  pageRef = "support"
+  weight = 10
+
+[[footer]]
+  name = "隐私政策"
+  pageRef = "privacy"
+  weight = 20
