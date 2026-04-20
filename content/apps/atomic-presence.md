@@ -2,7 +2,7 @@
 title: 原子在場
 layout: simple
 url: /apps/atomic-presence/
-summary: 防深偽錄音存證工具
+summary: 防深偽錄影錄音存證工具
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

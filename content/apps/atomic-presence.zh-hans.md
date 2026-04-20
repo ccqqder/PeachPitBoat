@@ -1,7 +1,7 @@
 ---
 title: 原子在场
 layout: simple
-summary: 防深伪录音存证工具
+summary: 防深伪录影录音存证工具
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

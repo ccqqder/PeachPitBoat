@@ -1,7 +1,7 @@
 ---
 title: Atomic Presence
 layout: simple
-summary: Anti-deepfake recording and evidence tool
+summary: Anti-deepfake video & audio evidence tool
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

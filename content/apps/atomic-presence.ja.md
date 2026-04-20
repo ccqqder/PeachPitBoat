@@ -1,7 +1,7 @@
 ---
 title: Atomic Presence
 layout: simple
-summary: ディープフェイク対策録音・証拠ツール
+summary: ディープフェイク対策 録画・録音 証拠ツール
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false
