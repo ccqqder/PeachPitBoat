@@ -3,7 +3,7 @@ title: Python 点线面
 layout: simple
 aliases:
   - /zh-hans/posts/python-dimensions/
-summary: 你的随身 Python 离线家教
+description: "三维度 Python 学习工具，内建端侧 AI 助教与 Python 3.13 执行环境。"
 app_slug: python-dimensions
 showDate: false
 showReadingTime: false

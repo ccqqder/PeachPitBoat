@@ -1,7 +1,7 @@
 ---
 title: 原子在场
 layout: simple
-summary: 防深伪录影录音存证工具
+description: "面对 Deepfake 与恶意剪辑，以密码学杂凑链与数字签名捍卫你的真实性。"
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

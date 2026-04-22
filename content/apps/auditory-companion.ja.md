@@ -1,7 +1,7 @@
 ---
 title: Auditory Companion
 layout: simple
-summary: 環境音、ホワイトノイズ、そして文学の朗読
+description: "DSP によるリアルタイム合成ノイズ、108 種類の環境音、没入型 TTS 読み上げ。すべて端末内処理で完結。"
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

@@ -1,7 +1,7 @@
 ---
 title: Atomic Presence
 layout: simple
-summary: ディープフェイク対策 録画・録音 証拠ツール
+description: "ディープフェイクや悪意ある編集に対し、暗号学的ハッシュチェーンとデジタル署名で真正性を守る。"
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

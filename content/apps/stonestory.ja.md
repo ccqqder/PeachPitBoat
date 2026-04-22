@@ -1,7 +1,7 @@
 ---
 title: StoneStory
 layout: simple
-summary: インタラクティブなAIナラティブシミュレーションとして蘇る「紅楼夢」
+description: "『紅楼夢』をインタラクティブな AI 物語シミュレーションに仕立て、文学を静的な読書の枠から解き放つ。"
 app_slug: stonestory
 showDate: false
 showReadingTime: false

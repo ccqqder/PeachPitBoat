@@ -3,7 +3,7 @@ title: 英语 N+1
 layout: simple
 aliases:
   - /zh-hans/posts/english-n-plus-1/
-summary: 总是适合你程度的英语学习
+description: "离线 AI 英语外教，依你的 CEFR 程度动态生成刚好多一点挑战的内容。"
 app_slug: english-n-plus-1
 showDate: false
 showReadingTime: false

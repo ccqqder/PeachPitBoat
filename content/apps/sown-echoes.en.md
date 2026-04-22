@@ -1,7 +1,7 @@
 ---
 title: Sown Echoes
 layout: simple
-summary: Preserve your life narrative and values with on-device AI
+description: "Preserve your thoughts, values, and life experiences as a digital legacy that future AI can understand."
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

@@ -3,6 +3,10 @@ title: Apps
 summary: 目前已上架与持续维护中的 App 目录
 aliases:
   - /zh-hans/posts/app-matrix/
+cascade:
+  sitemap:
+    priority: 0.9
+    changefreq: weekly
 ---
 
 这里是目前已上架与持续维护中的 App 入口页。整体产品分成两条线：

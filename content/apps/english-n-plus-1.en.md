@@ -1,7 +1,7 @@
 ---
 title: English N+1
 layout: simple
-summary: English learning that always fits your level
+description: "An offline AI English tutor that generates material just slightly above your CEFR level."
 app_slug: english-n-plus-1
 showDate: false
 showReadingTime: false

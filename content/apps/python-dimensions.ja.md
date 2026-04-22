@@ -1,7 +1,7 @@
 ---
 title: Python Dimensions
 layout: simple
-summary: 常にポケットにある、オフラインPythonチューター
+description: "三次元構成の Python 学習ツール。端末内 AI チューターと Python 3.13 実行環境を内蔵。"
 app_slug: python-dimensions
 showDate: false
 showReadingTime: false

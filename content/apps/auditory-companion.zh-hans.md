@@ -3,7 +3,7 @@ title: 听觉旅伴
 layout: simple
 aliases:
   - /zh-hans/posts/auditory-companion/
-summary: 环境音、白噪音与文学朗读
+description: "DSP 即时合成噪音、108 种环境音，外加沉浸式 TTS 朗读，全部设备端运算。"
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

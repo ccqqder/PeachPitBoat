@@ -3,6 +3,10 @@ title: アプリ
 summary: 現在公開中・継続運用中のアプリ一覧
 aliases:
   - /ja/posts/app-matrix/
+cascade:
+  sitemap:
+    priority: 0.9
+    changefreq: weekly
 ---
 
 ここは現在公開中で継続的にメンテナンスしているアプリの入口ページです。プロダクトは二つのラインで整理しています。

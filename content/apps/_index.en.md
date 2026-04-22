@@ -3,6 +3,10 @@ title: Apps
 summary: The current catalog of released and maintained apps
 aliases:
   - /en/posts/app-matrix/
+cascade:
+  sitemap:
+    priority: 0.9
+    changefreq: weekly
 ---
 
 This is the entry page for all apps currently released and actively maintained. The portfolio is organised into two product lines:

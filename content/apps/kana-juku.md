@@ -2,7 +2,7 @@
 title: 假名私塾
 layout: simple
 url: /apps/kana-juku/
-summary: 專為中文母語者設計的五十音學習工具
+description: "專為中文母語者設計的五十音學習工具，內建客製化鍵盤與端側 AI。"
 app_slug: kana-juku
 showDate: false
 showReadingTime: false

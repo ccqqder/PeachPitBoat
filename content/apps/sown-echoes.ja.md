@@ -1,7 +1,7 @@
 ---
 title: Sown Echoes
 layout: simple
-summary: オンデバイスAIで人生の物語と価値観を保存する
+description: "思想、価値観、人生経験を残し、将来の AI にも理解される形のデジタルレガシーとして保存する。"
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

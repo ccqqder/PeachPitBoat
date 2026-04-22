@@ -4,7 +4,7 @@ layout: simple
 url: /apps/auditory-companion/
 aliases:
   - /posts/auditory-companion/
-summary: 環境音、白噪音與文學朗讀
+description: "DSP 即時合成噪音、108 種環境音，外加沉浸式 TTS 朗讀，全部裝置端運算。"
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

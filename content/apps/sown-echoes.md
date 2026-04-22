@@ -2,7 +2,7 @@
 title: 回聲種子
 layout: simple
 url: /apps/sown-echoes/
-summary: 用裝置端 AI 保存人生敘事與價值觀
+description: "把思想、價值觀與人生經歷留下來，做成可被未來 AI 理解的數位遺產。"
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

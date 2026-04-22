@@ -4,7 +4,7 @@ layout: simple
 url: /apps/python-dimensions/
 aliases:
   - /posts/python-dimensions/
-summary: 你的隨身 Python 離線家教
+description: "三維度 Python 學習工具，內建端側 AI 助教與 Python 3.13 執行環境。"
 app_slug: python-dimensions
 showDate: false
 showReadingTime: false

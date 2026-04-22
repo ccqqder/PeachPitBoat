@@ -4,6 +4,10 @@ url: /apps/
 summary: 目前已上架與持續維護中的 App 目錄
 aliases:
   - /posts/app-matrix/
+cascade:
+  sitemap:
+    priority: 0.9
+    changefreq: weekly
 ---
 
 這裡是目前已上架與持續維護中的 App 入口頁。整體產品分成兩條線：

@@ -396,6 +396,9 @@
     - 音声とテキストの記録：端末内 Whisper による書き起こしと連携。
     - AI ミラーとデジタル分身：価値観と人生の語りを整理したうえで、それと対話。
     - デュアルトラック共有：非公開で保存するか、選択的に公開貢献するかを選べる。
+  # TODO(aso-wave1): capture 3-5 screenshots from the shipped app;
+  # expected directory: static/images/screenshots/sown-echoes/*-zh.png
+  # Schema mirrors other apps (src/alt/caption/caption_en/caption_ja).
   screenshots: []
   article_links: []
 

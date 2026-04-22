@@ -1,7 +1,7 @@
 ---
 title: 仮名私塾
 layout: simple
-summary: 中国語母語話者のためのかな学習法
+description: "中国語母語話者のために設計された五十音学習ツール。カスタムキーボードと端末内 AI を搭載。"
 app_slug: kana-juku
 showDate: false
 showReadingTime: false

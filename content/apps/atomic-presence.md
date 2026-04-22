@@ -2,7 +2,7 @@
 title: 原子在場
 layout: simple
 url: /apps/atomic-presence/
-summary: 防深偽錄影錄音存證工具
+description: "面對 Deepfake 與惡意剪輯，以密碼學雜湊鏈與數位簽章捍衛你的真實性。"
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

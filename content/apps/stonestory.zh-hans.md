@@ -1,7 +1,7 @@
 ---
 title: 红楼梦模拟器
 layout: simple
-summary: 把《红楼梦》做成可互动的 AI 叙事模拟
+description: "把《红楼梦》做成可互动的 AI 叙事模拟，让文学不再只是静态阅读。"
 app_slug: stonestory
 showDate: false
 showReadingTime: false

@@ -1,7 +1,7 @@
 ---
 title: 回声种子
 layout: simple
-summary: 用设备端 AI 保存人生叙事与价值观
+description: "把思想、价值观与人生经历留下来，做成可被未来 AI 理解的数字遗产。"
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

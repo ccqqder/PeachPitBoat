@@ -1,7 +1,7 @@
 ---
 title: Gantt Planet
 layout: simple
-summary: 終わりから始める、邪魔されない小宇宙
+description: "3D で可視化する習慣化と AI の樹洞で、自己管理を静かな星間の旅に変える。"
 app_slug: gantt-planet
 showDate: false
 showReadingTime: false

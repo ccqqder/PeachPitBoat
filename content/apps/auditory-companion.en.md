@@ -1,7 +1,7 @@
 ---
 title: Auditory Companion
 layout: simple
-summary: Ambient sound, white noise, and literary reading
+description: "Real-time DSP-synthesized noise, 108 ambient sounds, and immersive TTS reading — all computed on-device."
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

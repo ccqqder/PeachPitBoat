@@ -1,7 +1,7 @@
 ---
 title: Atomic Presence
 layout: simple
-summary: Anti-deepfake video & audio evidence tool
+description: "In the face of deepfakes and malicious edits, defend your authenticity with a cryptographic hash chain and digital signatures."
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

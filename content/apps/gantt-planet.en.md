@@ -1,7 +1,7 @@
 ---
 title: Gantt Planet
 layout: simple
-summary: Begin with the end in mind — your undisturbed personal universe
+description: "3D habit visualisation paired with an AI tree hole — turning self-discipline into a quiet interstellar journey."
 app_slug: gantt-planet
 showDate: false
 showReadingTime: false
