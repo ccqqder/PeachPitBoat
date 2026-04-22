@@ -5,6 +5,8 @@ url: /apps/english-n-plus-1/
 aliases:
   - /posts/english-n-plus-1/
 description: "離線 AI 英語外教，依你的 CEFR 程度動態生成剛好多一點挑戰的內容。"
+images:
+  - images/apps/english-plus-one.jpg
 app_slug: english-n-plus-1
 showDate: false
 showReadingTime: false

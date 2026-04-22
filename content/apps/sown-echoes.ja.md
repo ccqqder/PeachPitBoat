@@ -2,6 +2,8 @@
 title: Sown Echoes
 layout: simple
 description: "思想、価値観、人生経験を残し、将来の AI にも理解される形のデジタルレガシーとして保存する。"
+images:
+  - images/apps/meme-lives.jpg
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

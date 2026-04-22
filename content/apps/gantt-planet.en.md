@@ -2,6 +2,8 @@
 title: Gantt Planet
 layout: simple
 description: "3D habit visualisation paired with an AI tree hole — turning self-discipline into a quiet interstellar journey."
+images:
+  - images/apps/gantt-planet.jpg
 app_slug: gantt-planet
 showDate: false
 showReadingTime: false

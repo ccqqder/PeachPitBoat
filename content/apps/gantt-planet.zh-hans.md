@@ -4,6 +4,8 @@ layout: simple
 aliases:
   - /zh-hans/posts/gantt-planet/
 description: "3D 可视化习惯养成加上 AI 树洞，把自律变成一场安静的星际冒险。"
+images:
+  - images/apps/gantt-planet.jpg
 app_slug: gantt-planet
 showDate: false
 showReadingTime: false

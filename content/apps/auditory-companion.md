@@ -5,6 +5,8 @@ url: /apps/auditory-companion/
 aliases:
   - /posts/auditory-companion/
 description: "DSP 即時合成噪音、108 種環境音，外加沉浸式 TTS 朗讀，全部裝置端運算。"
+images:
+  - images/apps/auditory-companion.jpg
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

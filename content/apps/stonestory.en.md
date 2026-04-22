@@ -2,6 +2,8 @@
 title: StoneStory
 layout: simple
 description: "Turn Dream of the Red Chamber into an interactive AI narrative simulation, so literature becomes more than static reading."
+images:
+  - images/apps/stone-story.jpg
 app_slug: stonestory
 showDate: false
 showReadingTime: false

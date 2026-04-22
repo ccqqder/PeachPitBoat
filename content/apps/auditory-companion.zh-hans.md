@@ -4,6 +4,8 @@ layout: simple
 aliases:
   - /zh-hans/posts/auditory-companion/
 description: "DSP 即时合成噪音、108 种环境音，外加沉浸式 TTS 朗读，全部设备端运算。"
+images:
+  - images/apps/auditory-companion.jpg
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

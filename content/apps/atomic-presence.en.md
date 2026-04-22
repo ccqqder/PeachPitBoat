@@ -2,6 +2,8 @@
 title: Atomic Presence
 layout: simple
 description: "In the face of deepfakes and malicious edits, defend your authenticity with a cryptographic hash chain and digital signatures."
+images:
+  - images/apps/atomic-presence.jpg
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

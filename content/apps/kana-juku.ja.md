@@ -2,6 +2,8 @@
 title: 仮名私塾
 layout: simple
 description: "中国語母語話者のために設計された五十音学習ツール。カスタムキーボードと端末内 AI を搭載。"
+images:
+  - images/apps/kana-juku.jpg
 app_slug: kana-juku
 showDate: false
 showReadingTime: false

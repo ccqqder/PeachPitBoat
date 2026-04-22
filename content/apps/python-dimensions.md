@@ -5,6 +5,8 @@ url: /apps/python-dimensions/
 aliases:
   - /posts/python-dimensions/
 description: "三維度 Python 學習工具，內建端側 AI 助教與 Python 3.13 執行環境。"
+images:
+  - images/apps/python-dimensions.jpg
 app_slug: python-dimensions
 showDate: false
 showReadingTime: false

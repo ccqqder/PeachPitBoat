@@ -2,6 +2,8 @@
 title: 原子在场
 layout: simple
 description: "面对 Deepfake 与恶意剪辑，以密码学杂凑链与数字签名捍卫你的真实性。"
+images:
+  - images/apps/atomic-presence.jpg
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

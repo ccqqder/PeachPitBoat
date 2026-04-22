@@ -2,6 +2,8 @@
 title: Kana Juku
 layout: simple
 description: "A kana-learning tool built for Chinese native speakers, with a custom keyboard and on-device AI."
+images:
+  - images/apps/kana-juku.jpg
 app_slug: kana-juku
 showDate: false
 showReadingTime: false

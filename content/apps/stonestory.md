@@ -3,6 +3,8 @@ title: 紅樓夢模擬器
 layout: simple
 url: /apps/stonestory/
 description: "把《紅樓夢》做成可互動的 AI 敘事模擬，讓文學不再只是靜態閱讀。"
+images:
+  - images/apps/stone-story.jpg
 app_slug: stonestory
 showDate: false
 showReadingTime: false

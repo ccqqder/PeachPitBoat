@@ -2,6 +2,8 @@
 title: 回声种子
 layout: simple
 description: "把思想、价值观与人生经历留下来，做成可被未来 AI 理解的数字遗产。"
+images:
+  - images/apps/meme-lives.jpg
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false
