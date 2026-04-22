@@ -6,7 +6,7 @@ aliases:
   - /posts/gantt-planet/
 description: "3D 視覺化習慣養成加上 AI 樹洞，把自律變成一場安靜的星際冒險。"
 images:
-  - images/apps/gantt-planet.jpg
+  - images/og/gantt-planet.png
 app_slug: gantt-planet
 showDate: false
 showReadingTime: false

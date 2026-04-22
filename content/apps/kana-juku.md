@@ -4,7 +4,7 @@ layout: simple
 url: /apps/kana-juku/
 description: "專為中文母語者設計的五十音學習工具，內建客製化鍵盤與端側 AI。"
 images:
-  - images/apps/kana-juku.jpg
+  - images/og/kana-juku.png
 app_slug: kana-juku
 showDate: false
 showReadingTime: false

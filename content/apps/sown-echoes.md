@@ -4,7 +4,7 @@ layout: simple
 url: /apps/sown-echoes/
 description: "把思想、價值觀與人生經歷留下來，做成可被未來 AI 理解的數位遺產。"
 images:
-  - images/apps/meme-lives.jpg
+  - images/og/sown-echoes.png
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

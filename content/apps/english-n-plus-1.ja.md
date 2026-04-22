@@ -3,7 +3,7 @@ title: English N+1
 layout: simple
 description: "オフライン AI 英語チューターが、CEFR レベルに合わせて「もう少しだけ挑戦的」な教材を生成します。"
 images:
-  - images/apps/english-plus-one.jpg
+  - images/og/english-n-plus-1.png
 app_slug: english-n-plus-1
 showDate: false
 showReadingTime: false

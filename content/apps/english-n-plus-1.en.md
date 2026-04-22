@@ -3,7 +3,7 @@ title: English N+1
 layout: simple
 description: "An offline AI English tutor that generates material just slightly above your CEFR level."
 images:
-  - images/apps/english-plus-one.jpg
+  - images/og/english-n-plus-1.png
 app_slug: english-n-plus-1
 showDate: false
 showReadingTime: false

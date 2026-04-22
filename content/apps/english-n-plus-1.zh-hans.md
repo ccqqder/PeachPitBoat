@@ -5,7 +5,7 @@ aliases:
   - /zh-hans/posts/english-n-plus-1/
 description: "离线 AI 英语外教，依你的 CEFR 程度动态生成刚好多一点挑战的内容。"
 images:
-  - images/apps/english-plus-one.jpg
+  - images/og/english-n-plus-1.png
 app_slug: english-n-plus-1
 showDate: false
 showReadingTime: false

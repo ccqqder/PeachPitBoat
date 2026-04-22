@@ -3,7 +3,7 @@ title: Atomic Presence
 layout: simple
 description: "ディープフェイクや悪意ある編集に対し、暗号学的ハッシュチェーンとデジタル署名で真正性を守る。"
 images:
-  - images/apps/atomic-presence.jpg
+  - images/og/atomic-presence.png
 app_slug: atomic-presence
 showDate: false
 showReadingTime: false

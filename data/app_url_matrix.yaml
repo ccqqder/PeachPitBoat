@@ -403,10 +403,32 @@
     - 音声とテキストの記録：端末内 Whisper による書き起こしと連携。
     - AI ミラーとデジタル分身：価値観と人生の語りを整理したうえで、それと対話。
     - デュアルトラック共有：非公開で保存するか、選択的に公開貢献するかを選べる。
-  # TODO(aso-wave1): capture 3-5 screenshots from the shipped app;
-  # expected directory: static/images/screenshots/sown-echoes/*-zh.png
-  # Schema mirrors other apps (src/alt/caption/caption_en/caption_ja).
-  screenshots: []
+  screenshots:
+    - src: /images/screenshots/sown-echoes/write-home-zh.png
+      alt: 回聲種子書寫首頁
+      caption: 一個入口並列三種記錄方式：自由書寫、語音記錄，以及引導式結構化問卷。
+      caption_en: One home, three ways to record — free text, voice, and a structured questionnaire.
+      caption_ja: ホームから 3 通りの記録方法にアクセス — 自由記述、音声、ガイド付き質問。
+    - src: /images/screenshots/sown-echoes/guided-questionnaire-zh.png
+      alt: 回聲種子引導式問卷八大類別
+      caption: 從人生故事、價值觀到情緒圖譜，八個類別引導你寫下結構化的記憶。
+      caption_en: Eight categories — life story, values, emotional map — guide you into structured memories.
+      caption_ja: ライフストーリー、価値観、感情地図など 8 カテゴリで記憶を構造化して引き出す。
+    - src: /images/screenshots/sown-echoes/record-thoughts-zh.png
+      alt: 回聲種子自由記錄頁
+      caption: 語音轉文字、標籤、心情、內容類型與雙軌分享設定，所有後設資料在同一頁完成。
+      caption_en: Voice-to-text, tags, mood, content type, and dual-track sharing — all metadata on one page.
+      caption_ja: 音声書き起こし、タグ、気分、種別、共有トラックまで一画面で設定できる。
+    - src: /images/screenshots/sown-echoes/echo-zh.png
+      alt: 回聲種子之影空狀態
+      caption: 累積足夠記錄後，回聲之影會以文字雲、價值觀雷達圖與人格摘要描繪出你。
+      caption_en: Once entries accumulate, your Echo reflects you as word clouds, a values radar, and a persona summary.
+      caption_ja: 記録が貯まると、エコーは単語雲・価値観レーダー・人格要約としてあなたを映し出す。
+    - src: /images/screenshots/sown-echoes/settings-zh.png
+      alt: 回聲種子設定與隱私控制
+      caption: 密碼學身份、iCloud 加密備份與雙軌分享策略，所有隱私控制集中在一處。
+      caption_en: Cryptographic identity, encrypted iCloud backup, and dual-track sharing — privacy controls in one place.
+      caption_ja: 暗号学的 ID、暗号化された iCloud バックアップ、共有ポリシーを一箇所で管理。
   article_links: []
 
 - slug: stonestory

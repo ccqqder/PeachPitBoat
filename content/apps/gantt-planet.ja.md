@@ -3,7 +3,7 @@ title: Gantt Planet
 layout: simple
 description: "3D で可視化する習慣化と AI の樹洞で、自己管理を静かな星間の旅に変える。"
 images:
-  - images/apps/gantt-planet.jpg
+  - images/og/gantt-planet.png
 app_slug: gantt-planet
 showDate: false
 showReadingTime: false

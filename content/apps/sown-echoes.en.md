@@ -3,7 +3,7 @@ title: Sown Echoes
 layout: simple
 description: "Preserve your thoughts, values, and life experiences as a digital legacy that future AI can understand."
 images:
-  - images/apps/meme-lives.jpg
+  - images/og/sown-echoes.png
 app_slug: sown-echoes
 showDate: false
 showReadingTime: false

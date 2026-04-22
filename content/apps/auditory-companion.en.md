@@ -3,7 +3,7 @@ title: Auditory Companion
 layout: simple
 description: "Real-time DSP-synthesized noise, 108 ambient sounds, and immersive TTS reading — all computed on-device."
 images:
-  - images/apps/auditory-companion.jpg
+  - images/og/auditory-companion.png
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

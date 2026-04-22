@@ -3,7 +3,7 @@ title: Auditory Companion
 layout: simple
 description: "DSP によるリアルタイム合成ノイズ、108 種類の環境音、没入型 TTS 読み上げ。すべて端末内処理で完結。"
 images:
-  - images/apps/auditory-companion.jpg
+  - images/og/auditory-companion.png
 app_slug: auditory-companion
 showDate: false
 showReadingTime: false

@@ -5,7 +5,7 @@ aliases:
   - /zh-hans/posts/python-dimensions/
 description: "三维度 Python 学习工具，内建端侧 AI 助教与 Python 3.13 执行环境。"
 images:
-  - images/apps/python-dimensions.jpg
+  - images/og/python-dimensions.png
 app_slug: python-dimensions
 showDate: false
 showReadingTime: false
