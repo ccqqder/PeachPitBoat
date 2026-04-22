@@ -14,9 +14,11 @@
     {{- $isEn := eq $lang "en" -}}
     {{- $isJa := eq $lang "ja" -}}
     {{- $displayName := $app.name_zh -}}
+    {{- if eq $lang "zh-hans" }}{{ $displayName = or $app.name_zh_hans $app.name_zh }}{{ end -}}
     {{- if $isEn }}{{ $displayName = or $app.name $app.name_zh }}{{ end -}}
     {{- if $isJa }}{{ $displayName = or $app.name_zh $app.name }}{{ end -}}
     {{- $altName := $app.name -}}
+    {{- if eq $lang "zh-hans" }}{{ $altName = $app.name }}{{ end -}}
     {{- if $isEn }}{{ $altName = $app.name_zh }}{{ end -}}
     {{- if $isJa }}{{ $altName = $app.name }}{{ end -}}
     {{- $description := $app.description -}}

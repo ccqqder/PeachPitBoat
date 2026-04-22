@@ -30,7 +30,8 @@
     </section>
   {{ else }}
     {{ $app := index $matches 0 }}
-    {{ $displayName := cond $isEn $app.name (cond $isJa $app.name_zh $app.name_zh) }}
+    {{ $isZhHans := eq $lang "zh-hans" }}
+    {{ $displayName := cond $isEn $app.name (cond $isJa $app.name_zh (cond $isZhHans (or $app.name_zh_hans $app.name_zh) $app.name_zh)) }}
     {{ $tagline := $app.tagline }}
     {{ if and $isEn $app.tagline_en }}{{ $tagline = $app.tagline_en }}{{ end }}
     {{ if and $isJa $app.tagline_ja }}{{ $tagline = $app.tagline_ja }}{{ end }}

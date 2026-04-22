@@ -5,6 +5,7 @@
   asset_slug: python-dimensions
   name: Python Dimensions
   name_zh: Python 點線面
+  name_zh_hans: Python 点线面
   icon: /images/apps/python-dimensions.jpg
   store_url: https://apps.apple.com/app/id6759192089
   marketing_url: /apps/python-dimensions/
@@ -66,6 +67,7 @@
   asset_slug: kana-juku
   name: Kana Juku
   name_zh: 假名私塾
+  name_zh_hans: 假名私塾
   icon: /images/apps/kana-juku.jpg
   store_url: https://apps.apple.com/app/id6756785942
   marketing_url: /apps/kana-juku/
@@ -126,6 +128,7 @@
   asset_slug: english-plus-one
   name: English N+1
   name_zh: 英語N+1
+  name_zh_hans: 英语 N+1
   icon: /images/apps/english-plus-one.jpg
   store_url: https://apps.apple.com/app/id6757358263
   marketing_url: /apps/english-n-plus-1/
@@ -187,6 +190,7 @@
   asset_slug: gantt-planet
   name: Gantt Planet
   name_zh: 甘特星球
+  name_zh_hans: 甘特星球
   icon: /images/apps/gantt-planet.jpg
   store_url: https://apps.apple.com/app/id6757654373
   marketing_url: /apps/gantt-planet/
@@ -252,6 +256,7 @@
   asset_slug: auditory-companion
   name: AuditoryCompanion
   name_zh: 聽覺旅伴
+  name_zh_hans: 听觉旅伴
   icon: /images/apps/auditory-companion.jpg
   store_url: https://apps.apple.com/app/id6759191303
   marketing_url: /apps/auditory-companion/
@@ -310,6 +315,7 @@
   asset_slug: atomic-presence
   name: Atomic Presence
   name_zh: 原子受訪
+  name_zh_hans: 原子受访
   icon: /images/apps/atomic-presence.jpg
   store_url: https://apps.apple.com/app/id6759192866
   marketing_url: /apps/atomic-presence/
@@ -368,6 +374,7 @@
   asset_slug: meme-lives
   name: Sown Echoes
   name_zh: 回聲種子
+  name_zh_hans: 回声种子
   icon: /images/apps/meme-lives.jpg
   store_url: https://apps.apple.com/app/id6759969494
   marketing_url: /apps/sown-echoes/
@@ -409,6 +416,7 @@
   asset_slug: stone-story
   name: StoneStory
   name_zh: 紅樓夢模擬器
+  name_zh_hans: 红楼梦模拟器
   icon: /images/apps/stone-story.jpg
   store_url: https://apps.apple.com/app/id6759855416
   marketing_url: /apps/stonestory/
@@ -480,6 +488,7 @@
   category: democracy-edc
   name: Instant Vote
   name_zh: 即時投票
+  name_zh_hans: 即时投票
   progress: 60
   tagline: 民主 EDC 系列的投票工具，強調在離線環境下也能清楚記錄與彙整集體意見。
   tagline_en: A voting tool in the Democracy EDC line, designed to capture and aggregate collective opinion clearly even offline.

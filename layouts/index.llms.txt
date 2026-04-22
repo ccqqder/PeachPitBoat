@@ -28,6 +28,7 @@ Personal hub for an indie iOS developer (QQder). Ships on-device, privacy-preser
 {{ $shipped := where site.Data.app_url_matrix "shipped" true -}}
 {{- range $app := $shipped -}}
 {{- $name := $app.name_zh -}}
+{{- if eq $lang "zh-hans" }}{{ $name = or $app.name_zh_hans $app.name_zh }}{{ end -}}
 {{- if $isEn }}{{ $name = printf "%s / %s" $app.name $app.name_zh }}{{ end -}}
 {{- if $isJa }}{{ $name = printf "%s / %s" $app.name_zh $app.name }}{{ end -}}
 {{- $tagline := $app.tagline -}}

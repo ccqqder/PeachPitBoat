@@ -109,6 +109,7 @@
         <div class="pp-apps-grid">
           {{ range $app := $inDevApps }}
             {{ $name := $app.name_zh }}
+            {{ if eq $lang "zh-hans" }}{{ $name = or $app.name_zh_hans $app.name_zh }}{{ end }}
             {{ if $isEn }}{{ $name = or $app.name $app.name_zh }}{{ end }}
             {{ if $isJa }}{{ $name = or $app.name_zh $app.name }}{{ end }}
             {{ $tagline := $app.tagline }}
