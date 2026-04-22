@@ -1,4 +1,5 @@
 mainSections = ["posts"]
+copyright = "© { year } QQder (ChengChe Lee · qqder339@gmail.com)"
 colorScheme = "braun"
 defaultAppearance = "dark"
 autoSwitchAppearance = true

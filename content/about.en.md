@@ -14,6 +14,7 @@ summary: The Miniature Boat
 
 ## About Me
 
+* Legal name: ChengChe Lee · qqder339@gmail.com
 * Until age 24, I identified as a humanities person. After that, I became a system administrator (the "admin" that error messages tell you to contact).
 * I use AI in a punk rock way — simple chords, rough technique, but genuine expression.
 * All text on this site is written by me personally, without AI ghostwriting or polishing, because the fun parts should be enjoyed firsthand.

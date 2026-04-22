@@ -2,19 +2,19 @@ disabled = false
 languageCode = "ja"
 languageName = "日本語"
 weight = 3
-title = "核舟"
+title = "QQder 核舟記部落格"
 
 [params]
   displayName = "JA"
   isoCode = "ja"
   dateFormat = "2006年1月2日"
-  description = "核舟 — 趣味で開発した小さな作品を海に放つ記録"
+  description = "無料・広告なし iOS アプリ＋AI 補助による開発日誌 · 核舟"
 
 [params.author]
-  name = "QQder"
+  name = "QQder 核舟記部落格"
   image = "img/author.png"
-  headline = "核舟 — デジタル骨董"
-  bio = "AIの計算資源は独占されるのか？AI能力は突破し続けるのか？答えがどうであれ、早く使い始めるに越したことはない。文系出身のSysadminがAIの力を借りてiOSアプリを開発する記録。"
+  headline = "インディー開発 · 無料・広告なし · AI コーディング日誌"
+  bio = "8本の iOS アプリを公開中。すべて無料、広告なし、トラッキングなし——気になるものをぜひ試してみてください。同時に、文系出身の Sysadmin が AI vibe coding でゼロから App Store に届けるまでの記録も綴っています。"
   links = [
     { github = "https://github.com/ccqqder" },
     { email = "mailto:qqder339@gmail.com" },

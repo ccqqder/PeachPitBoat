@@ -10,14 +10,16 @@
   </div>
   <div class="not-prose grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
     {{ range . }}
-      {{ $iconURL := printf "/images/apps/%s.png" .Params.app_slug | absURL }}
+      {{ $icon := resources.Get (printf "images/apps/%s.jpg" .Params.app_slug) }}
       <a href="{{ .RelPermalink }}"
          class="group flex flex-col items-center text-center p-3 rounded-xl
                 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
-        <img src="{{ $iconURL }}"
-             alt="{{ .Title }}"
+        {{ with $icon }}
+        <img src="{{ .RelPermalink }}"
+             alt="{{ $.Title }}"
              loading="lazy"
              class="w-16 h-16 rounded-2xl mb-2 shadow-sm">
+        {{ end }}
         <span class="text-sm font-semibold text-neutral-800 dark:text-neutral leading-tight">
           {{ .Title }}
         </span>

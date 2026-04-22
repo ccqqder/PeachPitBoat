@@ -2,19 +2,19 @@ disabled = false
 languageCode = "zh-Hans"
 languageName = "简体中文"
 weight = 4
-title = "核舟"
+title = "QQder 核舟记部落格"
 
 [params]
   displayName = "简体中文"
   isoCode = "zh-Hans"
   dateFormat = "2006年1月2日"
-  description = "核舟 — 兴趣使然的开发者把自己做的小玩意扔进海里的记录"
+  description = "免费无广告 iOS App + AI 辅助开发日志 · QQder 核舟记部落格"
 
 [params.author]
-  name = "QQder"
+  name = "QQder 核舟记部落格"
   image = "img/author.png"
-  headline = "核舟 — 数字古玩"
-  bio = "AI 算力以后会被垄断吗？AI 能力还会持续突破吗？不管答案是什么都要越早使用越好。这里记录一个文科背景 Sysadmin 靠 AI 协助开发 iOS App。"
+  headline = "独立开发 · 免费无广告 · AI 编程日志"
+  bio = "这里有八款 iOS App，全部免费、无广告、无追踪——直接挑一款来用。同时记录一个文科背景的系统管理员，如何靠 AI vibe coding 从零把想法做进 App Store。"
   links = [
     { github = "https://github.com/ccqqder" },
     { email = "mailto:qqder339@gmail.com" },
