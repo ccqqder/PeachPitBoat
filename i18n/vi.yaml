@@ -1,0 +1,18 @@
+homepage_featured:
+  other: Nổi bật
+homepage_apps:
+  other: Ứng dụng
+homepage_apps_more:
+  other: Xem tất cả
+offline_badge_fully:
+  other: Hoạt động ngoại tuyến
+offline_badge_after_setup:
+  other: Ngoại tuyến sau cài đặt
+offline_badge_needs_network:
+  other: Cần internet
+offline_badge_aria_fully:
+  other: Hoàn toàn ngoại tuyến từ khi cài đặt — không Wi-Fi, không dữ liệu, không máy chủ
+offline_badge_aria_after_setup:
+  other: Hoàn toàn ngoại tuyến sau khi tải xuống mô hình hoặc dữ liệu một lần trên thiết bị
+offline_badge_aria_needs_network:
+  other: Ứng dụng này yêu cầu kết nối internet liên tục

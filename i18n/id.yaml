@@ -1,0 +1,18 @@
+homepage_featured:
+  other: Unggulan
+homepage_apps:
+  other: Aplikasi
+homepage_apps_more:
+  other: Lihat semua
+offline_badge_fully:
+  other: Bekerja offline
+offline_badge_after_setup:
+  other: Offline setelah pengaturan
+offline_badge_needs_network:
+  other: Membutuhkan internet
+offline_badge_aria_fully:
+  other: Sepenuhnya offline sejak pemasangan — tanpa Wi-Fi, tanpa data, tanpa server
+offline_badge_aria_after_setup:
+  other: Sepenuhnya offline setelah pengunduhan model atau data sekali di perangkat
+offline_badge_aria_needs_network:
+  other: Aplikasi ini memerlukan koneksi internet yang berkelanjutan

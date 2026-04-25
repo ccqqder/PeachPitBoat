@@ -1,0 +1,18 @@
+homepage_featured:
+  other: 추천
+homepage_apps:
+  other: 앱
+homepage_apps_more:
+  other: 전체 보기
+offline_badge_fully:
+  other: 오프라인 작동
+offline_badge_after_setup:
+  other: 설정 후 오프라인
+offline_badge_needs_network:
+  other: 인터넷 필요
+offline_badge_aria_fully:
+  other: 설치부터 완전 오프라인 — Wi-Fi, 데이터, 서버 불필요
+offline_badge_aria_after_setup:
+  other: 기기에서 모델 또는 데이터를 한 번 다운로드한 후 완전 오프라인
+offline_badge_aria_needs_network:
+  other: 이 앱은 지속적인 인터넷 연결이 필요합니다
