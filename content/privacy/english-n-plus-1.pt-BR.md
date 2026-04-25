@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: English N+1 — Privacy Policy
 layout: simple
 showDate: false

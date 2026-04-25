@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: "Gantt Planet: An Indie Developer's Niche and Considerations"
 date: 2026-02-25T06:55:21.349Z
 draft: false

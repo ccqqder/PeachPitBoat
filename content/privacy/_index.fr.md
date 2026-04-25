@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Privacy Policies
 layout: simple
 summary: Privacy policies for all apps

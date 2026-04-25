@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Python Dimensions Support
 layout: simple
 summary: Support and contact for Python Dimensions

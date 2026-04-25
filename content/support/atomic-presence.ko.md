@@ -1,5 +1,5 @@
 ---
-title: Atomic Presence Support
+title: 아토믹 프레전스 지원
 layout: simple
 summary: Support and contact for Atomic Presence
 app_slug: atomic-presence
@@ -7,44 +7,44 @@ showDate: false
 showReadingTime: false
 ---
 
-[App Store](https://apps.apple.com/app/id6759192866) · [Privacy Policy](/en/privacy/atomic-presence/)
+[App Store](https://apps.apple.com/app/id6759192866) · [개인정보 처리방침](/en/privacy/atomic-presence/)
 
 ---
 
-## FAQ
+## 자주 묻는 질문
 
-**Q: The QR code is unclear in the video and can't be scanned during verification?**  
-A: Ensure sufficient screen brightness during recording, and keep the camera 30–50 cm from the screen. The QR code updates once per second — the camera needs to be able to focus clearly. If the problem persists, try reducing the recording resolution.
+**Q: 영상 속 QR code가 선명하지 않아 검증 시 스캔되지 않나요?**  
+A: 녹화 중 화면 밝기를 충분히 높이고, 카메라를 화면에서 30–50cm 떨어뜨려 주세요. QR code는 1초마다 갱신되므로 카메라가 또렷하게 초점을 맞출 수 있어야 합니다. 문제가 계속되면 녹화 해상도를 낮춰 보세요.
 
-**Q: Audio watermark verification fails?**  
-A: Watermark verification may fail if: the audio was heavily compressed (e.g., forwarded via WhatsApp), the audio was truncated, or there was excessive background noise. Record in a quiet environment and use the original audio file for verification.
+**Q: 오디오 watermark 검증이 실패하나요?**  
+A: 다음 경우 watermark 검증이 실패할 수 있습니다: 오디오가 과도하게 압축된 경우(예: WhatsApp 전달), 오디오가 잘린 경우, 또는 배경 소음이 너무 큰 경우. 조용한 환경에서 녹음하고, 검증 시 원본 오디오 파일을 사용하세요.
 
-**Q: The digital signature is invalid on a new device?**  
-A: Each device's signing key is stored in the iOS Keychain, and a new device generates a different key. You do NOT need to manually export the public key — every `.evidence.json` written by the app already embeds the public key used for that recording's signature, so any verifier who holds the evidence file can verify it regardless of which device they're on.
+**Q: 새 기기에서 디지털 서명이 유효하지 않게 나오나요?**  
+A: 기기별 서명 키는 iOS Keychain에 저장되며, 새 기기에서는 다른 키가 생성됩니다. 공개 키를 수동으로 내보낼 필요는 없습니다 — 앱이 생성한 각 `.evidence.json`에는 해당 녹화 서명에 사용된 공개 키가 이미 포함되어 있으므로, 증거 파일만 있으면 어떤 기기에서든 검증할 수 있습니다.
 
-**Q: The app crashed during recording — is the file still there?**  
-A: When the app crashes unexpectedly, partial recordings may remain in the Documents directory. Reopen the app, tap the **VERIFY** button at the top of the main screen, and check the three tabs (Level 1 / Level 2 / Level 3) for any recoverable files.
+**Q: 녹화 중 앱이 크래시났는데 파일이 남아 있나요?**  
+A: 앱이 예기치 않게 크래시나면 부분 녹화 파일이 Documents 디렉터리에 남아 있을 수 있습니다. 앱을 다시 열고 메인 화면 상단의 **VERIFY** 버튼을 누른 뒤, 세 개 탭(레벨 1 / 레벨 2 / 레벨 3)에서 복구 가능한 파일을 확인하세요.
 
-**Q: Hash chain verification shows "integrity broken" but I didn't edit the recording?**  
-A: Possible causes include: the app was interrupted by the system during recording, low battery, or a write error due to insufficient storage. Ensure sufficient battery and storage before recording.
-
----
-
-## Troubleshooting
-
-1. **Ensure the device has sufficient storage** (recommend at least 2 GB available)
-2. **Keep the screen on during recording** to avoid system interruptions
-3. **Force quit and relaunch the app**
-4. **Check iOS version** ≥ 17.0
-5. If a specific scenario consistently causes issues, screenshot the error message and email us
+**Q: hash chain 검증에 "integrity broken"이 표시되는데 녹화를 수정하지 않았습니다.**  
+A: 가능한 원인으로는 녹화 중 시스템 인터럽트, 배터리 부족, 저장 공간 부족으로 인한 쓰기 오류가 있습니다. 녹화 전에 배터리와 저장 공간을 충분히 확보하세요.
 
 ---
 
-## Contact Support
+## 문제 해결
+
+1. **기기에 충분한 저장 공간이 있는지 확인** (최소 2GB 이상 권장)
+2. **녹화 중 화면을 켜 둔 상태 유지**로 시스템 인터럽트 방지
+3. **앱을 강제 종료 후 다시 실행**
+4. **iOS 버전 확인** ≥ 17.0
+5. 특정 상황에서 문제가 반복되면 오류 메시지를 캡처해 이메일로 보내 주세요
+
+---
+
+## 지원 문의
 
 📧 **qqder339@gmail.com**  
-Subject: `[Atomic Presence] Issue Description`
+제목: `[Atomic Presence] Issue Description`
 
-Please include: device model, iOS version, app version, recording mode (video/audio), steps to reproduce.
+포함해 주세요: 기기 모델, iOS 버전, 앱 버전, 녹화 모드(영상/오디오), 재현 단계.
 
-> This app collects no user data. All cryptographic operations run entirely on-device. We have no access to your recordings. [View Privacy Policy →](/en/privacy/atomic-presence/)
+> 이 앱은 사용자 데이터를 수집하지 않습니다. 모든 암호 연산은 전적으로 기기 내에서 실행됩니다. 당사는 귀하의 녹화물에 접근할 수 없습니다. [개인정보 처리방침 보기 →](/en/privacy/atomic-presence/)

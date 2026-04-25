@@ -1,5 +1,5 @@
 ---
-title: Atomic Presence Support
+title: Hỗ Trợ Atomic Presence
 layout: simple
 summary: Support and contact for Atomic Presence
 app_slug: atomic-presence
@@ -7,44 +7,44 @@ showDate: false
 showReadingTime: false
 ---
 
-[App Store](https://apps.apple.com/app/id6759192866) · [Privacy Policy](/en/privacy/atomic-presence/)
+[App Store](https://apps.apple.com/app/id6759192866) · [Chính Sách Quyền Riêng Tư](/en/privacy/atomic-presence/)
 
 ---
 
-## FAQ
+## Câu hỏi thường gặp
 
-**Q: The QR code is unclear in the video and can't be scanned during verification?**  
-A: Ensure sufficient screen brightness during recording, and keep the camera 30–50 cm from the screen. The QR code updates once per second — the camera needs to be able to focus clearly. If the problem persists, try reducing the recording resolution.
+**H: QR code trong video bị mờ và không quét được khi xác minh?**  
+Đ: Hãy đảm bảo độ sáng màn hình đủ cao khi ghi và giữ camera cách màn hình 30–50 cm. QR code cập nhật mỗi giây một lần — camera cần lấy nét rõ. Nếu vẫn gặp lỗi, hãy thử giảm độ phân giải ghi.
 
-**Q: Audio watermark verification fails?**  
-A: Watermark verification may fail if: the audio was heavily compressed (e.g., forwarded via WhatsApp), the audio was truncated, or there was excessive background noise. Record in a quiet environment and use the original audio file for verification.
+**H: Xác minh watermark âm thanh bị thất bại?**  
+Đ: Xác minh watermark có thể thất bại nếu: âm thanh bị nén quá mạnh (ví dụ chuyển tiếp qua WhatsApp), âm thanh bị cắt ngắn, hoặc có quá nhiều tạp âm nền. Hãy ghi trong môi trường yên tĩnh và dùng tệp âm thanh gốc để xác minh.
 
-**Q: The digital signature is invalid on a new device?**  
-A: Each device's signing key is stored in the iOS Keychain, and a new device generates a different key. You do NOT need to manually export the public key — every `.evidence.json` written by the app already embeds the public key used for that recording's signature, so any verifier who holds the evidence file can verify it regardless of which device they're on.
+**H: Chữ ký số không hợp lệ trên thiết bị mới?**  
+Đ: Khóa ký của mỗi thiết bị được lưu trong iOS Keychain, và thiết bị mới sẽ tạo khóa khác. Bạn KHÔNG cần xuất khóa công khai thủ công — mỗi `.evidence.json` do ứng dụng ghi ra đã nhúng sẵn khóa công khai dùng cho chữ ký của bản ghi đó, nên bất kỳ bên xác minh nào có tệp bằng chứng đều có thể xác minh, bất kể đang dùng thiết bị nào.
 
-**Q: The app crashed during recording — is the file still there?**  
-A: When the app crashes unexpectedly, partial recordings may remain in the Documents directory. Reopen the app, tap the **VERIFY** button at the top of the main screen, and check the three tabs (Level 1 / Level 2 / Level 3) for any recoverable files.
+**H: Ứng dụng bị crash khi đang ghi — tệp còn không?**  
+Đ: Khi ứng dụng crash bất ngờ, các bản ghi chưa hoàn chỉnh có thể vẫn nằm trong thư mục Documents. Mở lại ứng dụng, nhấn nút **VERIFY** ở đầu màn hình chính, rồi kiểm tra ba tab (Cấp 1 / Cấp 2 / Cấp 3) để tìm tệp có thể khôi phục.
 
-**Q: Hash chain verification shows "integrity broken" but I didn't edit the recording?**  
-A: Possible causes include: the app was interrupted by the system during recording, low battery, or a write error due to insufficient storage. Ensure sufficient battery and storage before recording.
-
----
-
-## Troubleshooting
-
-1. **Ensure the device has sufficient storage** (recommend at least 2 GB available)
-2. **Keep the screen on during recording** to avoid system interruptions
-3. **Force quit and relaunch the app**
-4. **Check iOS version** ≥ 17.0
-5. If a specific scenario consistently causes issues, screenshot the error message and email us
+**H: Xác minh hash chain báo "integrity broken" nhưng tôi không chỉnh sửa bản ghi?**  
+Đ: Nguyên nhân có thể gồm: ứng dụng bị hệ thống ngắt trong lúc ghi, pin yếu, hoặc lỗi ghi do thiếu dung lượng. Hãy đảm bảo đủ pin và dung lượng lưu trữ trước khi ghi.
 
 ---
 
-## Contact Support
+## Khắc phục sự cố
+
+1. **Đảm bảo thiết bị còn đủ dung lượng** (khuyến nghị còn trống ít nhất 2 GB)
+2. **Giữ màn hình luôn bật khi ghi** để tránh hệ thống làm gián đoạn
+3. **Buộc đóng và mở lại ứng dụng**
+4. **Kiểm tra phiên bản iOS** ≥ 17.0
+5. Nếu một tình huống cụ thể luôn gây lỗi, hãy chụp màn hình thông báo lỗi và gửi email cho chúng tôi
+
+---
+
+## Liên hệ hỗ trợ
 
 📧 **qqder339@gmail.com**  
-Subject: `[Atomic Presence] Issue Description`
+Tiêu đề: `[Atomic Presence] Issue Description`
 
-Please include: device model, iOS version, app version, recording mode (video/audio), steps to reproduce.
+Vui lòng gửi kèm: mẫu thiết bị, phiên bản iOS, phiên bản ứng dụng, chế độ ghi (video/audio), các bước tái hiện lỗi.
 
-> This app collects no user data. All cryptographic operations run entirely on-device. We have no access to your recordings. [View Privacy Policy →](/en/privacy/atomic-presence/)
+> Ứng dụng này không thu thập dữ liệu người dùng. Mọi thao tác mật mã đều chạy hoàn toàn trên thiết bị. Chúng tôi không có quyền truy cập bản ghi của bạn. [Xem Chính Sách Quyền Riêng Tư →](/en/privacy/atomic-presence/)

@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Sown Echoes — Privacy Policy
 layout: simple
 showDate: false

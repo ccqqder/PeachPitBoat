@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Support
 layout: simple
 summary: Support pages for all apps

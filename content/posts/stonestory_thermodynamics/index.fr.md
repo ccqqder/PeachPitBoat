@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: "Dream of the Red Chamber Simulator: Thermodynamics and Artistic Choice"
 date: 2026-03-29T15:28:32.157Z
 draft: false

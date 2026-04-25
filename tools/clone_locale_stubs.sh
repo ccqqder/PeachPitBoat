@@ -40,6 +40,13 @@ for lang in "$@"; do
     target="${f%.${SRC_LANG}.md}.${lang}.md"
     if [ ! -f "$target" ]; then
       cp "$f" "$target"
+      # Inject isStub: true after the first --- line (frontmatter open).
+      # baseof.html canonical override sees this and points the page's
+      # canonical at the English equivalent at root, preventing Google
+      # duplicate-content penalty until a real translation lands.
+      sed -i '' '1a\
+isStub: true
+' "$target"
       created=$((created + 1))
     else
       skipped=$((skipped + 1))

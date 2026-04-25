@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Gantt Planet Support
 layout: simple
 summary: Support and contact for Gantt Planet

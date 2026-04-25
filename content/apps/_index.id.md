@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Apps
 summary: The current catalog of released and maintained apps
 aliases:

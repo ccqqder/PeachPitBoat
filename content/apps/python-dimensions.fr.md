@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Python Dimensions
 layout: simple
 description: "A three-dimensional Python learning tool with an on-device AI tutor and a built-in Python 3.13 runtime."

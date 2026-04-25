@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Kana Juku — Privacy Policy
 layout: simple
 showDate: false

@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Kana Juku Support
 layout: simple
 summary: Support and contact for Kana Juku

@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: About
 layout: simple
 summary: The Miniature Boat

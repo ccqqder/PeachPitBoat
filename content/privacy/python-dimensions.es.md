@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Python Dimensions — Privacy Policy
 layout: simple
 showDate: false

@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Gantt Planet — Privacy Policy
 layout: simple
 showDate: false

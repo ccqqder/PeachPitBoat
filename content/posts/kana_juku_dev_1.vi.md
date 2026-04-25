@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: "Kana Juku Dev Log (Part 1): From Chatbots to AI Agents"
 date: 2026-02-22T13:16:34.278Z
 author: "QQder"

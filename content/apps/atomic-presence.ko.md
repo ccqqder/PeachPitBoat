@@ -1,7 +1,7 @@
 ---
-title: Atomic Presence
+title: 아토믹 프레전스
 layout: simple
-description: "In the face of deepfakes and malicious edits, defend your authenticity with a cryptographic hash chain and digital signatures."
+description: "Deepfake와 악의적 편집에 맞서, 암호학적 Hash chain과 디지털 서명으로 당신의 진정성을 지키세요."
 images:
   - images/og/atomic-presence.png
 app_slug: atomic-presence
@@ -9,26 +9,26 @@ showDate: false
 showReadingTime: false
 ---
 
-## In the deepfake era, verifiable authenticity is what's actually scarce
+## Deepfake 시대에 정말 희소한 것은 검증 가능한 진정성입니다
 
-Lowering the barrier to video and audio production is mostly a good thing. The problem is that fabrication, re-editing, and context-stripping get cheaper at the same time, so "I recorded it" has drifted away from "I can prove this is how it really happened." Atomic Presence steps into that gap: it lets you start building a verifiable evidence chain the moment you hit record.
+영상·오디오 제작 장벽이 낮아진 것은 대체로 좋은 일입니다. 문제는 조작, 재편집, 맥락 제거의 비용도 동시에 낮아진다는 점입니다. 그래서 "내가 녹화했다"는 말은 "실제로 그렇게 일어났다는 것을 증명할 수 있다"와 점점 멀어졌습니다. 아토믹 프레전스는 이 간극을 메웁니다. 녹화 버튼을 누르는 순간부터 검증 가능한 증거 체인을 만들기 시작할 수 있습니다.
 
-The situations it's designed for are the ones where you'd worry about the footage being challenged later: interviews, witness accounts, whistleblowing, contested scenes, any context where a recording might get disputed, re-cut, or forged. Casual everyday capture sits outside its target.
+이 앱은 나중에 영상이 문제 삼아질 수 있는 상황을 위해 설계되었습니다. 인터뷰, 증언, whistleblowing, 분쟁 장면처럼 기록이 이의 제기되거나 재편집되거나 위조될 가능성이 있는 맥락이 대상입니다. 일상적인 캐주얼 촬영은 핵심 타깃이 아닙니다.
 
-## How it differs from ordinary recording tools
+## 일반 녹화 도구와 다른 점
 
-Most recording tools think "record the file first, worry about preservation later." Atomic Presence weaves hash chains, dynamic QR codes, and digital signatures into the capture flow while it's happening. Verifiability is the core of the product from the start, not a patch bolted on afterwards.
+대부분의 녹화 도구는 "파일을 먼저 저장하고 보존은 나중에"라는 방식입니다. 아토믹 프레전스는 녹화가 진행되는 동안 Hash chain, 동적 QR code, 디지털 서명을 캡처 흐름에 함께 엮습니다. 검증 가능성은 처음부터 제품의 중심이며, 사후에 덧붙인 기능이 아닙니다.
 
-That makes it feel more like a technical defense tool for risk scenarios. You may not reach for it every day, but when you do need it, you'll want it already installed, with a workflow you already know, rather than scrambling to assemble tools in the moment.
+그래서 이 앱은 위험 시나리오를 위한 기술적 방어 도구에 가깝습니다. 매일 사용할 필요는 없을 수 있지만, 정말 필요할 때는 급히 도구를 조합하기보다 이미 설치되어 있고 익숙한 워크플로가 있는 상태가 훨씬 유리합니다.
 
-## Why four protection levels: different risks, different costs
+## 왜 보호 레벨이 4단계인가: 위험이 다르면 비용도 다르기 때문입니다
 
-The protection levels correspond to real scenario differences. Sometimes you only need to signal "this is being recorded" to the other party; sometimes you need something closer to evidence-grade integrity verification. Having intermediate steps lets the tool sit inside actual workflows instead of offering only a crude on/off switch.
+보호 레벨은 실제 시나리오의 차이를 반영합니다. 어떤 경우에는 상대에게 "지금 녹화 중"이라는 신호만으로 충분하고, 어떤 경우에는 증거 수준에 가까운 무결성 검증이 필요합니다. 중간 단계를 두면 거친 on/off 스위치 하나가 아니라 실제 워크플로에 도구를 자연스럽게 넣을 수 있습니다.
 
-For journalists, legal professionals, citizen journalists, and anyone who regularly needs a clean record of a conversation, this is valuable. What helps them is a recording tool with fewer ambiguous zones; more filters and beauty modes won't.
+기자, 법률 실무자, 시민기자, 그리고 대화 기록의 명확성을 자주 요구받는 사람들에게 이것은 큰 가치가 있습니다. 이들에게 필요한 것은 애매한 구간이 적은 녹화 도구이지, 더 많은 필터나 뷰티 모드가 아닙니다.
 
-## Privacy and offline are part of credibility
+## 프라이버시와 오프라인 동작은 신뢰성의 일부입니다
 
-A tool that claims to stand for authenticity loses credibility if its core data handling depends heavily on external servers. Atomic Presence keeps the critical computation on-device, partly for privacy and partly to reduce external dependencies inside the evidence chain itself. The fewer third parties your material passes through, the easier it is to explain later what did and didn't happen to it.
+진정성을 표방하는 도구가 핵심 데이터 처리를 외부 서버에 크게 의존하면 신뢰를 잃습니다. 아토믹 프레전스는 핵심 연산을 기기 내에서 수행합니다. 프라이버시를 지키기 위해서이기도 하고, 증거 체인 자체의 외부 의존성을 줄이기 위해서이기도 합니다. 자료가 거치는 제3자가 적을수록, 나중에 무엇이 있었고 무엇이 없었는지 설명하기가 쉬워집니다.
 
-If you want a recording tool that has a better chance of convincing others when a dispute breaks out, Atomic Presence is worth getting familiar with before you need it.
+분쟁이 발생했을 때 상대를 설득할 가능성이 더 높은 녹화 도구를 원한다면, 필요해지기 전에 아토믹 프레전스를 미리 익혀 두는 것이 좋습니다.

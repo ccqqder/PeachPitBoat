@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: StoneStory Support
 layout: simple
 summary: Support and contact for StoneStory

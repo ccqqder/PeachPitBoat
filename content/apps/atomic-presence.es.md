@@ -1,7 +1,7 @@
 ---
 title: Atomic Presence
 layout: simple
-description: "In the face of deepfakes and malicious edits, defend your authenticity with a cryptographic hash chain and digital signatures."
+description: "Frente a los deepfakes y las ediciones maliciosas, protege tu autenticidad con una hash chain criptográfica y firmas digitales."
 images:
   - images/og/atomic-presence.png
 app_slug: atomic-presence
@@ -9,26 +9,26 @@ showDate: false
 showReadingTime: false
 ---
 
-## In the deepfake era, verifiable authenticity is what's actually scarce
+## En la era de los deepfakes, la autenticidad verificable es lo que realmente escasea
 
-Lowering the barrier to video and audio production is mostly a good thing. The problem is that fabrication, re-editing, and context-stripping get cheaper at the same time, so "I recorded it" has drifted away from "I can prove this is how it really happened." Atomic Presence steps into that gap: it lets you start building a verifiable evidence chain the moment you hit record.
+Reducir la barrera para producir video y audio es, en general, algo positivo. El problema es que fabricar contenido, reeditarlo y sacarlo de contexto también se vuelve más barato al mismo tiempo, así que «lo grabé» se aleja cada vez más de «puedo demostrar que ocurrió exactamente así». Atomic Presence cubre ese vacío: te permite empezar a construir una cadena de evidencia verificable en el momento en que pulsas grabar.
 
-The situations it's designed for are the ones where you'd worry about the footage being challenged later: interviews, witness accounts, whistleblowing, contested scenes, any context where a recording might get disputed, re-cut, or forged. Casual everyday capture sits outside its target.
+Está diseñada para situaciones en las que te preocupa que la grabación se cuestione después: entrevistas, relatos de testigos, denuncias de whistleblowing, escenas en disputa o cualquier contexto donde el material pueda ser impugnado, recortado o falsificado. La grabación casual del día a día queda fuera de su objetivo principal.
 
-## How it differs from ordinary recording tools
+## En qué se diferencia de las herramientas de grabación convencionales
 
-Most recording tools think "record the file first, worry about preservation later." Atomic Presence weaves hash chains, dynamic QR codes, and digital signatures into the capture flow while it's happening. Verifiability is the core of the product from the start, not a patch bolted on afterwards.
+La mayoría de las herramientas de grabación piensa «primero grabar el archivo, luego preocuparse por su preservación». Atomic Presence integra hash chains, QR codes dinámicos y firmas digitales en el flujo de captura mientras ocurre. La verificabilidad es el núcleo del producto desde el inicio, no un parche añadido después.
 
-That makes it feel more like a technical defense tool for risk scenarios. You may not reach for it every day, but when you do need it, you'll want it already installed, with a workflow you already know, rather than scrambling to assemble tools in the moment.
+Eso hace que se sienta más como una herramienta de defensa técnica para escenarios de riesgo. Puede que no la uses todos los días, pero cuando la necesites, querrás tenerla ya instalada y dominar el flujo de trabajo, en lugar de improvisar herramientas en el momento.
 
-## Why four protection levels: different risks, different costs
+## Por qué cuatro niveles de protección: riesgos distintos, costos distintos
 
-The protection levels correspond to real scenario differences. Sometimes you only need to signal "this is being recorded" to the other party; sometimes you need something closer to evidence-grade integrity verification. Having intermediate steps lets the tool sit inside actual workflows instead of offering only a crude on/off switch.
+Los niveles de protección corresponden a diferencias reales entre escenarios. A veces solo necesitas señalar a la otra parte que «esto se está grabando»; otras veces necesitas algo más cercano a una verificación de integridad de nivel probatorio. Tener pasos intermedios permite que la herramienta encaje en flujos reales, en lugar de ofrecer solo un interruptor básico de encendido/apagado.
 
-For journalists, legal professionals, citizen journalists, and anyone who regularly needs a clean record of a conversation, this is valuable. What helps them is a recording tool with fewer ambiguous zones; more filters and beauty modes won't.
+Para periodistas, profesionales del derecho, periodistas ciudadanos y cualquier persona que necesite con frecuencia un registro limpio de una conversación, esto es valioso. Lo que les ayuda es una herramienta de grabación con menos zonas ambiguas; más filtros y modos belleza no lo harán.
 
-## Privacy and offline are part of credibility
+## La privacidad y el modo offline forman parte de su credibilidad
 
-A tool that claims to stand for authenticity loses credibility if its core data handling depends heavily on external servers. Atomic Presence keeps the critical computation on-device, partly for privacy and partly to reduce external dependencies inside the evidence chain itself. The fewer third parties your material passes through, the easier it is to explain later what did and didn't happen to it.
+Una herramienta que afirma defender la autenticidad pierde credibilidad si el manejo de sus datos clave depende en gran medida de servidores externos. Atomic Presence mantiene el cómputo crítico en el dispositivo, en parte por privacidad y en parte para reducir dependencias externas dentro de la propia cadena de evidencia. Cuantos menos terceros atraviese tu material, más fácil será explicar después qué pasó con él y qué no.
 
-If you want a recording tool that has a better chance of convincing others when a dispute breaks out, Atomic Presence is worth getting familiar with before you need it.
+Si quieres una herramienta de grabación con más probabilidades de convencer a otros cuando surge una disputa, merece la pena familiarizarte con Atomic Presence antes de necesitarla.

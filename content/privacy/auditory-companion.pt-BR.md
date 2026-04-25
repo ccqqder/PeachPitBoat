@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Auditory Companion — Privacy Policy
 layout: simple
 showDate: false

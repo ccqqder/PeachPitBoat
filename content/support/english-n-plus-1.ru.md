@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: English N+1 Support
 layout: simple
 summary: Support and contact for English N+1

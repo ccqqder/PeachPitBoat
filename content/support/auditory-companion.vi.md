@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Auditory Companion Support
 layout: simple
 summary: Support and contact for Auditory Companion

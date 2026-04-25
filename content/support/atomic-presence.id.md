@@ -1,5 +1,5 @@
 ---
-title: Atomic Presence Support
+title: Dukungan Atomic Presence
 layout: simple
 summary: Support and contact for Atomic Presence
 app_slug: atomic-presence
@@ -7,44 +7,44 @@ showDate: false
 showReadingTime: false
 ---
 
-[App Store](https://apps.apple.com/app/id6759192866) · [Privacy Policy](/en/privacy/atomic-presence/)
+[App Store](https://apps.apple.com/app/id6759192866) · [Kebijakan Privasi](/en/privacy/atomic-presence/)
 
 ---
 
-## FAQ
+## Pertanyaan Umum
 
-**Q: The QR code is unclear in the video and can't be scanned during verification?**  
-A: Ensure sufficient screen brightness during recording, and keep the camera 30–50 cm from the screen. The QR code updates once per second — the camera needs to be able to focus clearly. If the problem persists, try reducing the recording resolution.
+**T: QR code di video tidak jelas dan tidak bisa dipindai saat verifikasi?**  
+J: Pastikan kecerahan layar cukup saat perekaman, dan jaga jarak kamera 30–50 cm dari layar. QR code diperbarui sekali per detik — kamera harus bisa fokus dengan jelas. Jika masalah berlanjut, coba turunkan resolusi perekaman.
 
-**Q: Audio watermark verification fails?**  
-A: Watermark verification may fail if: the audio was heavily compressed (e.g., forwarded via WhatsApp), the audio was truncated, or there was excessive background noise. Record in a quiet environment and use the original audio file for verification.
+**T: Verifikasi watermark audio gagal?**  
+J: Verifikasi watermark dapat gagal jika: audio dikompresi berat (misalnya diteruskan lewat WhatsApp), audio terpotong, atau terdapat kebisingan latar yang berlebihan. Rekam di lingkungan yang tenang dan gunakan file audio asli untuk verifikasi.
 
-**Q: The digital signature is invalid on a new device?**  
-A: Each device's signing key is stored in the iOS Keychain, and a new device generates a different key. You do NOT need to manually export the public key — every `.evidence.json` written by the app already embeds the public key used for that recording's signature, so any verifier who holds the evidence file can verify it regardless of which device they're on.
+**T: Tanda tangan digital tidak valid di perangkat baru?**  
+J: Kunci penandatanganan tiap perangkat disimpan di iOS Keychain, dan perangkat baru akan membuat kunci yang berbeda. Anda TIDAK perlu mengekspor kunci publik secara manual — setiap `.evidence.json` yang ditulis aplikasi sudah menyematkan kunci publik yang digunakan untuk tanda tangan rekaman tersebut, sehingga verifier mana pun yang memegang file bukti dapat memverifikasi tanpa tergantung perangkat.
 
-**Q: The app crashed during recording — is the file still there?**  
-A: When the app crashes unexpectedly, partial recordings may remain in the Documents directory. Reopen the app, tap the **VERIFY** button at the top of the main screen, and check the three tabs (Level 1 / Level 2 / Level 3) for any recoverable files.
+**T: Aplikasi crash saat merekam — apakah filenya masih ada?**  
+J: Saat aplikasi crash secara tak terduga, rekaman parsial bisa tetap tersimpan di direktori Documents. Buka ulang aplikasi, ketuk tombol **VERIFY** di bagian atas layar utama, lalu periksa tiga tab (Level 1 / Level 2 / Level 3) untuk file yang bisa dipulihkan.
 
-**Q: Hash chain verification shows "integrity broken" but I didn't edit the recording?**  
-A: Possible causes include: the app was interrupted by the system during recording, low battery, or a write error due to insufficient storage. Ensure sufficient battery and storage before recording.
-
----
-
-## Troubleshooting
-
-1. **Ensure the device has sufficient storage** (recommend at least 2 GB available)
-2. **Keep the screen on during recording** to avoid system interruptions
-3. **Force quit and relaunch the app**
-4. **Check iOS version** ≥ 17.0
-5. If a specific scenario consistently causes issues, screenshot the error message and email us
+**T: Verifikasi hash chain menampilkan "integrity broken" padahal saya tidak mengedit rekaman?**  
+J: Kemungkinan penyebab: aplikasi sempat diinterupsi sistem saat merekam, baterai lemah, atau terjadi error tulis karena ruang penyimpanan tidak cukup. Pastikan baterai dan penyimpanan memadai sebelum merekam.
 
 ---
 
-## Contact Support
+## Pemecahan masalah
+
+1. **Pastikan perangkat memiliki penyimpanan yang cukup** (disarankan minimal 2 GB tersedia)
+2. **Jaga layar tetap menyala saat perekaman** untuk menghindari interupsi sistem
+3. **Paksa tutup lalu buka kembali aplikasi**
+4. **Periksa versi iOS** ≥ 17.0
+5. Jika skenario tertentu konsisten memicu masalah, ambil tangkapan layar pesan error dan kirim email kepada kami
+
+---
+
+## Hubungi dukungan
 
 📧 **qqder339@gmail.com**  
-Subject: `[Atomic Presence] Issue Description`
+Subjek: `[Atomic Presence] Issue Description`
 
-Please include: device model, iOS version, app version, recording mode (video/audio), steps to reproduce.
+Mohon sertakan: model perangkat, versi iOS, versi aplikasi, mode perekaman (video/audio), langkah reproduksi.
 
-> This app collects no user data. All cryptographic operations run entirely on-device. We have no access to your recordings. [View Privacy Policy →](/en/privacy/atomic-presence/)
+> Aplikasi ini tidak mengumpulkan data pengguna. Semua operasi kriptografis berjalan sepenuhnya di perangkat. Kami tidak memiliki akses ke rekaman Anda. [Lihat Kebijakan Privasi →](/en/privacy/atomic-presence/)

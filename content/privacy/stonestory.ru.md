@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: StoneStory — Privacy Policy
 layout: simple
 showDate: false

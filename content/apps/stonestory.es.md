@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: StoneStory
 layout: simple
 description: "Turn Dream of the Red Chamber into an interactive AI narrative simulation, so literature becomes more than static reading."

@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: "Dream of the Red Chamber Simulator: The Holy Grail of Social Science, and LLMs as Prophetic Verse"
 date: 2026-03-22T03:31:45.090Z
 draft: false

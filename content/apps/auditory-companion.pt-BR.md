@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Auditory Companion
 layout: simple
 description: "Real-time DSP-synthesized noise, 108 ambient sounds, and immersive TTS reading — all computed on-device."

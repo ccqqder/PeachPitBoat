@@ -29,12 +29,13 @@
   {{ with .Params.robots }}
     <meta name="robots" content="{{ . }}">
   {{ end }}
-  {{/* Stub-locale canonical: when site.Params.isStub is true (English placeholder
-       shown under /<lang>/...), point canonical to the English equivalent at root
-       (defaultContentLanguageInSubdir = false). Prevents Google duplicate-content
-       penalty across the 8 stub locales. Real translations: drop isStub from the
-       locale's languages.<lang>.toml and canonical reverts to self. */}}
-  {{ if site.Params.isStub }}
+  {{/* Stub-page canonical: when a page's frontmatter has isStub: true (English
+       placeholder cloned by tools/clone_locale_stubs.sh), point canonical to the
+       English equivalent at root (defaultContentLanguageInSubdir = false).
+       Prevents Google duplicate-content penalty for the 272 stub pages while
+       letting individually-translated pages (e.g. atomic-presence.fr.md) keep
+       a self-canonical once their isStub flag is removed. */}}
+  {{ if .Params.isStub }}
     {{ $en := replaceRE (printf "/%s/" .Lang) "/" .Permalink }}
     <link rel="canonical" href="{{ $en }}">
   {{ else }}

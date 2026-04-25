@@ -1,5 +1,5 @@
 ---
-title: Atomic Presence Support
+title: Suporte do Atomic Presence
 layout: simple
 summary: Support and contact for Atomic Presence
 app_slug: atomic-presence
@@ -7,44 +7,44 @@ showDate: false
 showReadingTime: false
 ---
 
-[App Store](https://apps.apple.com/app/id6759192866) · [Privacy Policy](/en/privacy/atomic-presence/)
+[App Store](https://apps.apple.com/app/id6759192866) · [Política de Privacidade](/en/privacy/atomic-presence/)
 
 ---
 
-## FAQ
+## Perguntas frequentes
 
-**Q: The QR code is unclear in the video and can't be scanned during verification?**  
-A: Ensure sufficient screen brightness during recording, and keep the camera 30–50 cm from the screen. The QR code updates once per second — the camera needs to be able to focus clearly. If the problem persists, try reducing the recording resolution.
+**P: O QR code está pouco nítido no vídeo e não pode ser escaneado durante a verificação?**  
+R: Garanta brilho de tela suficiente durante a gravação e mantenha a câmera a 30–50 cm da tela. O QR code é atualizado uma vez por segundo — a câmera precisa conseguir focar com clareza. Se o problema persistir, tente reduzir a resolução de gravação.
 
-**Q: Audio watermark verification fails?**  
-A: Watermark verification may fail if: the audio was heavily compressed (e.g., forwarded via WhatsApp), the audio was truncated, or there was excessive background noise. Record in a quiet environment and use the original audio file for verification.
+**P: A verificação do watermark de áudio falha?**  
+R: A verificação do watermark pode falhar se: o áudio foi muito comprimido (por exemplo, encaminhado via WhatsApp), o áudio foi truncado ou havia ruído de fundo excessivo. Grave em um ambiente silencioso e use o arquivo de áudio original para verificar.
 
-**Q: The digital signature is invalid on a new device?**  
-A: Each device's signing key is stored in the iOS Keychain, and a new device generates a different key. You do NOT need to manually export the public key — every `.evidence.json` written by the app already embeds the public key used for that recording's signature, so any verifier who holds the evidence file can verify it regardless of which device they're on.
+**P: A assinatura digital é inválida em um novo dispositivo?**  
+R: A chave de assinatura de cada dispositivo fica no iOS Keychain, e um novo dispositivo gera uma chave diferente. Você NÃO precisa exportar manualmente a chave pública — cada `.evidence.json` gravado pelo app já incorpora a chave pública usada na assinatura daquela gravação, então qualquer verificador com o arquivo de evidência pode verificar independentemente do dispositivo.
 
-**Q: The app crashed during recording — is the file still there?**  
-A: When the app crashes unexpectedly, partial recordings may remain in the Documents directory. Reopen the app, tap the **VERIFY** button at the top of the main screen, and check the three tabs (Level 1 / Level 2 / Level 3) for any recoverable files.
+**P: O app travou durante a gravação — o arquivo ainda está lá?**  
+R: Quando o app trava inesperadamente, gravações parciais podem permanecer no diretório Documents. Reabra o app, toque no botão **VERIFY** no topo da tela principal e verifique as três abas (Nível 1 / Nível 2 / Nível 3) para arquivos recuperáveis.
 
-**Q: Hash chain verification shows "integrity broken" but I didn't edit the recording?**  
-A: Possible causes include: the app was interrupted by the system during recording, low battery, or a write error due to insufficient storage. Ensure sufficient battery and storage before recording.
-
----
-
-## Troubleshooting
-
-1. **Ensure the device has sufficient storage** (recommend at least 2 GB available)
-2. **Keep the screen on during recording** to avoid system interruptions
-3. **Force quit and relaunch the app**
-4. **Check iOS version** ≥ 17.0
-5. If a specific scenario consistently causes issues, screenshot the error message and email us
+**P: A verificação de hash chain mostra "integrity broken", mas eu não editei a gravação?**  
+R: As possíveis causas incluem: o app foi interrompido pelo sistema durante a gravação, bateria baixa ou erro de escrita por falta de armazenamento. Garanta bateria e espaço suficientes antes de gravar.
 
 ---
 
-## Contact Support
+## Solução de problemas
+
+1. **Garanta que o dispositivo tenha armazenamento suficiente** (recomendado pelo menos 2 GB disponíveis)
+2. **Mantenha a tela ligada durante a gravação** para evitar interrupções do sistema
+3. **Forçar fechamento e reabrir o app**
+4. **Verifique a versão do iOS** ≥ 17.0
+5. Se um cenário específico causar problemas de forma consistente, tire screenshot da mensagem de erro e envie um e-mail
+
+---
+
+## Contato de suporte
 
 📧 **qqder339@gmail.com**  
-Subject: `[Atomic Presence] Issue Description`
+Assunto: `[Atomic Presence] Issue Description`
 
-Please include: device model, iOS version, app version, recording mode (video/audio), steps to reproduce.
+Inclua: modelo do dispositivo, versão do iOS, versão do app, modo de gravação (vídeo/áudio), passos para reproduzir.
 
-> This app collects no user data. All cryptographic operations run entirely on-device. We have no access to your recordings. [View Privacy Policy →](/en/privacy/atomic-presence/)
+> Este app não coleta dados de usuário. Todas as operações criptográficas rodam totalmente no dispositivo. Não temos acesso às suas gravações. [Ver Política de Privacidade →](/en/privacy/atomic-presence/)

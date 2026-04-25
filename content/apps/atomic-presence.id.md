@@ -1,7 +1,7 @@
 ---
 title: Atomic Presence
 layout: simple
-description: "In the face of deepfakes and malicious edits, defend your authenticity with a cryptographic hash chain and digital signatures."
+description: "Di tengah Deepfake dan edit berbahaya, lindungi keaslian Anda dengan hash chain kriptografis dan tanda tangan digital."
 images:
   - images/og/atomic-presence.png
 app_slug: atomic-presence
@@ -9,26 +9,26 @@ showDate: false
 showReadingTime: false
 ---
 
-## In the deepfake era, verifiable authenticity is what's actually scarce
+## Di era Deepfake, kelangkaan yang nyata adalah keaslian yang bisa diverifikasi
 
-Lowering the barrier to video and audio production is mostly a good thing. The problem is that fabrication, re-editing, and context-stripping get cheaper at the same time, so "I recorded it" has drifted away from "I can prove this is how it really happened." Atomic Presence steps into that gap: it lets you start building a verifiable evidence chain the moment you hit record.
+Menurunkan hambatan produksi video dan audio pada dasarnya adalah hal baik. Masalahnya, pemalsuan, penyuntingan ulang, dan penghilangan konteks juga jadi lebih murah pada saat yang sama, sehingga "saya merekam ini" makin menjauh dari "saya bisa membuktikan kejadian ini memang terjadi seperti itu". Atomic Presence hadir untuk menutup celah itu: begitu Anda menekan rekam, Anda mulai membangun rantai bukti yang dapat diverifikasi.
 
-The situations it's designed for are the ones where you'd worry about the footage being challenged later: interviews, witness accounts, whistleblowing, contested scenes, any context where a recording might get disputed, re-cut, or forged. Casual everyday capture sits outside its target.
+Aplikasi ini dirancang untuk situasi ketika rekaman berpotensi dipersoalkan di kemudian hari: wawancara, kesaksian, whistleblowing, adegan yang disengketakan, dan konteks apa pun ketika rekaman bisa dibantah, dipotong ulang, atau dipalsukan. Perekaman kasual sehari-hari berada di luar target utamanya.
 
-## How it differs from ordinary recording tools
+## Bedanya dengan alat perekam biasa
 
-Most recording tools think "record the file first, worry about preservation later." Atomic Presence weaves hash chains, dynamic QR codes, and digital signatures into the capture flow while it's happening. Verifiability is the core of the product from the start, not a patch bolted on afterwards.
+Sebagian besar alat perekam berpikir "rekam file dulu, urusan preservasi belakangan". Atomic Presence merangkai hash chain, QR code dinamis, dan tanda tangan digital langsung ke alur perekaman saat proses berlangsung. Verifiabilitas menjadi inti produk sejak awal, bukan tempelan yang ditambahkan setelahnya.
 
-That makes it feel more like a technical defense tool for risk scenarios. You may not reach for it every day, but when you do need it, you'll want it already installed, with a workflow you already know, rather than scrambling to assemble tools in the moment.
+Karena itu, rasanya lebih seperti alat pertahanan teknis untuk skenario berisiko. Mungkin Anda tidak memakainya setiap hari, tetapi saat benar-benar dibutuhkan, Anda akan ingin aplikasi ini sudah terpasang dan alurnya sudah dikuasai, bukan panik merakit alat dadakan.
 
-## Why four protection levels: different risks, different costs
+## Mengapa ada empat level perlindungan: risiko berbeda, biaya berbeda
 
-The protection levels correspond to real scenario differences. Sometimes you only need to signal "this is being recorded" to the other party; sometimes you need something closer to evidence-grade integrity verification. Having intermediate steps lets the tool sit inside actual workflows instead of offering only a crude on/off switch.
+Level perlindungan ini mewakili perbedaan skenario yang nyata. Terkadang Anda hanya perlu memberi sinyal "ini sedang direkam" kepada pihak lain; di situasi lain Anda membutuhkan verifikasi integritas yang lebih mendekati standar pembuktian. Adanya level menengah membuat alat ini bisa masuk ke workflow nyata, bukan sekadar sakelar on/off yang kasar.
 
-For journalists, legal professionals, citizen journalists, and anyone who regularly needs a clean record of a conversation, this is valuable. What helps them is a recording tool with fewer ambiguous zones; more filters and beauty modes won't.
+Bagi jurnalis, profesional hukum, jurnalis warga, dan siapa pun yang rutin membutuhkan rekaman percakapan yang bersih, ini sangat bernilai. Yang membantu mereka adalah alat perekam dengan lebih sedikit area abu-abu; menambah filter dan mode kecantikan tidak akan menyelesaikannya.
 
-## Privacy and offline are part of credibility
+## Privasi dan offline adalah bagian dari kredibilitas
 
-A tool that claims to stand for authenticity loses credibility if its core data handling depends heavily on external servers. Atomic Presence keeps the critical computation on-device, partly for privacy and partly to reduce external dependencies inside the evidence chain itself. The fewer third parties your material passes through, the easier it is to explain later what did and didn't happen to it.
+Alat yang mengklaim membela keaslian akan kehilangan kredibilitas jika penanganan data intinya sangat bergantung pada server eksternal. Atomic Presence mempertahankan komputasi penting tetap di perangkat, sebagian demi privasi dan sebagian untuk mengurangi ketergantungan pihak ketiga di dalam rantai bukti itu sendiri. Semakin sedikit pihak ketiga yang dilalui materi Anda, semakin mudah nanti menjelaskan apa yang terjadi dan apa yang tidak terjadi pada materi tersebut.
 
-If you want a recording tool that has a better chance of convincing others when a dispute breaks out, Atomic Presence is worth getting familiar with before you need it.
+Jika Anda menginginkan alat perekam yang peluangnya lebih besar untuk meyakinkan pihak lain saat sengketa muncul, Atomic Presence layak dipahami sebelum Anda membutuhkannya.

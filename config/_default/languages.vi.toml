@@ -9,7 +9,6 @@ title = "QQder 核舟記部落格"
   isoCode = "vi"
   dateFormat = "2 January 2006"
   description = "Free, ad-free iOS Apps + AI-assisted dev journal · The Miniature Boat"
-  isStub = true
 
 [params.author]
   name = "QQder 核舟記部落格"

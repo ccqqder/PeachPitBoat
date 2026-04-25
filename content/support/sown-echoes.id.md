@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: Sown Echoes Support
 layout: simple
 summary: Support and contact for Sown Echoes

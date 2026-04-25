@@ -1,4 +1,5 @@
 ---
+isStub: true
 title: English N+1
 layout: simple
 description: "An offline AI English tutor that generates material just slightly above your CEFR level."
