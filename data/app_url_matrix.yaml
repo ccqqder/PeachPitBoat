@@ -353,21 +353,29 @@
   screenshots:
     - src: /images/screenshots/atomic-presence/info-zh.png
       alt: 原子受訪資訊頁
+      alt_en: Atomic Presence info screen
+      alt_ja: Atomic Presence 情報画面
       caption: 快速理解不同防護等級與驗證思路。
       caption_en: Get oriented on the protection levels and verification approach at a glance.
       caption_ja: 保護レベルと検証の考え方をひと目で把握できる。
     - src: /images/screenshots/atomic-presence/level-selector-zh.png
       alt: 原子受訪等級選擇
+      alt_en: Atomic Presence protection level selector
+      alt_ja: Atomic Presence 保護レベル選択画面
       caption: 依風險情境切換不同保護強度。
       caption_en: Switch between protection strengths according to the risk scenario.
       caption_ja: リスクシナリオに応じて保護強度を切り替えられる。
     - src: /images/screenshots/atomic-presence/running-zh.png
       alt: 原子受訪運行畫面
+      alt_en: Atomic Presence running while recording
+      alt_ja: Atomic Presence 録画中の画面
       caption: 錄影時即時輸出可供事後驗證的視覺訊號。
       caption_en: While recording, the app emits live visual signals for later verification.
       caption_ja: 録画中にリアルタイムで、後から検証に使える視覚信号を出力する。
     - src: /images/screenshots/atomic-presence/verification-zh.png
       alt: 原子受訪驗證畫面
+      alt_en: Atomic Presence verification screen
+      alt_ja: Atomic Presence 検証画面
       caption: 回頭檢驗素材是否遭到刪改或重組。
       caption_en: Replay the footage afterwards to verify it hasn't been edited or rearranged.
       caption_ja: 後から素材を再生し、改ざんや再編集がないかを検証する。

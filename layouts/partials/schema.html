@@ -11,19 +11,26 @@
   {{- if gt (len $matches) 0 -}}
     {{- $app := index $matches 0 -}}
     {{- $lang := site.Language.Lang -}}
-    {{- $isEn := eq $lang "en" -}}
     {{- $isJa := eq $lang "ja" -}}
-    {{- $displayName := $app.name_zh -}}
-    {{- if eq $lang "zh-hans" }}{{ $displayName = or $app.name_zh_hans $app.name_zh }}{{ end -}}
-    {{- if $isEn }}{{ $displayName = or $app.name $app.name_zh }}{{ end -}}
+    {{- $isZhTw := eq $lang "zh-tw" -}}
+    {{- $isZhHans := eq $lang "zh-hans" -}}
+    {{/* English is the default for stub locales (fr/ko/de/etc.) and the en page;
+         only ja/zh-tw/zh-hans get an explicit override. */}}
+    {{- $displayName := or $app.name $app.name_zh -}}
+    {{- if $isZhHans }}{{ $displayName = or $app.name_zh_hans $app.name_zh }}{{ end -}}
+    {{- if $isZhTw }}{{ $displayName = $app.name_zh }}{{ end -}}
     {{- if $isJa }}{{ $displayName = or $app.name_zh $app.name }}{{ end -}}
-    {{- $altName := $app.name -}}
-    {{- if eq $lang "zh-hans" }}{{ $altName = $app.name }}{{ end -}}
-    {{- if $isEn }}{{ $altName = $app.name_zh }}{{ end -}}
+    {{/* alternateName helps users searching for the other-script name find this
+         page. Only meaningful for ja/zh-tw/zh-hans pages where the page title is
+         in that script and the alt is the English / Chinese counterpart.
+         For English (root) and stub locales, omit alternateName entirely. */}}
+    {{- $altName := "" -}}
+    {{- if $isZhTw }}{{ $altName = $app.name }}{{ end -}}
+    {{- if $isZhHans }}{{ $altName = $app.name }}{{ end -}}
     {{- if $isJa }}{{ $altName = $app.name }}{{ end -}}
-    {{- $description := $app.description -}}
-    {{- if and $isEn $app.description_en }}{{ $description = $app.description_en }}{{ end -}}
-    {{- if and $isJa $app.description_ja }}{{ $description = $app.description_ja }}{{ end -}}
+    {{- $description := $app.description_en | default $app.description -}}
+    {{- if $isJa }}{{ $description = or $app.description_ja $app.description }}{{ end -}}
+    {{- if or $isZhTw $isZhHans }}{{ $description = $app.description }}{{ end -}}
     {{- $categoryMap := dict
         "language-learning" "EducationalApplication"
         "self-reflection"   "LifestyleApplication"

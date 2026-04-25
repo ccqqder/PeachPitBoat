@@ -1,11 +1,13 @@
 {{ $lang := site.Language.Lang }}
 {{ $isEn := eq $lang "en" }}
 {{ $isJa := eq $lang "ja" }}
+{{ $isZh := or (eq $lang "zh-tw") (eq $lang "zh-hans") }}
 {{ $slug := .Params.app_slug | default .File.ContentBaseName }}
 {{ $matches := where site.Data.app_url_matrix "slug" $slug }}
 
-{{ $supportTitleSuffix := cond $isEn "Support" (cond $isJa "サポート" "支援") }}
-{{ $introText := cond $isEn "Bug reports, usage questions, and privacy requests all start from this page." (cond $isJa "不具合報告・利用上の質問・プライバシー関連のお問い合わせは、このページから始められます。" "問題回報、使用疑問與隱私相關詢問都可以從這裡開始。") }}
+{{/* English default for stub locales (fr/ko/de/etc.); explicit ja/zh override. */}}
+{{ $supportTitleSuffix := cond $isJa "サポート" (cond $isZh "支援" "Support") }}
+{{ $introText := cond $isJa "不具合報告・利用上の質問・プライバシー関連のお問い合わせは、このページから始められます。" (cond $isZh "問題回報、使用疑問與隱私相關詢問都可以從這裡開始。" "Bug reports, usage questions, and privacy requests all start from this page.") }}
 
 <article class="pp-container pp-container--narrow">
   {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
@@ -22,7 +24,9 @@
     </section>
   {{ else }}
     {{ $app := index $matches 0 }}
-    {{ $displayName := cond $isEn $app.name $app.name_zh }}
+    {{/* English default; ja/zh-tw/zh-hans use the Chinese-script name. */}}
+    {{ $displayName := $app.name }}
+    {{ if or $isJa $isZh }}{{ $displayName = $app.name_zh }}{{ end }}
 
     <header class="pp-header">
       <h1 class="pp-header__title">{{ $displayName }} {{ $supportTitleSuffix }}</h1>

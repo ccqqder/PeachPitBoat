@@ -2,33 +2,35 @@
   {{ $lang := site.Language.Lang }}
   {{ $isEn := eq $lang "en" }}
   {{ $isJa := eq $lang "ja" }}
+  {{ $isZh := or (eq $lang "zh-tw") (eq $lang "zh-hans") }}
+  {{/* English defaults for stub locales (fr/ko/de/etc.); ja/zh-tw/zh-hans override. */}}
   {{ $appPages := where site.RegularPages "Section" "apps" }}
   {{ $supportPages := where site.RegularPages "Section" "support" }}
   {{ $privacyPages := where site.RegularPages "Section" "privacy" }}
   {{ $lineConfigs := slice
     (dict
       "key" "offline-growth"
-      "title" (cond $isEn "Offline Growth" (cond $isJa "オフライン成長" "離線成長"))
-      "description" (cond $isEn "Tools for language learning, reflection, and long-term personal growth." (cond $isJa "語学学習・内省・長期的な自己成長のための道具群。" "面向語言學習、自省沉澱與長期成長的產品。")))
+      "title" (cond $isJa "オフライン成長" (cond $isZh "離線成長" "Offline Growth"))
+      "description" (cond $isJa "語学学習・内省・長期的な自己成長のための道具群。" (cond $isZh "面向語言學習、自省沉澱與長期成長的產品。" "Tools for language learning, reflection, and long-term personal growth.")))
     (dict
       "key" "digital-citizen"
-      "title" (cond $isEn "Digital Citizen" (cond $isJa "デジタル市民" "數位公民"))
-      "description" (cond $isEn "Apps focused on authenticity, memory, and personal digital agency." (cond $isJa "真正性、記憶、そして個人のデジタル主体性に焦点を置くアプリ群。" "聚焦真實性、記憶與個人數位主體性的產品。")))
+      "title" (cond $isJa "デジタル市民" (cond $isZh "數位公民" "Digital Citizen"))
+      "description" (cond $isJa "真正性、記憶、そして個人のデジタル主体性に焦点を置くアプリ群。" (cond $isZh "聚焦真實性、記憶與個人數位主體性的產品。" "Apps focused on authenticity, memory, and personal digital agency.")))
   }}
   {{ $categoryLabels := dict
-    "language-learning" (cond $isEn "Language Learning" (cond $isJa "語学学習" "語言學習"))
-    "self-reflection" (cond $isEn "Self-Reflection" (cond $isJa "内省・沈思" "自省沉澱"))
-    "democracy-edc" (cond $isEn "Democracy EDC" (cond $isJa "民主EDC" "民主EDC"))
+    "language-learning" (cond $isJa "語学学習" (cond $isZh "語言學習" "Language Learning"))
+    "self-reflection" (cond $isJa "内省・沈思" (cond $isZh "自省沉澱" "Self-Reflection"))
+    "democracy-edc" (cond $isJa "民主EDC" (cond $isZh "民主EDC" "Democracy EDC"))
   }}
-  {{ $viewLabel := cond $isEn "View App" (cond $isJa "詳細を見る" "查看產品頁") }}
+  {{ $viewLabel := cond $isJa "詳細を見る" (cond $isZh "查看產品頁" "View App") }}
   {{ $storeLabel := "App Store" }}
-  {{ $supportLabel := cond $isEn "Support" (cond $isJa "サポート" "支援") }}
-  {{ $privacyLabel := cond $isEn "Privacy" (cond $isJa "プライバシー" "隱私") }}
-  {{ $supportIndexLabel := cond $isEn "Support Index" (cond $isJa "サポート一覧" "支援總覽") }}
-  {{ $privacyIndexLabel := cond $isEn "Privacy Index" (cond $isJa "プライバシー一覧" "隱私總覽") }}
-  {{ $inDevTitle := cond $isEn "In Development" (cond $isJa "開発中" "製作中") }}
-  {{ $inDevDesc := cond $isEn "Products currently under active development. Progress numbers reflect internal build status." (cond $isJa "現在開発中のプロダクト。進捗は社内のビルド状況に基づきます。" "目前還在開發階段的產品，下方進度對應內部建置狀態。") }}
-  {{ $progressLabel := cond $isEn "Progress" (cond $isJa "進捗" "進度") }}
+  {{ $supportLabel := cond $isJa "サポート" (cond $isZh "支援" "Support") }}
+  {{ $privacyLabel := cond $isJa "プライバシー" (cond $isZh "隱私" "Privacy") }}
+  {{ $supportIndexLabel := cond $isJa "サポート一覧" (cond $isZh "支援總覽" "Support Index") }}
+  {{ $privacyIndexLabel := cond $isJa "プライバシー一覧" (cond $isZh "隱私總覽" "Privacy Index") }}
+  {{ $inDevTitle := cond $isJa "開発中" (cond $isZh "製作中" "In Development") }}
+  {{ $inDevDesc := cond $isJa "現在開発中のプロダクト。進捗は社内のビルド状況に基づきます。" (cond $isZh "目前還在開發階段的產品，下方進度對應內部建置狀態。" "Products currently under active development. Progress numbers reflect internal build status.") }}
+  {{ $progressLabel := cond $isJa "進捗" (cond $isZh "進度" "Progress") }}
 
   <article class="pp-container">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
@@ -75,7 +77,16 @@
                           <span class="pp-tag">{{ . }}</span>
                         {{ end }}
                       </div>
-                      <p class="pp-app-item__summary">{{ or $marketingPage.Params.summary $app.tagline }}</p>
+                      {{/* Locale-aware tagline: prefer page frontmatter (already
+                           translated for AP, English for stubs), then matrix tagline
+                           per locale, finally raw tagline (zh-Hant). */}}
+                      {{ $cardTagline := $marketingPage.Params.summary | default $marketingPage.Description }}
+                      {{ if not $cardTagline }}
+                        {{ $cardTagline = $app.tagline_en | default $app.tagline }}
+                        {{ if and $isJa $app.tagline_ja }}{{ $cardTagline = $app.tagline_ja }}{{ end }}
+                        {{ if and $isZh $app.tagline }}{{ $cardTagline = $app.tagline }}{{ end }}
+                      {{ end }}
+                      <p class="pp-app-item__summary">{{ $cardTagline }}</p>
                     </div>
                   </div>
 
@@ -108,13 +119,14 @@
         </div>
         <div class="pp-apps-grid">
           {{ range $app := $inDevApps }}
-            {{ $name := $app.name_zh }}
+            {{/* English default; explicit override for ja/zh-tw/zh-hans only. */}}
+            {{ $name := $app.name }}
+            {{ if eq $lang "zh-tw" }}{{ $name = $app.name_zh }}{{ end }}
             {{ if eq $lang "zh-hans" }}{{ $name = or $app.name_zh_hans $app.name_zh }}{{ end }}
-            {{ if $isEn }}{{ $name = or $app.name $app.name_zh }}{{ end }}
             {{ if $isJa }}{{ $name = or $app.name_zh $app.name }}{{ end }}
-            {{ $tagline := $app.tagline }}
-            {{ if and $isEn $app.tagline_en }}{{ $tagline = $app.tagline_en }}{{ end }}
+            {{ $tagline := $app.tagline_en | default $app.tagline }}
             {{ if and $isJa $app.tagline_ja }}{{ $tagline = $app.tagline_ja }}{{ end }}
+            {{ if and $isZh $app.tagline }}{{ $tagline = $app.tagline }}{{ end }}
             <article class="pp-app-item">
               <div class="pp-app-item__media">
                 <div class="pp-app-item__body">
@@ -136,9 +148,9 @@
     {{ end }}
 
     <section class="pp-panel">
-      <h2 class="pp-panel__title">{{ cond $isEn "Further Navigation" (cond $isJa "補助ナビゲーション" "延伸導覽") }}</h2>
+      <h2 class="pp-panel__title">{{ cond $isJa "補助ナビゲーション" (cond $isZh "延伸導覽" "Further Navigation") }}</h2>
       <p class="pp-panel__desc">
-        {{ cond $isEn "Use the links below for the support and privacy indexes across all apps." (cond $isJa "全アプリ横断のサポート・プライバシー一覧は以下から辿れます。" "想看跨 App 的支援總覽與隱私總覽，可以從下面進入。") }}
+        {{ cond $isJa "全アプリ横断のサポート・プライバシー一覧は以下から辿れます。" (cond $isZh "想看跨 App 的支援總覽與隱私總覽，可以從下面進入。" "Use the links below for the support and privacy indexes across all apps.") }}
       </p>
       <div class="pp-actions">
         <a href="{{ "support/" | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $supportIndexLabel }}</a>

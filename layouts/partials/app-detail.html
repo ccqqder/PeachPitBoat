@@ -1,19 +1,23 @@
 {{ $lang := site.Language.Lang }}
 {{ $isEn := eq $lang "en" }}
 {{ $isJa := eq $lang "ja" }}
+{{ $isZh := or (eq $lang "zh-tw") (eq $lang "zh-hans") }}
+{{/* English is the default fallback for any locale not in {ja, zh-tw, zh-hans} —
+     stub locales (fr/ko/de/es/pt-br/vi/id/ru) and any future addition all get
+     English chrome until they have their own translation here. */}}
 {{ $slug := .Params.app_slug | default .File.ContentBaseName }}
 {{ $matches := where site.Data.app_url_matrix "slug" $slug }}
 
 {{ $storeLabel := "App Store" }}
-{{ $supportLabel := cond $isEn "Support" (cond $isJa "サポート" "支援") }}
-{{ $privacyLabel := cond $isEn "Privacy" (cond $isJa "プライバシー" "隱私") }}
-{{ $termsLabel := cond $isEn "Terms" (cond $isJa "利用規約" "服務條款") }}
-{{ $featuresTitle := cond $isEn "Core Features" (cond $isJa "コア機能" "核心特色") }}
-{{ $shotsTitle := cond $isEn "Screenshots" (cond $isJa "画面プレビュー" "畫面預覽") }}
-{{ $linksTitle := cond $isEn "Further Reading" (cond $isJa "関連記事" "延伸閱讀") }}
-{{ $startTitle := cond $isEn "Quick Links" (cond $isJa "クイックリンク" "快速入口") }}
-{{ $startDesc := cond $isEn "Head straight to the store, or read the support and privacy pages first." (cond $isJa "ストアに直接進むか、先にサポートとプライバシーを確認してから始められます。" "你可以直接進 App Store，也可以先看支援頁與隱私政策。") }}
-{{ $downloadLabel := cond $isEn "Download on the App Store" (cond $isJa "App Store でダウンロード" "到 App Store 下載") }}
+{{ $supportLabel := cond $isJa "サポート" (cond $isZh "支援" "Support") }}
+{{ $privacyLabel := cond $isJa "プライバシー" (cond $isZh "隱私" "Privacy") }}
+{{ $termsLabel := cond $isJa "利用規約" (cond $isZh "服務條款" "Terms") }}
+{{ $featuresTitle := cond $isJa "コア機能" (cond $isZh "核心特色" "Core Features") }}
+{{ $shotsTitle := cond $isJa "画面プレビュー" (cond $isZh "畫面預覽" "Screenshots") }}
+{{ $linksTitle := cond $isJa "関連記事" (cond $isZh "延伸閱讀" "Further Reading") }}
+{{ $startTitle := cond $isJa "クイックリンク" (cond $isZh "快速入口" "Quick Links") }}
+{{ $startDesc := cond $isJa "ストアに直接進むか、先にサポートとプライバシーを確認してから始められます。" (cond $isZh "你可以直接進 App Store，也可以先看支援頁與隱私政策。" "Head straight to the store, or read the support and privacy pages first.") }}
+{{ $downloadLabel := cond $isJa "App Store でダウンロード" (cond $isZh "到 App Store 下載" "Download on the App Store") }}
 
 <article class="pp-container pp-container--narrow">
   {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
@@ -31,17 +35,23 @@
   {{ else }}
     {{ $app := index $matches 0 }}
     {{ $isZhHans := eq $lang "zh-hans" }}
-    {{ $displayName := cond $isEn $app.name (cond $isJa $app.name_zh (cond $isZhHans (or $app.name_zh_hans $app.name_zh) $app.name_zh)) }}
-    {{ $tagline := $app.tagline }}
-    {{ if and $isEn $app.tagline_en }}{{ $tagline = $app.tagline_en }}{{ end }}
+    {{ $isZhTw := eq $lang "zh-tw" }}
+    {{/* App display fields default to English; only ja/zh-tw/zh-hans override.
+         For stub locales (fr/ko/de/etc.), $app.name (English) wins. */}}
+    {{ $displayName := $app.name }}
+    {{ if $isJa }}{{ $displayName = $app.name_zh }}{{ end }}
+    {{ if $isZhTw }}{{ $displayName = $app.name_zh }}{{ end }}
+    {{ if $isZhHans }}{{ $displayName = or $app.name_zh_hans $app.name_zh }}{{ end }}
+    {{ $tagline := $app.tagline_en | default $app.tagline }}
     {{ if and $isJa $app.tagline_ja }}{{ $tagline = $app.tagline_ja }}{{ end }}
-    {{ $description := $app.description }}
-    {{ if and $isEn $app.description_en }}{{ $description = $app.description_en }}{{ end }}
+    {{ if and $isZh $app.tagline }}{{ $tagline = $app.tagline }}{{ end }}
+    {{ $description := $app.description_en | default $app.description }}
     {{ if and $isJa $app.description_ja }}{{ $description = $app.description_ja }}{{ end }}
-    {{ $features := $app.features }}
-    {{ if and $isEn $app.features_en }}{{ $features = $app.features_en }}{{ end }}
+    {{ if and $isZh $app.description }}{{ $description = $app.description }}{{ end }}
+    {{ $features := $app.features_en | default $app.features }}
     {{ if and $isJa $app.features_ja }}{{ $features = $app.features_ja }}{{ end }}
-    {{ $shotSuffix := cond $isEn "-en." (cond $isJa "-ja." "-zh.") }}
+    {{ if and $isZh $app.features }}{{ $features = $app.features }}{{ end }}
+    {{ $shotSuffix := cond $isJa "-ja." (cond $isZh "-zh." "-en.") }}
     <header class="pp-detail-header">
       <div class="pp-detail-header__main">
         {{ with $app.icon }}
@@ -126,10 +136,14 @@
           {{ range . }}
             {{ $src := replace .src "-zh." $shotSuffix }}
             {{ $caption := .caption }}
-            {{ if and $isEn .caption_en }}{{ $caption = .caption_en }}{{ end }}
+            {{ $caption = .caption_en | default .caption }}
             {{ if and $isJa .caption_ja }}{{ $caption = .caption_ja }}{{ end }}
+            {{ if and $isZh .caption }}{{ $caption = .caption }}{{ end }}
+            {{ $alt := .alt_en | default .alt }}
+            {{ if and $isJa .alt_ja }}{{ $alt = .alt_ja }}{{ end }}
+            {{ if and $isZh .alt }}{{ $alt = .alt }}{{ end }}
             <figure class="pp-shot">
-              <img src="{{ strings.TrimPrefix "/" $src | relURL }}" alt="{{ .alt }}" />
+              <img src="{{ strings.TrimPrefix "/" $src | relURL }}" alt="{{ $alt }}" />
               <figcaption>{{ $caption }}</figcaption>
             </figure>
           {{ end }}
