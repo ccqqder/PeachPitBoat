@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: 初回の一度きりのリソースダウンロード後は完全オフラインで使えます
 offline_badge_aria_needs_network:
   other: このアプリは継続的なネット接続が必要です
+app_support_label:
+  other: サポート
+app_privacy_label:
+  other: プライバシー
+app_terms_label:
+  other: 利用規約
+app_features_title:
+  other: コア機能
+app_screenshots_title:
+  other: 画面プレビュー
+app_further_reading_title:
+  other: 関連記事
+app_quick_links_title:
+  other: クイックリンク
+app_quick_links_desc:
+  other: ストアに直接進むか、先にサポートとプライバシーを確認してから始められます。
+app_download_label:
+  other: App Store でダウンロード

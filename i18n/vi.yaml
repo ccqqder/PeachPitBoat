@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: Hoàn toàn ngoại tuyến sau khi tải xuống mô hình hoặc dữ liệu một lần trên thiết bị
 offline_badge_aria_needs_network:
   other: Ứng dụng này yêu cầu kết nối internet liên tục
+app_support_label:
+  other: Hỗ trợ
+app_privacy_label:
+  other: Quyền riêng tư
+app_terms_label:
+  other: Điều khoản
+app_features_title:
+  other: Tính năng chính
+app_screenshots_title:
+  other: Ảnh chụp màn hình
+app_further_reading_title:
+  other: Đọc thêm
+app_quick_links_title:
+  other: Liên kết nhanh
+app_quick_links_desc:
+  other: Đến thẳng cửa hàng, hoặc đọc trang hỗ trợ và quyền riêng tư trước.
+app_download_label:
+  other: Tải trên App Store

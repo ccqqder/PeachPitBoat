@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: 首次完成一次性資源下載後即可完全離線使用
 offline_badge_aria_needs_network:
   other: 這個 app 需要持續的網路連線
+app_support_label:
+  other: 支援
+app_privacy_label:
+  other: 隱私
+app_terms_label:
+  other: 服務條款
+app_features_title:
+  other: 核心特色
+app_screenshots_title:
+  other: 畫面預覽
+app_further_reading_title:
+  other: 延伸閱讀
+app_quick_links_title:
+  other: 快速入口
+app_quick_links_desc:
+  other: 你可以直接進 App Store，也可以先看支援頁與隱私政策。
+app_download_label:
+  other: 到 App Store 下載

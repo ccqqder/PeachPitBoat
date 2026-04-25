@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: Sepenuhnya offline setelah pengunduhan model atau data sekali di perangkat
 offline_badge_aria_needs_network:
   other: Aplikasi ini memerlukan koneksi internet yang berkelanjutan
+app_support_label:
+  other: Dukungan
+app_privacy_label:
+  other: Privasi
+app_terms_label:
+  other: Syarat
+app_features_title:
+  other: Fitur utama
+app_screenshots_title:
+  other: Tangkapan layar
+app_further_reading_title:
+  other: Bacaan lanjutan
+app_quick_links_title:
+  other: Tautan cepat
+app_quick_links_desc:
+  other: Langsung ke toko, atau baca halaman dukungan dan privasi terlebih dahulu.
+app_download_label:
+  other: Unduh di App Store

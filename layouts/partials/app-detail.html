@@ -9,15 +9,15 @@
 {{ $matches := where site.Data.app_url_matrix "slug" $slug }}
 
 {{ $storeLabel := "App Store" }}
-{{ $supportLabel := cond $isJa "サポート" (cond $isZh "支援" "Support") }}
-{{ $privacyLabel := cond $isJa "プライバシー" (cond $isZh "隱私" "Privacy") }}
-{{ $termsLabel := cond $isJa "利用規約" (cond $isZh "服務條款" "Terms") }}
-{{ $featuresTitle := cond $isJa "コア機能" (cond $isZh "核心特色" "Core Features") }}
-{{ $shotsTitle := cond $isJa "画面プレビュー" (cond $isZh "畫面預覽" "Screenshots") }}
-{{ $linksTitle := cond $isJa "関連記事" (cond $isZh "延伸閱讀" "Further Reading") }}
-{{ $startTitle := cond $isJa "クイックリンク" (cond $isZh "快速入口" "Quick Links") }}
-{{ $startDesc := cond $isJa "ストアに直接進むか、先にサポートとプライバシーを確認してから始められます。" (cond $isZh "你可以直接進 App Store，也可以先看支援頁與隱私政策。" "Head straight to the store, or read the support and privacy pages first.") }}
-{{ $downloadLabel := cond $isJa "App Store でダウンロード" (cond $isZh "到 App Store 下載" "Download on the App Store") }}
+{{ $supportLabel := i18n "app_support_label" | default "Support" }}
+{{ $privacyLabel := i18n "app_privacy_label" | default "Privacy" }}
+{{ $termsLabel := i18n "app_terms_label" | default "Terms" }}
+{{ $featuresTitle := i18n "app_features_title" | default "Core Features" }}
+{{ $shotsTitle := i18n "app_screenshots_title" | default "Screenshots" }}
+{{ $linksTitle := i18n "app_further_reading_title" | default "Further Reading" }}
+{{ $startTitle := i18n "app_quick_links_title" | default "Quick Links" }}
+{{ $startDesc := i18n "app_quick_links_desc" | default "Head straight to the store, or read the support and privacy pages first." }}
+{{ $downloadLabel := i18n "app_download_label" | default "Download on the App Store" }}
 
 <article class="pp-container pp-container--narrow">
   {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
@@ -51,6 +51,13 @@
     {{ $features := $app.features_en | default $app.features }}
     {{ if and $isJa $app.features_ja }}{{ $features = $app.features_ja }}{{ end }}
     {{ if and $isZh $app.features }}{{ $features = $app.features }}{{ end }}
+    {{/* Generic per-locale override: looks up tagline_fr, tagline_ko, etc. in YAML */}}
+    {{ if and (not $isJa) (not $isZh) }}
+      {{ $lk := $lang | replaceRE "-" "_" }}
+      {{ with index $app (printf "tagline_%s" $lk) }}{{ $tagline = . }}{{ end }}
+      {{ with index $app (printf "description_%s" $lk) }}{{ $description = . }}{{ end }}
+      {{ with index $app (printf "features_%s" $lk) }}{{ $features = . }}{{ end }}
+    {{ end }}
     {{ $shotSuffix := cond $isJa "-ja." (cond $isZh "-zh." "-en.") }}
     <header class="pp-detail-header">
       <div class="pp-detail-header__main">
@@ -92,10 +99,10 @@
       </div>
       <div class="pp-actions">
         <a href="{{ $app.store_url }}" class="pp-btn pp-btn--primary">{{ $storeLabel }}</a>
-        <a href="{{ strings.TrimPrefix "/" $app.support_url | relURL }}" class="pp-btn pp-btn--ghost">{{ $supportLabel }}</a>
-        <a href="{{ strings.TrimPrefix "/" $app.privacy_url | relURL }}" class="pp-btn pp-btn--ghost">{{ $privacyLabel }}</a>
+        <a href="{{ strings.TrimPrefix "/" $app.support_url | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $supportLabel }}</a>
+        <a href="{{ strings.TrimPrefix "/" $app.privacy_url | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $privacyLabel }}</a>
         {{ with $app.terms_url }}
-          <a href="{{ strings.TrimPrefix "/" . | relURL }}" class="pp-btn pp-btn--ghost">{{ $termsLabel }}</a>
+          <a href="{{ strings.TrimPrefix "/" . | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $termsLabel }}</a>
         {{ end }}
       </div>
     </header>
@@ -110,10 +117,10 @@
       <p class="pp-panel__desc">{{ $startDesc }}</p>
       <div class="pp-actions">
         <a href="{{ $app.store_url }}" class="pp-btn pp-btn--primary">{{ $downloadLabel }}</a>
-        <a href="{{ strings.TrimPrefix "/" $app.support_url | relURL }}" class="pp-btn pp-btn--ghost">{{ $supportLabel }}</a>
-        <a href="{{ strings.TrimPrefix "/" $app.privacy_url | relURL }}" class="pp-btn pp-btn--ghost">{{ $privacyLabel }}</a>
+        <a href="{{ strings.TrimPrefix "/" $app.support_url | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $supportLabel }}</a>
+        <a href="{{ strings.TrimPrefix "/" $app.privacy_url | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $privacyLabel }}</a>
         {{ with $app.terms_url }}
-          <a href="{{ strings.TrimPrefix "/" . | relURL }}" class="pp-btn pp-btn--ghost">{{ $termsLabel }}</a>
+          <a href="{{ strings.TrimPrefix "/" . | relLangURL }}" class="pp-btn pp-btn--ghost">{{ $termsLabel }}</a>
         {{ end }}
       </div>
     </section>

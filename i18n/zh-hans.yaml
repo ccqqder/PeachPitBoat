@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: 首次完成一次性资源下载后即可完全离线使用
 offline_badge_aria_needs_network:
   other: 此 app 需要持续的网络连接
+app_support_label:
+  other: 支持
+app_privacy_label:
+  other: 隐私
+app_terms_label:
+  other: 服务条款
+app_features_title:
+  other: 核心功能
+app_screenshots_title:
+  other: 屏幕截图
+app_further_reading_title:
+  other: 延伸阅读
+app_quick_links_title:
+  other: 快速入口
+app_quick_links_desc:
+  other: 您可以直接前往 App Store，或先查看支持页面和隐私政策。
+app_download_label:
+  other: 在 App Store 下载

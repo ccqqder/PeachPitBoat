@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: Entièrement hors ligne après le téléchargement unique du modèle ou des données sur l'appareil
 offline_badge_aria_needs_network:
   other: Cette application nécessite une connexion internet continue
+app_support_label:
+  other: Assistance
+app_privacy_label:
+  other: Confidentialité
+app_terms_label:
+  other: CGU
+app_features_title:
+  other: Fonctionnalités
+app_screenshots_title:
+  other: Captures d'écran
+app_further_reading_title:
+  other: Lecture complémentaire
+app_quick_links_title:
+  other: Liens rapides
+app_quick_links_desc:
+  other: Rendez-vous directement sur le store, ou consultez d'abord les pages d'assistance et de confidentialité.
+app_download_label:
+  other: Télécharger sur l'App Store

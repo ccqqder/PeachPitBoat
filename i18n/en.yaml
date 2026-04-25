@@ -16,3 +16,21 @@ offline_badge_aria_after_setup:
   other: Fully offline after the one-time on-device model or data download
 offline_badge_aria_needs_network:
   other: This app requires a continuous internet connection
+app_support_label:
+  other: Support
+app_privacy_label:
+  other: Privacy
+app_terms_label:
+  other: Terms
+app_features_title:
+  other: Core Features
+app_screenshots_title:
+  other: Screenshots
+app_further_reading_title:
+  other: Further Reading
+app_quick_links_title:
+  other: Quick Links
+app_quick_links_desc:
+  other: Head straight to the store, or read the support and privacy pages first.
+app_download_label:
+  other: Download on the App Store

@@ -38,6 +38,22 @@
     - 内蔵 Python 3.13 ランタイム：アプリ内で直接コードを実行し動作を確認できる。
     - 300問以上の問題とレーダーチャート分析：PCEP、TQC+、CPE に対応。
     - 端末適応型のモデル選択：デバイス性能に応じた AI 構成を選べる。
+  tagline_fr: "Un outil d'apprentissage Python en trois dimensions, avec tuteur IA sur l'appareil et runtime Python 3.13 intégré."
+  tagline_ko: "온디바이스 AI 튜터와 내장 Python 3.13 런타임을 갖춘 입체형 Python 학습 도구."
+  description_fr: Que vous partiez de zéro, prépariez le TQC+ ou visiez le CPE, Python Dimensions vous aide à bâtir des bases solides en programmation.
+  description_ko: 완전 초보로 시작하든, TQC+를 준비하든, CPE를 목표로 하든 Python Dimensions는 탄탄한 프로그래밍 기초를 쌓도록 도와줍니다.
+  features_fr:
+    - Trois formats d'exercices — QCM, texte à trous et remise en ordre de code — pour couvrir la syntaxe, la logique locale et le flux complet d'un programme.
+    - Tuteur IA sur l'appareil — un LLM hors ligne avec RAG propose des indices à partir de vos erreurs.
+    - Runtime Python 3.13 intégré — exécutez et vérifiez votre code directement dans l'app.
+    - Plus de 300 questions avec analyse par radar chart — pour préparer PCEP, TQC+ et CPE.
+    - Chargement de modèles adaptatif selon l'appareil — choisissez la configuration IA adaptée à votre matériel.
+  features_ko:
+    - 객관식, 클로즈, 코드 순서 맞추기의 세 가지 문제 유형으로 문법, 국소 로직, 전체 프로그램 흐름까지 학습합니다.
+    - 온디바이스 AI 튜터 - 오프라인 LLM과 RAG가 오답을 바탕으로 힌트를 제공합니다.
+    - 내장 Python 3.13 런타임으로 앱 안에서 코드를 바로 실행하고 검증할 수 있습니다.
+    - 레이더 차트 분석이 포함된 300개+ 문제로 PCEP, TQC+, CPE 준비를 지원합니다.
+    - 기기 적응형 모델 로딩으로 내 장치에 맞는 AI 구성을 선택할 수 있습니다.
   screenshots:
     - src: /images/screenshots/python-dimensions/practice-zh.png
       alt: Python 點線面練習模式
@@ -98,6 +114,20 @@
     - 手書き認識と画像認識：最も直感的な方法で字形を覚えられる。
     - 音声認識と AI 補助：発音練習にも理解のサポートにも使える。
     - オフライン AI コア：端末内で動作し、プライバシーと学習のリズムを守る。
+  tagline_fr: "Un outil d'apprentissage des kana conçu pour les locuteurs natifs chinois, avec clavier personnalisé et IA sur l'appareil."
+  tagline_ko: "중국어 모국어 화자를 위해 설계된 가나 학습 도구로, 전용 키보드와 온디바이스 AI를 제공합니다."
+  description_fr: Kana Juku réunit formes de glyphes, ordre des traits, pratique de saisie et assistance IA dans un système d'initiation au japonais pensé pour les apprenants sinophones.
+  description_ko: Kana Juku는 글리프 형태, 획순, 타이핑 연습, AI 보조를 하나로 묶어 중국어권 학습자에게 맞춘 일본어 입문 시스템을 제공합니다.
+  features_fr:
+    - Clavier kana personnalisé — fonctionne sans dépendre du clavier japonais système; vous tapez exactement ce que vous voyez.
+    - Reconnaissance manuscrite et d'image — mémorisez les formes des glyphes de la manière la plus intuitive.
+    - Reconnaissance vocale et aide IA — utile à la fois pour la prononciation et la compréhension.
+    - Cœur IA hors ligne — tout s'exécute en local pour protéger votre vie privée et votre rythme d'apprentissage.
+  features_ko:
+    - 맞춤형 가나 키보드 - 시스템 일본어 키보드에 의존하지 않으며, 보이는 그대로 입력할 수 있습니다.
+    - 필기 및 이미지 인식으로 글자 형태를 가장 직관적으로 익힐 수 있습니다.
+    - 음성 인식과 AI 지원으로 발음 연습과 이해 학습 모두에 유용합니다.
+    - 오프라인 AI 코어로 모든 기능이 로컬에서 실행되어 프라이버시와 학습 리듬을 지킵니다.
   screenshots:
     - src: /images/screenshots/kana-juku/reference-zh.png
       alt: 五十音總覽
@@ -223,6 +253,20 @@
     - 3D 惑星ビュー：宝石、軌道、鉱山で成長の進み具合を可視化。
     - AI 樹洞：ローカルモデルが、プライベートな対話と内省の伴走を提供。
     - アート図鑑コレクション：目標を達成するたびに、イラスト作品やコレクション報酬が解放。
+  tagline_fr: "Visualisation 3D des habitudes associée à un arbre-creux IA — transformer l'autodiscipline en un voyage interstellaire paisible."
+  tagline_ko: "3D 습관 시각화와 AI 트리홀을 결합해, 자기 규율을 조용한 성간 여정으로 바꿉니다."
+  description_fr: Gantt Planet relie suivi d'objectifs, réflexion émotionnelle et système de collection d'œuvres dans un univers personnel qui vous accompagne durablement, sans aucun serveur.
+  description_ko: Gantt Planet은 목표 추적, 감정 성찰, 아트 컬렉션 시스템을 묶어 서버 없이도 오래 함께할 수 있는 개인 우주를 만듭니다.
+  features_fr:
+    - Timeline multidimensionnelle — placez les sujets de vie importants mais non urgents dans un rythme suivi sur le long terme.
+    - Vue planète 3D — visualisez votre progression sous forme de gemmes, d'orbites et de mines.
+    - Tree hole IA — un modèle local offre des conversations privées et un accompagnement introspectif.
+    - Collection d'œuvres — atteindre vos objectifs débloque progressivement des illustrations et des récompenses à collectionner.
+  features_ko:
+    - 다차원 타임라인으로 중요하지만 급하지 않은 삶의 항목을 장기적으로 추적 가능한 리듬에 배치합니다.
+    - 3D 행성 뷰에서 진행 상황을 보석, 궤도, 광산으로 시각화합니다.
+    - AI 트리홀은 로컬 모델로 사적인 대화와 성찰 동반을 제공합니다.
+    - 아트워크 컬렉션 기능으로 목표를 달성할수록 일러스트와 수집 보상이 단계적으로 열립니다.
   screenshots:
     - src: /images/screenshots/gantt-planet/timeline-zh.png
       alt: 甘特星球時間軸主畫面
@@ -290,6 +334,20 @@
     - シーンミキサー：108 種類の音声サンプルで自分だけのサウンドレシピを構築。
     - 没入型 READER：ローカル TTS 読み上げに対応し、背景音は自動でダッキング。
     - 完全オフライン音声処理：テキストをアップロードせずに読み上げ・ミックス・再生が可能。
+  tagline_fr: "Bruit synthétisé en DSP en temps réel, 108 sons d'ambiance et lecture TTS immersive — le tout calculé sur l'appareil."
+  tagline_ko: "실시간 DSP 합성 노이즈, 108가지 앰비언트 사운드, 몰입형 TTS 읽기까지 모두 기기 내에서 처리합니다."
+  description_fr: AuditoryCompanion réunit bruit blanc, mixage d'ambiances et lecture de texte dans un moteur audio précis, aussi adapté aux sessions de concentration qu'à la détente.
+  description_ko: AuditoryCompanion은 백색소음, 앰비언트 믹싱, 텍스트 읽기를 하나의 정밀한 오디오 엔진에 담아 집중 세션과 휴식 모두에 잘 맞습니다.
+  features_fr:
+    - Synthétiseur de bruit — synthèse DSP en temps réel des bruits blanc, rose, brun et bleu.
+    - Mixeur de scènes — composez votre propre recette de paysage sonore à partir de 108 échantillons audio.
+    - READER immersif — lecture locale en TTS avec ducking automatique de l'audio d'arrière-plan.
+    - Traitement audio 100 % hors ligne — lisez, mixez et écoutez sans téléverser le moindre texte.
+  features_ko:
+    - 노이즈 신시사이저 - 백색, 핑크, 브라운, 블루 노이즈 컬러를 DSP로 실시간 합성합니다.
+    - 씬 믹서로 108개의 오디오 샘플을 조합해 나만의 사운드스케이프 레시피를 만들 수 있습니다.
+    - 몰입형 READER - 로컬 TTS 읽기와 배경 오디오 자동 덕킹을 지원합니다.
+    - 완전 오프라인 오디오 처리로 텍스트 업로드 없이 읽기, 믹싱, 재생이 가능합니다.
   screenshots:
     - src: /images/screenshots/auditory-companion/synthesis-zh.png
       alt: 聽覺旅伴噪音合成器
@@ -350,6 +408,20 @@
     - デジタル署名：端末内の鍵で録画・録音内容に署名。
     - 音声ウォーターマーク：近超音波帯域に検証可能な信号を録音へ埋め込み。
     - 内蔵検証ツール：後からフレーム単位で照合し、完全性を確認。
+  tagline_fr: "Face aux deepfakes et aux montages malveillants, défendez votre authenticité grâce à une hash chain cryptographique et à des signatures numériques."
+  tagline_ko: "Deepfake와 악의적 편집에 맞서, 암호학적 Hash chain과 디지털 서명으로 당신의 진정성을 지키세요."
+  description_fr: Atomic Presence est un outil de défense technique conçu pour les personnes interviewées, les journalistes et les contextes de preuve légale, avec pour cœur l'intégrité vérifiable de la vidéo et de l'audio.
+  description_ko: Atomic Presence는 인터뷰이, 기자, 법적 증거 상황을 위한 기술적 방어 도구로, 영상과 음성의 검증 가능한 무결성을 핵심에 둡니다.
+  features_fr:
+    - Hash chain — encodage en temps réel de la séquence de hash dans un QR code dynamique.
+    - Signature numérique — les enregistrements sont signés avec une clé sur l'appareil.
+    - Filigrane audio — insertion dans l'enregistrement d'un signal proche de l'ultrason vérifiable.
+    - Vérificateur intégré — rejouez image par image pour contrôler l'intégrité.
+  features_ko:
+    - Hash chain - 해시 시퀀스를 동적 QR 코드로 실시간 인코딩합니다.
+    - 디지털 서명 - 녹화/녹음 데이터에 온디바이스 키로 서명합니다.
+    - 오디오 워터마크 - 검증 가능한 준초음파 신호를 녹음에 삽입합니다.
+    - 내장 검증기로 프레임 단위 재생을 통해 무결성을 확인합니다.
   screenshots:
     - src: /images/screenshots/atomic-presence/info-zh.png
       alt: 原子受訪資訊頁
@@ -418,6 +490,20 @@
     - 音声とテキストの記録：端末内 Whisper による書き起こしと連携。
     - AI ミラーとデジタル分身：価値観と人生の語りを整理したうえで、それと対話。
     - デュアルトラック共有：非公開で保存するか、選択的に公開貢献するかを選べる。
+  tagline_fr: "Préservez vos pensées, vos valeurs et vos expériences de vie comme un héritage numérique compréhensible par l'IA du futur."
+  tagline_ko: "생각과 가치관, 삶의 경험을 미래의 AI가 이해할 수 있는 디지털 유산으로 보존합니다."
+  description_fr: Sown Echoes intègre enregistrement, analyse et dialogue dans un outil personnel de préservation des connaissances et de l'identité, avec des réglages par défaut orientés on-device-first et protection de la vie privée.
+  description_ko: Sown Echoes는 기록, 분석, 대화를 통합한 개인 지식·정체성 보존 도구로, 전반에 걸쳐 on-device-first와 프라이버시 보호를 기본값으로 삼습니다.
+  features_fr:
+    - Identité cryptographique — créez votre propre Meme ID avec une phrase mnémotechnique.
+    - Enregistrements vocaux et textuels — couplés à une transcription Whisper sur l'appareil.
+    - Miroir IA et double numérique — organisez vos valeurs et récits de vie, puis dialoguez avec eux.
+    - Partage à double voie — conservez vos contenus en privé ou publiez-en une partie de façon sélective.
+  features_ko:
+    - 암호학적 신원 - 니모닉 문구로 나만의 Meme ID를 생성합니다.
+    - 음성과 텍스트 기록 - 온디바이스 Whisper 전사와 연동됩니다.
+    - AI 미러와 디지털 더블 - 가치관과 삶의 서사를 정리한 뒤 그것들과 대화할 수 있습니다.
+    - 이중 트랙 공유 - 콘텐츠를 비공개로 보관하거나 선택적으로 공개 기여할 수 있습니다.
   screenshots:
     - src: /images/screenshots/sown-echoes/write-home-zh.png
       alt: 回聲種子書寫首頁
@@ -483,6 +569,20 @@
     - 人物の性格と関係ネットワーク：登場人物の反応はセリフだけでなく内面の動機に駆動される。
     - 端末内 AI の解釈：キャラクターの心理や場面の緊張を端末上で分析。
     - 詩詞とオブジェクト図鑑：読書体験を、検索可能で没入感のあるコレクションへと拡張。
+  tagline_fr: "Transformer Le Rêve dans le pavillon rouge en simulation narrative IA interactive, pour que la littérature dépasse la lecture statique."
+  tagline_ko: "『홍루몽』을 상호작용형 AI 서사 시뮬레이션으로 전환해, 문학을 정적인 독서 이상으로 확장합니다."
+  description_fr: StoneStory abstrait personnages, scènes et événements en un système narratif exécutable, pour vous permettre d'évoluer aux côtés du classique plutôt que de seulement le lire.
+  description_ko: StoneStory는 인물, 장면, 사건을 실행 가능한 서사 시스템으로 추상화해, 고전을 단지 읽는 것을 넘어 그 안에서 함께 움직이게 합니다.
+  features_fr:
+    - 768 scènes originales — le récit est découpé en un flux d'événements rejouable et explorable.
+    - Personnalités des personnages et graphe relationnel — les réactions sont guidées par des motivations internes, pas seulement par les dialogues.
+    - Interprétation IA sur l'appareil — analyse locale de la psychologie des personnages et de la tension des scènes.
+    - Archive de poèmes et d'objets — la lecture se prolonge en une collection consultable et immersive.
+  features_ko:
+    - 원작의 768개 장면을 재생 가능하고 탐색 가능한 이벤트 스트림으로 분해했습니다.
+    - 인물 성격과 관계 그래프를 기반으로, 반응은 대사만이 아니라 내적 동기에 의해 움직입니다.
+    - 온디바이스 AI 해석으로 인물 심리와 장면의 긴장을 로컬에서 분석합니다.
+    - 시구와 오브젝트 아카이브로 독서를 검색 가능하고 몰입적인 컬렉션 경험으로 확장합니다.
   screenshots:
     - src: /images/screenshots/stonestory/01_chapter_list-zh.png
       alt: 章節列表
