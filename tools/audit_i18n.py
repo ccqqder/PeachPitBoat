@@ -30,20 +30,35 @@ from typing import Optional
 
 DEFAULT_BASE = "https://ccqqder.github.io/PeachPitBoat"
 
-# Each locale: URL path, expected <html lang>, and what counts as "OK title".
-# `style` drives the title/description CJK heuristic:
+# Each locale: URL prefix path (relative to base), expected <html lang>,
+# title style. `style` drives the title/description CJK heuristic:
 #   en   — must NOT contain CJK ideographs or kana
 #   ja   — kanji + kana acceptable
 #   zh   — CJK ideographs acceptable
+# `is_stub` controls the canonical check: stub locales' canonicals should
+# strip the language prefix (collapse to EN equivalent).
 LOCALES = [
-    ("en-root", "/",         "en",      "en"),
-    ("zh-tw",   "/zh-tw/",   "zh-TW",   "zh"),
-    ("ja",      "/ja/",      "ja",      "ja"),
-    ("zh-hans", "/zh-hans/", "zh-Hans", "zh"),
-    ("fr",      "/fr/",      "fr",      "en"),  # stub → English chrome
-    ("ko",      "/ko/",      "ko",      "en"),
-    ("vi",      "/vi/",      "vi",      "en"),
-    ("id",      "/id/",      "id",      "en"),
+    # (label,      url_prefix,   html_lang, style, is_stub)
+    ("en-root",    "/",          "en",      "en",  False),
+    ("zh-tw",      "/zh-tw/",    "zh-TW",   "zh",  False),
+    ("ja",         "/ja/",       "ja",      "ja",  False),
+    ("zh-hans",    "/zh-hans/",  "zh-Hans", "zh",  False),
+    ("fr",         "/fr/",       "fr",      "en",  True),
+    ("ko",         "/ko/",       "ko",      "en",  True),
+    ("vi",         "/vi/",       "vi",      "en",  True),
+    ("id",         "/id/",       "id",      "en",  True),
+]
+
+# Pages to audit per locale. The path is relative to the locale prefix.
+# For a stub-translated page that has its own .md file the canonical should
+# self-canonical; for a stub page (isStub: true in front matter, or the
+# whole locale is stub) it should canonical to the EN equivalent — that's
+# what the canonical heuristic in evaluate() checks.
+PAGES = [
+    ("home",  ""),
+    ("about", "about/"),
+    ("posts", "posts/"),
+    ("app",   "apps/atomic-presence/"),
 ]
 
 CJK_RE = re.compile(r"[぀-ヿ一-鿿]")  # hiragana, katakana, CJK
@@ -52,10 +67,13 @@ GREEN, YELLOW, RED, RESET = "\033[32m", "\033[33m", "\033[31m", "\033[0m"
 
 @dataclass
 class Audit:
-    label: str
+    label: str            # locale label, e.g. "fr"
+    page: str             # page label, e.g. "home", "about", "app"
     url: str
     expected_html_lang: str
-    style: str
+    style: str            # "en" / "ja" / "zh" — controls CJK heuristic
+    is_stub: bool         # whole-locale stub flag (see config languages.*.toml)
+    locale_prefix: str    # e.g. "/fr/" or "/" for en-root
     html: str = ""
     title: str = ""
     description: str = ""
@@ -68,15 +86,19 @@ class Audit:
     issues: list[str] = field(default_factory=list)
     fetch_error: Optional[str] = None
     og_image_status: int = 0
+    http_status: int = 0
 
 
-def _fetch(url: str, timeout: float = 15) -> str:
+def _fetch(url: str, timeout: float = 15) -> tuple[int, str]:
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE  # match curl --ssl-no-revoke behavior
     req = urllib.request.Request(url, headers={"User-Agent": "audit-i18n/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
-        return r.read().decode("utf-8", errors="replace")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
+            return r.status, r.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        return e.code, ""
 
 
 def _head_status(url: str, timeout: float = 10) -> int:
@@ -132,9 +154,12 @@ def _internal_anchors(html: str, base_path: str) -> list[str]:
 
 def collect(audit: Audit) -> Audit:
     try:
-        audit.html = _fetch(audit.url)
+        audit.http_status, audit.html = _fetch(audit.url)
     except Exception as e:
         audit.fetch_error = repr(e)
+        return audit
+    if audit.http_status != 200:
+        audit.fetch_error = f"HTTP {audit.http_status}"
         return audit
     h = audit.html
     audit.title = _first(r"<title[^>]*>([^<]+)</title>", h)
@@ -152,7 +177,11 @@ def collect(audit: Audit) -> Audit:
 
 
 def evaluate(audits: list[Audit]) -> None:
-    """Populate `issues` on each audit by cross-comparing locales."""
+    """Populate `issues` on each audit by cross-comparing locales.
+
+    `audits` should be the list for ONE page (so nav-parity comparisons stay
+    within the same page across locales).
+    """
     base_nav = max((len(a.nav_anchors) for a in audits if not a.fetch_error), default=0)
     for a in audits:
         if a.fetch_error:
@@ -194,56 +223,76 @@ def evaluate(audits: list[Audit]) -> None:
         elif not re.match(r"^[a-z]{2}_[A-Z]{2}$", a.og_locale):
             a.issues.append(f"og:locale not in xx_YY form: {a.og_locale!r}")
 
-        # 8. Canonical sanity: stub homepages should canonical to EN root
-        if a.style == "en" and "/PeachPitBoat/" in a.canonical and a.label != "en-root":
-            # stub homepages should point at the EN root, not at /xx/
-            if not a.canonical.rstrip("/").endswith("/PeachPitBoat"):
-                # only enforce on the four stub locales, not the EN root itself
-                if a.label in {"fr", "ko", "vi", "id"}:
-                    a.issues.append(f"stub homepage canonical={a.canonical} (expected EN root)")
+        # 8. Canonical sanity. Real locales must self-canonical; stub
+        # locales may either self-canonical (when the page itself is
+        # translated, e.g. /fr/apps/atomic-presence/ which has its own
+        # markdown with isStub: false) OR canonical to the EN equivalent
+        # (when the page is a stub falling back to English). The audit
+        # can't read frontmatter, so for stubs we accept either form and
+        # only flag canonicals that don't match either valid target.
+        def _norm(u: str) -> str:
+            return u.rstrip("/") + "/"
+
+        self_url = _norm(a.url)
+        en_url = _norm(
+            a.url.replace(a.locale_prefix, "/", 1)
+            if a.locale_prefix != "/" else a.url
+        )
+        canon = _norm(a.canonical) if a.canonical else ""
+
+        if not canon:
+            a.issues.append("canonical missing")
+        elif a.is_stub:
+            if canon not in (self_url, en_url):
+                a.issues.append(
+                    f"canonical={a.canonical} (expected self={self_url} or EN={en_url})"
+                )
+        else:
+            if canon != self_url:
+                a.issues.append(f"canonical={a.canonical} (expected self={self_url})")
 
 
-def emit(audits: list[Audit]) -> None:
-    use_color = sys.stdout.isatty()
-    g, y, r, x = (GREEN, YELLOW, RED, RESET) if use_color else ("", "", "", "")
-
-    def cell(ok: bool, val: str, width: int) -> str:
-        mark = f"{g}OK{x}" if ok else f"{r}!!{x}"
-        return f"{mark} {val[: width - 3]:<{width - 3}}"
-
-    print()
-    print(f"{'locale':10} | {'title':36} | nav | hreflang | og:locale | og:image |")
-    print("-" * 90)
+def _emit_table(page_label: str, audits: list[Audit], use_color: bool) -> None:
+    g, r, x = (GREEN, RED, RESET) if use_color else ("", "", "")
+    print(f"\n=== Page: {page_label} ===")
+    print(f"{'locale':10} | {'title':36} | nav | hflng | og:locale | og:image |")
+    print("-" * 86)
+    base_nav = max((len(z.nav_anchors) for z in audits if not z.fetch_error), default=0)
     for a in audits:
         if a.fetch_error:
-            print(f"{a.label:10} | {r}{a.fetch_error[:80]}{x}")
+            print(f"{a.label:10} | {r}{a.fetch_error[:70]}{x}")
             continue
-        title_disp = a.title[:34]
         title_ok = not (a.style == "en" and CJK_RE.search(a.title or ""))
-        title_cell = f"{g if title_ok else r}{title_disp:36}{x}"
-        nav_ok = len(a.nav_anchors) >= max(2, len([z for z in audits if not z.fetch_error and len(z.nav_anchors) >= 4]) > 0 and 4 or 2)
-        # Recompute against base
-        base_nav = max((len(z.nav_anchors) for z in audits if not z.fetch_error), default=0)
+        title_cell = f"{g if title_ok else r}{a.title[:34]:36}{x}"
         nav_ok = len(a.nav_anchors) >= base_nav
         nav_cell = f"{g if nav_ok else r}{len(a.nav_anchors)}{x}  "
-        hreflang_ok = a.hreflang_count == 9
-        hf_cell = f"{g if hreflang_ok else r}{a.hreflang_count}{x}      "
+        hf_ok = a.hreflang_count == 9
+        hf_cell = f"{g if hf_ok else r}{a.hreflang_count}{x}    "
         ogl_ok = bool(re.match(r"^[a-z]{2}_[A-Z]{2}$", a.og_locale or ""))
         ogl_cell = f"{g if ogl_ok else r}{a.og_locale or '-':<7}{x}  "
         ogi_ok = a.og_image_status == 200
         ogi_cell = f"{g if ogi_ok else r}{a.og_image_status or 'no':<3}{x}     "
         print(f"{a.label:10} | {title_cell} | {nav_cell} | {hf_cell} | {ogl_cell} | {ogi_cell} |")
 
+
+def emit(by_page: dict[str, list[Audit]]) -> None:
+    use_color = sys.stdout.isatty()
+    g, r, x = (GREEN, RED, RESET) if use_color else ("", "", "")
+
+    for page_label, audits in by_page.items():
+        _emit_table(page_label, audits, use_color)
+
+    # Aggregate issues across all (locale × page) combinations.
+    all_audits = [a for batch in by_page.values() for a in batch]
+    issue_audits = [a for a in all_audits if a.issues]
+    total_issues = sum(len(a.issues) for a in all_audits)
     print()
-    total_issues = sum(len(a.issues) for a in audits)
     if total_issues == 0:
-        print(f"{g}All checks passed across {len(audits)} locales.{x}")
+        print(f"{g}All checks passed across {len(all_audits)} (locale × page) combinations.{x}")
         return
-    print(f"{r}{total_issues} issue(s) across {sum(1 for a in audits if a.issues)} locale(s):{x}")
-    for a in audits:
-        if not a.issues:
-            continue
-        print(f"\n  [{a.label}]")
+    print(f"{r}{total_issues} issue(s) across {len(issue_audits)} (locale × page) combination(s):{x}")
+    for a in issue_audits:
+        print(f"\n  [{a.label} / {a.page}]")
         for issue in a.issues:
             print(f"    - {issue}")
 
@@ -261,18 +310,30 @@ def main() -> int:
                     help="Exit 1 if any locale has issues (for CI)")
     args = ap.parse_args()
 
-    audits = [Audit(label=lbl, url=args.base_url + path,
-                    expected_html_lang=hlang, style=style)
-              for lbl, path, hlang, style in LOCALES]
+    base = args.base_url.rstrip("/")
+    by_page: dict[str, list[Audit]] = {}
+    for page_label, page_path in PAGES:
+        batch: list[Audit] = []
+        for lbl, prefix, hlang, style, is_stub in LOCALES:
+            url = base + prefix + page_path
+            batch.append(Audit(
+                label=lbl, page=page_label, url=url,
+                expected_html_lang=hlang, style=style,
+                is_stub=is_stub, locale_prefix=prefix,
+            ))
+        by_page[page_label] = batch
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        futures = {ex.submit(collect, a): a for a in audits}
+    all_audits = [a for batch in by_page.values() for a in batch]
+    with ThreadPoolExecutor(max_workers=16) as ex:
+        futures = {ex.submit(collect, a): a for a in all_audits}
         for fut in as_completed(futures):
             fut.result()
 
-    evaluate(audits)
-    emit(audits)
-    if args.strict and any(a.issues for a in audits):
+    for batch in by_page.values():
+        evaluate(batch)
+    emit(by_page)
+
+    if args.strict and any(a.issues for a in all_audits):
         return 1
     return 0
 

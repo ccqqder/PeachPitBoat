@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: About
+title: 關於
 summary: 核舟記
 ---
 
