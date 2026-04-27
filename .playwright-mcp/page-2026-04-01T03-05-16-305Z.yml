@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - link "↓ 快轉到主要內容" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "核舟" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/
+    - navigation [ref=e8]:
+      - link "首頁" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/
+        - generic [ref=e10]: 首頁
+      - link "App 矩陣" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/apps/
+        - generic [ref=e12]: App 矩陣
+      - link "部落格" [ref=e13] [cursor=pointer]:
+        - /url: /OliverPitBoat/posts/
+        - generic [ref=e14]: 部落格
+      - link "關於" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/about/
+        - generic [ref=e16]: 關於
+      - button "繁體中文" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - generic "404 Page not found" [ref=e23]: 繁體中文
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - heading "找不到網頁 😕" [level=1] [ref=e36]
+      - paragraph [ref=e37]: 404 錯誤
+      - paragraph [ref=e39]: 您在尋找的頁面似乎不存在。
+      - link "捲動到頁頂" [ref=e41] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e42]:
+      - paragraph [ref=e44]: © 2026 QQder

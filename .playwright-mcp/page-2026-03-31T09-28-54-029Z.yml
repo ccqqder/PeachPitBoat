@@ -1,0 +1,204 @@
+- generic [active] [ref=e1]:
+  - link "↓ Skip to main content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "The Miniature Boat" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/en/
+    - navigation [ref=e8]:
+      - link "Home" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/en/
+        - generic [ref=e10]: Home
+      - link "Apps" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/en/apps/
+        - generic [ref=e12]: Apps
+      - link "Blog" [ref=e13] [cursor=pointer]:
+        - /url: ""
+        - generic [ref=e14]: Blog
+      - link "About" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/en/about/
+        - generic [ref=e16]: About
+      - button "EN" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - 'generic "Gantt Planet: An Indie Developer''s Niche and Considerations" [ref=e23]': EN
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - article [ref=e36]:
+        - generic [ref=e37]:
+          - list
+          - 'heading "Gantt Planet: An Indie Developer''s Niche and Considerations" [level=1] [ref=e38]'
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - time [ref=e41]: 25 February 2026
+              - generic [ref=e42]: ·
+              - generic "Reading time" [ref=e43]: 7 mins
+            - generic [ref=e44]:
+              - link "The Observatory" [ref=e45] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/categories/the-observatory/
+                - generic [ref=e47]: The Observatory
+              - link "Indie Developer" [ref=e48] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/indie-developer/
+                - generic [ref=e50]: Indie Developer
+              - link "App Store" [ref=e51] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/app-store/
+                - generic [ref=e53]: App Store
+              - link "Gantt Chart" [ref=e54] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/gantt-chart/
+                - generic [ref=e56]: Gantt Chart
+              - link "Product Development" [ref=e57] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/product-development/
+                - generic [ref=e59]: Product Development
+              - link "AI-Assisted Development" [ref=e60] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/ai-assisted-development/
+                - generic [ref=e62]: AI-Assisted Development
+              - link "Side Project" [ref=e63] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/side-project/
+                - generic [ref=e65]: Side Project
+          - generic [ref=e66]:
+            - img "Oliver" [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: Author
+              - generic [ref=e70]: Oliver
+              - generic [ref=e71]: Will AI compute be monopolized? Will AI capabilities keep breaking through? Regardless of the answer, the best time to start is now. This is a record of a humanities-background Sysadmin developing iOS apps with the assistance of AI.
+              - generic [ref=e73]:
+                - link "Github" [ref=e74] [cursor=pointer]:
+                  - /url: https://github.com/ccqqder
+                  - img [ref=e77]
+                - link "Email" [ref=e79] [cursor=pointer]:
+                  - /url: mailto:qqder339@gmail.com
+                  - img [ref=e82]
+        - generic [ref=e84]:
+          - group [ref=e87]:
+            - generic "Table of Contents" [ref=e88] [cursor=pointer]
+          - generic [ref=e90]:
+            - figure [ref=e91]
+            - heading "Preface Anchor" [level=1] [ref=e92]:
+              - text: Preface
+              - link "Anchor" [ref=e94] [cursor=pointer]:
+                - /url: "#preface"
+                - text: "#"
+            - paragraph [ref=e95]:
+              - text: "In this post, I’ll talk about the market, resources, ecosystem, and development process from the perspective of an indie developer. As a shameless plug, I’m using Gantt Planet as my running example:"
+              - link "URL" [ref=e96] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/%E7%94%98%E7%89%B9%E6%98%9F%E7%90%83/id6757654373
+              - text: . I’ll admit upfront that these are just my side projects — the pressure is very different from someone who makes a living off this — so I’m only discussing the research approach here.
+            - heading "The Spark and the Stall Anchor" [level=2] [ref=e97]:
+              - text: The Spark and the Stall
+              - link "Anchor" [ref=e99] [cursor=pointer]:
+                - /url: "#the-spark-and-the-stall"
+                - text: "#"
+            - paragraph [ref=e100]: "The idea behind Gantt Planet was simple: free Gantt chart tools — whether desktop software, mobile apps, or web apps — are all pretty terrible to use. The ones that actually seem decent all charge money, so I figured I’d just build my own Gantt chart app."
+            - paragraph [ref=e101]: "It didn’t take long before I realized things weren’t that simple:"
+            - list [ref=e102]:
+              - listitem [ref=e103]: Viewing a spreadsheet-style Gantt chart on a phone screen is way too cramped
+              - listitem [ref=e104]: A proper Gantt chart needs to connect to a ton of resources — email, contacts, meeting rooms, and so on
+            - paragraph [ref=e105]: Solving either of these problems is expensive. You’d need to spend a huge amount of time fine-tuning the UI and designing ideal usage flows, while accepting that some workflows simply can’t be integrated and have to be dropped.
+            - paragraph [ref=e106]: As for resource integration, you’d need to handle sign-ins for all major platforms, deal with countless APIs and authentication protocols, and maintain all of it going forward.
+            - paragraph [ref=e107]: At this point, I hit a wall — and when you’re working at a scale that doesn’t benefit from economies of scale, that’s pretty much inevitable.
+            - heading "Pivot After Pivot Anchor" [level=2] [ref=e108]:
+              - text: Pivot After Pivot
+              - link "Anchor" [ref=e110] [cursor=pointer]:
+                - /url: "#pivot-after-pivot"
+                - text: "#"
+            - paragraph [ref=e111]: In moments like this, I like to take each factor and extend it a step or two outward, looking for a viable intersection where things might actually work.
+            - paragraph [ref=e112]: As a developer driven by personal interest, “viable” means extremely low cost, plus a value proposition that’s small but clearly defined.
+            - paragraph [ref=e113]: AI helped me achieve the first part — extremely low cost.
+            - paragraph [ref=e114]: As for the value part, it’s mostly self-defined, though bouncing ideas off AI can help crystallize things too.
+            - paragraph [ref=e115]: For me, it mainly comes down to building something I’d actually want to use — something I’d enjoy looking at, at the very least. Beyond that, if nobody else has done it, there’s no free version, or there’s a clear differentiator, that counts as value too.
+            - paragraph [ref=e116]: "At this point, I started wondering: is there something that’s like a Gantt chart, but not really a Gantt chart?"
+            - paragraph [ref=e117]: And then a picture formed in my mind.
+            - paragraph [ref=e118]: I remembered that when I use Gantt charts, I tend to put the more important items further down.
+            - paragraph [ref=e119]: The bottommost item is usually the big-picture condition for completing the entire project — or it represents the project itself.
+            - paragraph [ref=e120]: But what if there were items even below that bottom row — items even more important? What would those be?
+            - paragraph [ref=e121]: Well, there are plenty of things more important — they just have nothing to do with work. They’re about me. About life.
+            - paragraph [ref=e122]:
+              - text: "And so it clicked: I wasn’t going to build a regular business Gantt chart. I was going to build a"
+              - strong [ref=e123]: life Gantt chart
+              - text: .
+            - figure
+            - heading "The Next Step Anchor" [level=2] [ref=e124]:
+              - text: The Next Step
+              - link "Anchor" [ref=e126] [cursor=pointer]:
+                - /url: "#the-next-step"
+                - text: "#"
+            - paragraph [ref=e127]: So I decided to build a Gantt chart that departs from the typical business use case.
+            - paragraph [ref=e128]: This conveniently meant I no longer needed to integrate with online services,
+            - paragraph [ref=e129]: because now it was all about the user — just them, and nothing else.
+            - paragraph [ref=e130]: With that, I’d taken one more step forward and kept the project alive for the time being. But could it lead to enough substance to be complete?
+            - paragraph [ref=e131]: I thought about self-management and the important-but-not-urgent things in life — they all have rhythms and frequencies.
+            - paragraph [ref=e132]: Health matters, so companies do annual check-ups. Family matters, so you make sure to see your loved ones before too much time passes.
+            - paragraph [ref=e133]: Combined with the nature of Gantt charts, within any given time window, items overlap on the current day.
+            - paragraph [ref=e134]: And if you consider the span of an entire lifetime, every item is potentially relevant today. That meant I could collapse everything onto the center line of the UI.
+            - paragraph [ref=e135]: This solved the cramped UI problem while expressing a set of values I found genuinely meaningful.
+            - heading "Completeness Anchor" [level=2] [ref=e136]:
+              - text: Completeness
+              - link "Anchor" [ref=e138] [cursor=pointer]:
+                - /url: "#completeness"
+                - text: "#"
+            - paragraph [ref=e139]: One of the App Store review guidelines is that your app can’t just replicate what a plain text webpage could do.
+            - paragraph [ref=e140]: For example, a simple to-do list might not pass muster. So I had to make sure this app was more than just a spreadsheet — otherwise, Google Sheets could do the same thing.
+            - paragraph [ref=e141]: The top-to-bottom visual flow of the spreadsheet reminded me of digging downward — like each day you only do the bare minimum surface-level tasks. There’s a Chinese idiom, “people floating above their work,” that captures this state perfectly.
+            - paragraph [ref=e142]: The metaphor of more important items sitting at deeper layers made me want to make it more visual, more tangible. The immediate association was excavation — digging through geological strata, mining.
+            - paragraph [ref=e143]: Then came the question of implementation. Should I slightly curve each row of the spreadsheet? Add some perspective distortion?
+            - paragraph [ref=e144]: I thought about the context of this life Gantt chart — solitary and introspective.
+            - paragraph [ref=e145]: "The image that came to mind was: on the surface of a planet’s crust, one person digging alone. And then it hit me — isn’t that the golden-haired boy who waters his rose and tames a fox?"
+            - paragraph [ref=e146]: So I built a 3D version of the Gantt chart, using a mine shaft and gemstones as the visual representation of to-do items.
+            - paragraph [ref=e147]: An even more radical approach would have been to keep only the planet version, but considering usability, review difficulty, and how intuitive it would be to understand, I decided to keep both views.
+            - figure
+            - heading "Still Missing a Desk Anchor" [level=2] [ref=e148]:
+              - text: Still Missing a Desk
+              - link "Anchor" [ref=e150] [cursor=pointer]:
+                - /url: "#still-missing-a-desk"
+                - text: "#"
+            - paragraph [ref=e151]: Back when I was still in school, I spent a lot of time sitting properly at my desk, alone — either studying or writing.
+            - paragraph [ref=e152]: Using and thinking about this life Gantt chart felt like it was bringing me back to that desk — the one that’s long been thrown away.
+            - paragraph [ref=e153]: If I completed something I only do once every three months or once a year — or even a long-term goal —
+            - paragraph [ref=e154]: I think I’d really want to write in a journal, or maybe write a letter to a close friend.
+            - paragraph [ref=e155]: I realized this Gantt chart was still missing a final emotional outlet. But if I added social media sharing, users wouldn’t be able to be fully honest.
+            - paragraph [ref=e156]: Another option was in-app messaging between users, but there would never — now or in the future — be enough installs to support that, or at least an Android version would need to be available too. Either way, it wasn’t necessary for the first version.
+            - paragraph [ref=e157]: "The most self-consistent solution I landed on was the most versatile one: a chatbot."
+            - paragraph [ref=e158]: Feed the chatbot a bunch of literary classics and let it play the role of a “tree hollow” — a confidant — offering users some thoughtful feedback.
+            - heading "Final Thoughts Anchor" [level=2] [ref=e159]:
+              - text: Final Thoughts
+              - link "Anchor" [ref=e161] [cursor=pointer]:
+                - /url: "#final-thoughts"
+                - text: "#"
+            - paragraph [ref=e162]: So that’s the product development and decision-making behind this app.
+            - paragraph [ref=e163]: It might look like I just kept changing direction until it was done, but in reality, there were tons of scrapped ideas and rejected features that I haven’t even mentioned.
+            - paragraph [ref=e164]: Beyond giving curious friends a window into the kinds of considerations that go into product development,
+            - paragraph [ref=e165]:
+              - text: "the last thing I want to emphasize — and the answer to the title — is that the indie developer’s niche and consideration is:"
+              - strong [ref=e166]: doing whatever the hell makes you happy!
+            - paragraph [ref=e167]: I’m sure plenty of people will think this is too niche, or that it doesn’t match their taste or values.
+            - paragraph [ref=e168]: But even so, with a bit of time and the help of AI, you can build the thing you want that doesn’t exist yet.
+            - paragraph [ref=e169]: You get to be the boss — deciding what’s valuable and what’s worth building.
+            - paragraph [ref=e170]: You get to be the designer — choosing your favorite layouts, colors, fonts, and images.
+            - paragraph [ref=e171]: You get to be the PM — deciding how to write it and how complete the features need to be.
+            - paragraph [ref=e172]: AI will only get stronger. Even if it can’t do everything today, in the foreseeable future, you’ll be able to enjoy all of this too.
+            - paragraph [ref=e173]: The App Store is now the new-era personal homepage — everyone can publish their own story.
+            - paragraph [ref=e174]: If you’re interested, follow this blog. I’ll keep sharing real experiences and reflections from publishing on the App Store.
+        - generic [ref=e176]:
+          - separator [ref=e177]
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - 'link "← Kana Juku Dev Log (Part 1): From Chatbots to AI Agents" [ref=e180] [cursor=pointer]':
+                - /url: /OliverPitBoat/en/posts/kana_juku_dev_1/
+                - generic [ref=e181]:
+                  - generic [ref=e182]: ←
+                  - text: "Kana Juku Dev Log (Part 1): From Chatbots to AI Agents"
+              - time [ref=e184]: 22 February 2026
+            - generic [ref=e185]:
+              - 'link "Dream of the Red Chamber Simulator: The Holy Grail of Social Science, and LLMs as Prophetic Verse →" [ref=e186] [cursor=pointer]':
+                - /url: /OliverPitBoat/en/posts/stonestory_fate/
+                - generic [ref=e187]:
+                  - text: "Dream of the Red Chamber Simulator: The Holy Grail of Social Science, and LLMs as Prophetic Verse"
+                  - generic [ref=e188]: →
+              - time [ref=e190]: 22 March 2026
+      - link "Scroll to top" [ref=e192] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e193]:
+      - paragraph [ref=e195]: © 2026 Oliver

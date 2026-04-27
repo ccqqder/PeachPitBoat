@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - link "↓ 快轉到主要內容" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "核舟" [ref=e5] [cursor=pointer]:
+      - /url: http://localhost:65516/PeachPitBoat/
+    - generic [ref=e6]:
+      - navigation [ref=e8]:
+        - link "首頁" [ref=e9] [cursor=pointer]:
+          - /url: http://localhost:65516/PeachPitBoat/
+        - link "Apps" [ref=e10] [cursor=pointer]:
+          - /url: http://localhost:65516/PeachPitBoat/apps/
+        - link "部落格" [ref=e11] [cursor=pointer]:
+          - /url: http://localhost:65516/PeachPitBoat/posts/
+        - link "關於" [ref=e12] [cursor=pointer]:
+          - /url: http://localhost:65516/PeachPitBoat/about/
+        - generic [ref=e13]:
+          - button "繁體中文" [ref=e14]:
+            - img [ref=e17]
+            - text: 繁體中文
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "繁體中文" [ref=e21] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/
+              - link "EN" [ref=e22] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/en/
+              - link "JA" [ref=e23] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/ja/
+              - link "简体中文" [ref=e24] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/zh-hans/
+        - button "Search" [ref=e25]
+        - button "Dark mode switcher" [ref=e28]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic:
+              - img
+      - generic [ref=e32]:
+        - button "Search" [ref=e33]
+        - button "Dark mode switcher" [ref=e35]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic:
+              - img
+        - checkbox [ref=e38]
+        - img [ref=e41]
+        - dialog [ref=e43]:
+          - img [ref=e46]
+          - navigation [ref=e48]:
+            - link "首頁" [ref=e50] [cursor=pointer]:
+              - /url: http://localhost:65516/PeachPitBoat/
+            - link "Apps" [ref=e52] [cursor=pointer]:
+              - /url: http://localhost:65516/PeachPitBoat/apps/
+            - link "部落格" [ref=e54] [cursor=pointer]:
+              - /url: http://localhost:65516/PeachPitBoat/posts/
+            - link "關於" [ref=e56] [cursor=pointer]:
+              - /url: http://localhost:65516/PeachPitBoat/about/
+            - generic [ref=e58]:
+              - button "繁體中文" [ref=e59]:
+                - img [ref=e62]
+                - text: 繁體中文
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "繁體中文" [ref=e66] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/
+                  - link "EN" [ref=e67] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/en/
+                  - link "JA" [ref=e68] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/ja/
+                  - link "简体中文" [ref=e69] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/zh-hans/
+  - generic [ref=e70]:
+    - main [ref=e71]:
+      - article [ref=e72]:
+        - generic [ref=e73]:
+          - img "QQder" [ref=e74]
+          - heading "QQder" [level=1] [ref=e75]
+          - heading "獨立 iOS App 開發者" [level=2] [ref=e76]
+          - generic [ref=e78]:
+            - link "Github" [ref=e79] [cursor=pointer]:
+              - /url: https://github.com/ccqqder
+              - img [ref=e82]
+            - link "Email" [ref=e84] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e87]
+      - generic [ref=e89]:
+        - heading "精選文章" [level=2] [ref=e90]
+        - generic [ref=e91]:
+          - article [ref=e92]:
+            - generic [ref=e94]:
+              - link "紅樓夢模擬器：熱力學與藝術選擇" [ref=e96] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/posts/stonestory_thermodynamics/
+                - heading "紅樓夢模擬器：熱力學與藝術選擇" [level=2] [ref=e97]
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - time [ref=e100]: 2026年3月29日
+                  - text: ·8 分鐘
+                - generic [ref=e101]:
+                  - link "The Workshop" [ref=e102] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/categories/the-workshop/
+                    - generic [ref=e103]: The Workshop
+                  - link "Thermodynamics" [ref=e104] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/thermodynamics/
+                    - generic [ref=e105]: Thermodynamics
+                  - link "熱力學" [ref=e106] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%86%B1%E5%8A%9B%E5%AD%B8/
+                    - generic [ref=e107]: 熱力學
+                  - link "紅樓夢" [ref=e108] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%B4%85%E6%A8%93%E5%A4%A2/
+                    - generic [ref=e109]: 紅樓夢
+                  - link "LLM" [ref=e110] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/llm/
+                    - generic [ref=e111]: LLM
+                  - link "規則引擎" [ref=e112] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E8%A6%8F%E5%89%87%E5%BC%95%E6%93%8E/
+                    - generic [ref=e113]: 規則引擎
+          - article [ref=e114]:
+            - generic [ref=e116]:
+              - link "甘特星球：個人開發者的生態位與考量" [ref=e118] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/posts/gantt-planet-intro/
+                - heading "甘特星球：個人開發者的生態位與考量" [level=2] [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - time [ref=e122]: 2026年2月25日
+                  - text: ·5 分鐘
+                - generic [ref=e123]:
+                  - link "The Observatory" [ref=e124] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/categories/the-observatory/
+                    - generic [ref=e125]: The Observatory
+                  - link "獨立開發者" [ref=e126] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%8D%A8%E7%AB%8B%E9%96%8B%E7%99%BC%E8%80%85/
+                    - generic [ref=e127]: 獨立開發者
+                  - link "App Store" [ref=e128] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/app-store/
+                    - generic [ref=e129]: App Store
+                  - link "甘特圖" [ref=e130] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%94%98%E7%89%B9%E5%9C%96/
+                    - generic [ref=e131]: 甘特圖
+                  - link "產品開發" [ref=e132] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC/
+                    - generic [ref=e133]: 產品開發
+                  - link "AI輔助開發" [ref=e134] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/ai%E8%BC%94%E5%8A%A9%E9%96%8B%E7%99%BC/
+                    - generic [ref=e135]: AI輔助開發
+                  - link "Side Project" [ref=e136] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/side-project/
+                    - generic [ref=e137]: Side Project
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - heading "應用程式" [level=2] [ref=e140]
+          - link "查看全部 →" [ref=e141] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/
+        - generic [ref=e142]:
+          - link "Python 點線面 Python 點線面 你的隨身 Python 離線家教" [ref=e143] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/python-dimensions/
+            - img "Python 點線面"
+            - text: Python 點線面 你的隨身 Python 離線家教
+          - link "甘特星球 甘特星球 以終為始，不被打擾的小宇宙" [ref=e144] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/gantt-planet/
+            - img "甘特星球"
+            - text: 甘特星球 以終為始，不被打擾的小宇宙
+          - link "回聲種子 回聲種子 用裝置端 AI 保存人生敘事與價值觀" [ref=e145] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/sown-echoes/
+            - img "回聲種子"
+            - text: 回聲種子 用裝置端 AI 保存人生敘事與價值觀
+          - link "紅樓夢模擬器 紅樓夢模擬器 把《紅樓夢》做成可互動的 AI 敘事模擬" [ref=e146] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/stonestory/
+            - img "紅樓夢模擬器"
+            - text: 紅樓夢模擬器 把《紅樓夢》做成可互動的 AI 敘事模擬
+          - link "英語N+1 英語N+1 總是適合你程度的英語學習" [ref=e147] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/english-n-plus-1/
+            - img "英語N+1"
+            - text: 英語N+1 總是適合你程度的英語學習
+          - link "原子在場 原子在場 防深偽錄影錄音存證工具" [ref=e148] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/atomic-presence/
+            - img "原子在場"
+            - text: 原子在場 防深偽錄影錄音存證工具
+          - link "假名私塾 假名私塾 專為中文母語者設計的五十音學習工具" [ref=e149] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/kana-juku/
+            - img "假名私塾"
+            - text: 假名私塾 專為中文母語者設計的五十音學習工具
+          - link "聽覺旅伴 聽覺旅伴 環境音、白噪音與文學朗讀" [ref=e150] [cursor=pointer]:
+            - /url: http://localhost:65516/PeachPitBoat/apps/auditory-companion/
+            - img "聽覺旅伴"
+            - text: 聽覺旅伴 環境音、白噪音與文學朗讀
+      - generic [ref=e151]:
+        - heading "最近的文章" [level=2] [ref=e152]
+        - generic [ref=e153]:
+          - article [ref=e154]:
+            - generic [ref=e156]:
+              - link "紅樓夢模擬器：熱力學與藝術選擇" [ref=e158] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/posts/stonestory_thermodynamics/
+                - heading "紅樓夢模擬器：熱力學與藝術選擇" [level=2] [ref=e159]
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - time [ref=e162]: 2026年3月29日
+                  - text: ·8 分鐘
+                - generic [ref=e163]:
+                  - link "The Workshop" [ref=e164] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/categories/the-workshop/
+                    - generic [ref=e165]: The Workshop
+                  - link "Thermodynamics" [ref=e166] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/thermodynamics/
+                    - generic [ref=e167]: Thermodynamics
+                  - link "熱力學" [ref=e168] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%86%B1%E5%8A%9B%E5%AD%B8/
+                    - generic [ref=e169]: 熱力學
+                  - link "紅樓夢" [ref=e170] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%B4%85%E6%A8%93%E5%A4%A2/
+                    - generic [ref=e171]: 紅樓夢
+                  - link "LLM" [ref=e172] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/llm/
+                    - generic [ref=e173]: LLM
+                  - link "規則引擎" [ref=e174] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E8%A6%8F%E5%89%87%E5%BC%95%E6%93%8E/
+                    - generic [ref=e175]: 規則引擎
+          - article [ref=e176]:
+            - generic [ref=e178]:
+              - link "紅樓夢模擬器：社會科學的聖杯，大語言讖判詞" [ref=e180] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/posts/stonestory_fate/
+                - heading "紅樓夢模擬器：社會科學的聖杯，大語言讖判詞" [level=2] [ref=e181]
+              - generic [ref=e182]:
+                - generic [ref=e183]:
+                  - time [ref=e184]: 2026年3月22日
+                  - text: ·7 分鐘
+                - generic [ref=e185]:
+                  - link "The Workshop" [ref=e186] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/categories/the-workshop/
+                    - generic [ref=e187]: The Workshop
+                  - link "本體論" [ref=e188] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E6%9C%AC%E9%AB%94%E8%AB%96/
+                    - generic [ref=e189]: 本體論
+                  - link "Ontology" [ref=e190] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/ontology/
+                    - generic [ref=e191]: Ontology
+                  - link "張愛玲" [ref=e192] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E5%BC%B5%E6%84%9B%E7%8E%B2/
+                    - generic [ref=e193]: 張愛玲
+                  - link "LLM" [ref=e194] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/llm/
+                    - generic [ref=e195]: LLM
+                  - link "紅樓夢" [ref=e196] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%B4%85%E6%A8%93%E5%A4%A2/
+                    - generic [ref=e197]: 紅樓夢
+                  - link "詩讖" [ref=e198] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E8%A9%A9%E8%AE%96/
+                    - generic [ref=e199]: 詩讖
+          - article [ref=e200]:
+            - generic [ref=e202]:
+              - link "甘特星球：個人開發者的生態位與考量" [ref=e204] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/posts/gantt-planet-intro/
+                - heading "甘特星球：個人開發者的生態位與考量" [level=2] [ref=e205]
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - time [ref=e208]: 2026年2月25日
+                  - text: ·5 分鐘
+                - generic [ref=e209]:
+                  - link "The Observatory" [ref=e210] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/categories/the-observatory/
+                    - generic [ref=e211]: The Observatory
+                  - link "獨立開發者" [ref=e212] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%8D%A8%E7%AB%8B%E9%96%8B%E7%99%BC%E8%80%85/
+                    - generic [ref=e213]: 獨立開發者
+                  - link "App Store" [ref=e214] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/app-store/
+                    - generic [ref=e215]: App Store
+                  - link "甘特圖" [ref=e216] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%94%98%E7%89%B9%E5%9C%96/
+                    - generic [ref=e217]: 甘特圖
+                  - link "產品開發" [ref=e218] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC/
+                    - generic [ref=e219]: 產品開發
+                  - link "AI輔助開發" [ref=e220] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/ai%E8%BC%94%E5%8A%A9%E9%96%8B%E7%99%BC/
+                    - generic [ref=e221]: AI輔助開發
+                  - link "Side Project" [ref=e222] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/side-project/
+                    - generic [ref=e223]: Side Project
+          - article [ref=e224]:
+            - generic [ref=e226]:
+              - link "假名私塾開發筆記(一)：從聊天機器人到AI代理" [ref=e228] [cursor=pointer]:
+                - /url: http://localhost:65516/PeachPitBoat/posts/kana_juku_dev_1/
+                - heading "假名私塾開發筆記(一)：從聊天機器人到AI代理" [level=2] [ref=e229]
+              - generic [ref=e230]:
+                - generic [ref=e231]:
+                  - time [ref=e232]: 2026年2月22日
+                  - text: ·5 分鐘
+                - generic [ref=e233]:
+                  - link "The Workshop" [ref=e234] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/categories/the-workshop/
+                    - generic [ref=e235]: The Workshop
+                  - link "IOS App" [ref=e236] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/ios-app/
+                    - generic [ref=e237]: IOS App
+                  - link "On-Device AI" [ref=e238] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/on-device-ai/
+                    - generic [ref=e239]: On-Device AI
+                  - link "手寫辨識" [ref=e240] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98/
+                    - generic [ref=e241]: 手寫辨識
+                  - link "Udemy" [ref=e242] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/udemy/
+                    - generic [ref=e243]: Udemy
+                  - link "Claude" [ref=e244] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/claude/
+                    - generic [ref=e245]: Claude
+                  - link "Claude Code" [ref=e246] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/claude-code/
+                    - generic [ref=e247]: Claude Code
+                  - link "Gemini" [ref=e248] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/gemini/
+                    - generic [ref=e249]: Gemini
+                  - link "Gemini Cli" [ref=e250] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/gemini-cli/
+                    - generic [ref=e251]: Gemini Cli
+                  - link "SwiftUI" [ref=e252] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/swiftui/
+                    - generic [ref=e253]: SwiftUI
+                  - link "UIKit" [ref=e254] [cursor=pointer]:
+                    - /url: http://localhost:65516/PeachPitBoat/tags/uikit/
+                    - generic [ref=e255]: UIKit
+        - link "顯示更多" [ref=e257] [cursor=pointer]:
+          - /url: http://localhost:65516/PeachPitBoat/posts/
+          - button "顯示更多" [ref=e258]
+      - link "捲動到頁頂" [ref=e260] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e261]:
+      - navigation [ref=e262]:
+        - list [ref=e263]:
+          - listitem [ref=e264]:
+            - link "支援" [ref=e265] [cursor=pointer]:
+              - /url: http://localhost:65516/PeachPitBoat/support/
+          - listitem [ref=e266]:
+            - link "隱私政策" [ref=e267] [cursor=pointer]:
+              - /url: http://localhost:65516/PeachPitBoat/privacy/
+      - paragraph [ref=e268]: AI 算力以後會被壟斷嗎？AI能力還會持續突破嗎？不管答案是什麼都要越早使用越好。這裡記錄一個文科背景系統管理員靠 AI 協助開發 iOS App。
+      - paragraph [ref=e270]: © 2026 QQder
+    - generic [ref=e272]:
+      - banner [ref=e273]:
+        - generic [ref=e274]:
+          - img [ref=e277]
+          - searchbox "搜尋" [ref=e279]
+        - button "關閉 (Esc)" [ref=e280]:
+          - generic:
+            - img
+      - generic:
+        - list

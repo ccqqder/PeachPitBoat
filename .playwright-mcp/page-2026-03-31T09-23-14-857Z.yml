@@ -1,0 +1,208 @@
+- generic [active] [ref=e1]:
+  - link "↓ 快轉到主要內容" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "核舟" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/
+    - navigation [ref=e8]:
+      - link "首頁" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/
+        - generic [ref=e10]: 首頁
+      - link "App 矩陣" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/apps/
+        - generic [ref=e12]: App 矩陣
+      - link "部落格" [ref=e13] [cursor=pointer]:
+        - /url: /OliverPitBoat/posts/
+        - generic [ref=e14]: 部落格
+      - link "關於" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/about/
+        - generic [ref=e16]: 關於
+      - button "繁體中文" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - generic "甘特星球：個人開發者的生態位與考量" [ref=e23]: 繁體中文
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - article [ref=e36]:
+        - generic [ref=e37]:
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - link "Posts" [ref=e40] [cursor=pointer]:
+                - /url: /OliverPitBoat/posts/
+              - text: /
+          - heading "甘特星球：個人開發者的生態位與考量" [level=1] [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - time [ref=e44]: 2026年2月25日
+              - generic [ref=e45]: ·
+              - generic "預計閱讀時間" [ref=e46]: 5 分鐘
+            - generic [ref=e47]:
+              - link "The Observatory" [ref=e48] [cursor=pointer]:
+                - /url: /OliverPitBoat/categories/the-observatory/
+                - generic [ref=e50]: The Observatory
+              - link "獨立開發者" [ref=e51] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/%E7%8D%A8%E7%AB%8B%E9%96%8B%E7%99%BC%E8%80%85/
+                - generic [ref=e53]: 獨立開發者
+              - link "App Store" [ref=e54] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/app-store/
+                - generic [ref=e56]: App Store
+              - link "甘特圖" [ref=e57] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/%E7%94%98%E7%89%B9%E5%9C%96/
+                - generic [ref=e59]: 甘特圖
+              - link "產品開發" [ref=e60] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC/
+                - generic [ref=e62]: 產品開發
+              - link "AI輔助開發" [ref=e63] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/ai%E8%BC%94%E5%8A%A9%E9%96%8B%E7%99%BC/
+                - generic [ref=e65]: AI輔助開發
+              - link "Side Project" [ref=e66] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/side-project/
+                - generic [ref=e68]: Side Project
+          - generic [ref=e69]:
+            - img "Oliver" [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]: 作者
+              - generic [ref=e73]: Oliver
+              - generic [ref=e74]: AI 算力以後會被壟斷嗎？AI能力還會持續突破嗎？不管答案是什麼都要越早使用越好。這裡記錄一個文科背景 Sysadmin 靠 AI 協助開發iOS App。
+              - generic [ref=e76]:
+                - link "Github" [ref=e77] [cursor=pointer]:
+                  - /url: https://github.com/ccqqder
+                  - img [ref=e80]
+                - link "Email" [ref=e82] [cursor=pointer]:
+                  - /url: mailto:qqder339@gmail.com
+                  - img [ref=e85]
+        - generic [ref=e87]:
+          - group [ref=e90]:
+            - generic "目錄" [ref=e91] [cursor=pointer]
+          - generic [ref=e93]:
+            - figure [ref=e94]
+            - heading "前言 定位點" [level=1] [ref=e95]:
+              - text: 前言
+              - link "定位點" [ref=e97] [cursor=pointer]:
+                - /url: "#%e5%89%8d%e8%a8%80"
+                - text: "#"
+            - paragraph [ref=e98]:
+              - text: "本篇講一下獨立開發者的市場、資源、生態、開發過程等面向。 為了強行宣傳所以私心結合甘特星球當作範例:"
+              - link "URL" [ref=e99] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/%E7%94%98%E7%89%B9%E6%98%9F%E7%90%83/id6757654373
+              - text: 。 先承認這些只是我的side project，跟靠這個吃飯的人壓力不同，所以只就調研的方式討論。
+            - heading "發想與卡住 定位點" [level=2] [ref=e100]:
+              - text: 發想與卡住
+              - link "定位點" [ref=e102] [cursor=pointer]:
+                - /url: "#%e7%99%bc%e6%83%b3%e8%88%87%e5%8d%a1%e4%bd%8f"
+                - text: "#"
+            - paragraph [ref=e103]: 甘特星球的發想是，甘特圖不管是軟體、app、網頁免費的都很難用， 看起來堪用的都要收費，想說自己做一個甘特圖的app。
+            - paragraph [ref=e104]: "做沒多久就發現事情沒那麼簡單:"
+            - list [ref=e105]:
+              - listitem [ref=e106]: 手機要看類似試算表的甘特圖實在太擠了
+              - listitem [ref=e107]: 正經的甘特圖需要連結很多資源，比如email、通訊錄、會議室等等
+            - paragraph [ref=e108]: 要解決這兩點的成本都很高，要花大量的時間微調UI，並且預設一些理想的使用流程，有些流程無法被整合的需要捨棄;
+            - paragraph [ref=e109]: 整合資源的話需要登入所有常用的主流帳號，要處理的接口跟驗證太多，並且日後需要維護。
+            - paragraph [ref=e110]: 到這裡因為成本卡住了，在規模不經濟的情況下幾乎是必然。
+            - heading "轉彎再轉彎 定位點" [level=2] [ref=e111]:
+              - text: 轉彎再轉彎
+              - link "定位點" [ref=e113] [cursor=pointer]:
+                - /url: "#%e8%bd%89%e5%bd%8e%e5%86%8d%e8%bd%89%e5%bd%8e"
+                - text: "#"
+            - paragraph [ref=e114]: 這種時候我想說把每個因素都往外延伸一兩步，能不能找到一個能夠成立的交集。
+            - paragraph [ref=e115]: 身為一個興趣使然的開發者，所謂的成立包括極低的成本，加上即使微小但明確的價值。
+            - paragraph [ref=e116]: AI幫我做到前者，極低的成本;
+            - paragraph [ref=e117]: 後者所謂的價值主要還是自己定義，跟AI聊也可以聊出一點東西。
+            - paragraph [ref=e118]: 對我來說主要是自己會想要做的，至少自己用得到看得開心，再來是如果沒人做過、沒有免費版、有明顯差異點，也是一種價值。
+            - paragraph [ref=e119]: 此時我心中想說有沒有什麼是甘特圖，但又不是甘特圖的東西，
+            - paragraph [ref=e120]: 最終一個畫面再我腦中浮現了，
+            - paragraph [ref=e121]: 我想起來我使用甘特圖的時候會把更重要的項目往下排，
+            - paragraph [ref=e122]: 最下面的項目通常是整個專案最終完成的大條件，或者是代表整個專案本身。
+            - paragraph [ref=e123]: 如果那個甘特圖最下面的項目，還要有其他、更重要的項目，會是什麼？
+            - paragraph [ref=e124]: 其實有很多更重要的，但都是跟工作無關的，關於我自己，關於人生的。
+            - paragraph [ref=e125]:
+              - text: 所以這時我確立了，不是做一般商務用的甘特圖，而是
+              - strong [ref=e126]: 人生甘特圖
+              - text: 。
+            - figure [ref=e127]
+            - heading "下一步 定位點" [level=2] [ref=e128]:
+              - text: 下一步
+              - link "定位點" [ref=e130] [cursor=pointer]:
+                - /url: "#%e4%b8%8b%e4%b8%80%e6%ad%a5"
+                - text: "#"
+            - paragraph [ref=e131]: 所以我決定做不同於一般商務情境的甘特圖，
+            - paragraph [ref=e132]: 這樣可以順理成章不用再連結線上的資源，
+            - paragraph [ref=e133]: 因為現在只跟使用者自己有關。
+            - paragraph [ref=e134]: 至此我多走了一步，讓這專案暫時活了下來，但是他有辦法通往足夠多的元素嗎？
+            - paragraph [ref=e135]: 我想了一下關於自我管理、人生重要不緊急的事項，都是有規律跟頻率的。
+            - paragraph [ref=e136]: 比如健康很重要，所以公司每年會健檢;家人很重要，所以會在頻率變得太久之前跟家人見面。
+            - paragraph [ref=e137]: 結合甘特圖本身的特性，在需要做的時間範疇內，都會在當天重疊;
+            - paragraph [ref=e138]: 那如果考慮一生的長度，每個項目都是今天潛在的項目，如此我可以將所有內容集中在UI的中線。
+            - paragraph [ref=e139]: 如此解決了UI擁擠的問題，並呈現了我覺得有價值的價值觀。
+            - heading "完整性 定位點" [level=2] [ref=e140]:
+              - text: 完整性
+              - link "定位點" [ref=e142] [cursor=pointer]:
+                - /url: "#%e5%ae%8c%e6%95%b4%e6%80%a7"
+                - text: "#"
+            - paragraph [ref=e143]: app store審核有一個大前提是，不能只是做純文字網頁也能做的功能，
+            - paragraph [ref=e144]: 比如簡單的待辦清單可能就不成立，所以我必須讓這個app不只是一個試算表，否則其實google sheet可以做一樣的事情。
+            - paragraph [ref=e145]: 這個試算表由上而下的視覺感受，讓我直觀的想到跟往下挖土一樣，每天只做最必要不得不做的事情，只是做表層，一個成語人浮於事就是講這個狀態。
+            - paragraph [ref=e146]: 越重要的項目越底層這個比喻，我想要把他更視覺化更固化，很直觀的就想到往地層挖掘、挖礦這個動作。
+            - paragraph [ref=e147]: 這時又要考慮如何實現? 將試算表的每一行稍微彎曲嗎? 加一點變形透視？
+            - paragraph [ref=e148]: 結合這個人生甘特圖，孤獨而自省的那種情境。
+            - paragraph [ref=e149]: 我想到的畫面是：在地殼表面，一個人孤獨的挖掘。這不就是在那個金頭髮，為玫瑰澆水、豢養狐狸的那個少年嗎？
+            - paragraph [ref=e150]: 於是我做了3D立體版本的甘特圖，並且用礦坑跟寶石作為待辦項目的視覺化。
+            - paragraph [ref=e151]: 更激進的做法是，我可以只保留星球版本的甘特圖，但考量到實用性、審核難度、理解難度，還是同時保留。
+            - figure
+            - heading "還缺一張書桌 定位點" [level=2] [ref=e152]:
+              - text: 還缺一張書桌
+              - link "定位點" [ref=e154] [cursor=pointer]:
+                - /url: "#%e9%82%84%e7%bc%ba%e4%b8%80%e5%bc%b5%e6%9b%b8%e6%a1%8c"
+                - text: "#"
+            - paragraph [ref=e155]: 還在唸書的時候，我有很多正襟危坐在書桌前獨處的時候，除了讀書，就是寫字。
+            - paragraph [ref=e156]: 去思考跟使用這樣的人生甘特圖，彷彿把我帶回那張我已經被丟掉的書桌。
+            - paragraph [ref=e157]: 如果我完成了三個月或一年才會做一次的事情，甚至是長期的目標，
+            - paragraph [ref=e158]: 我應該會很想寫日記吧，或是想寫信給自己的好朋友。
+            - paragraph [ref=e159]: 我發覺這個甘特圖還缺乏最後的情緒出口，但如果是做分享到社群網站的功能，使用者無法足夠誠實。
+            - paragraph [ref=e160]: 另一個是app使用者互相寄信的功能，現在或永遠不會有足夠的裝機量，或是連安卓版本也上架，至少第一個版本還沒有必要性。
+            - paragraph [ref=e161]: 最後想到比較自洽的功能就是，最萬用的聊天機器人，
+            - paragraph [ref=e162]: 丟給聊天機器人很多經典名著，讓他扮演樹洞的角色，給予使用者一些回饋。
+            - heading "最後 定位點" [level=2] [ref=e163]:
+              - text: 最後
+              - link "定位點" [ref=e165] [cursor=pointer]:
+                - /url: "#%e6%9c%80%e5%be%8c"
+                - text: "#"
+            - paragraph [ref=e166]: 以上就是這個app背後的產品開發跟管理，
+            - paragraph [ref=e167]: 看起來只是改來改去把它做完了，實際上很多棄案很多功能都被否決沒有提到。
+            - paragraph [ref=e168]: 除了讓有興趣的朋友知道開發產品會考量的一些面向，
+            - paragraph [ref=e169]:
+              - text: 我最後想強調以及回答標題，個人開發者的生態位與考量就是：
+              - strong [ref=e170]: 爽啦!
+            - paragraph [ref=e171]: 應該會有不少人覺得這個東西很小眾，或者跟自己審美或價值關不同。
+            - paragraph [ref=e172]: 但即使是這樣，只要有一些時間，藉由AI的幫助就可以把你想要，但是還不存在的東西做出來。
+            - paragraph [ref=e173]: 你可以跟公司老闆一樣，由你自己決定什麼是有價值的，值不值得做;
+            - paragraph [ref=e174]: 跟美編一樣用你喜歡的格式、顏色、字體、圖片;
+            - paragraph [ref=e175]: 跟PM一樣決定要怎麼寫，功能要做到多完整;
+            - paragraph [ref=e176]: AI會越來越強，即使現在還不行，在可預期的未來，你也能夠享受這些樂趣。
+            - paragraph [ref=e177]: appstore 現在就是新時代的無名小站，每個人都可以發表自己的文章。
+            - paragraph [ref=e178]: 如果有興趣可以follow此部落格，日後會繼續發表appstore上架的各種真實經驗跟心得。
+        - generic [ref=e180]:
+          - separator [ref=e181]
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - link "← 假名私塾開發筆記(一)：從聊天機器人到AI代理" [ref=e184] [cursor=pointer]:
+                - /url: /OliverPitBoat/posts/kana_juku_dev_1/
+                - generic [ref=e185]:
+                  - generic [ref=e186]: ←
+                  - text: 假名私塾開發筆記(一)：從聊天機器人到AI代理
+              - time [ref=e188]: 2026年2月22日
+            - generic [ref=e189]:
+              - link "紅樓夢模擬器：社會科學的聖杯，大語言讖判詞 →" [ref=e190] [cursor=pointer]:
+                - /url: /OliverPitBoat/posts/stonestory_fate/
+                - generic [ref=e191]:
+                  - text: 紅樓夢模擬器：社會科學的聖杯，大語言讖判詞
+                  - generic [ref=e192]: →
+              - time [ref=e194]: 2026年3月22日
+      - link "捲動到頁頂" [ref=e196] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e197]:
+      - paragraph [ref=e199]: © 2026 Oliver

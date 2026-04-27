@@ -1,0 +1,391 @@
+- generic [active] [ref=e1]:
+  - link "↓ Skip to main content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "The Miniature Boat" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/en/
+    - navigation [ref=e8]:
+      - link "Home" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/en/
+        - generic [ref=e10]: Home
+      - link "Apps" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/en/apps/
+        - generic [ref=e12]: Apps
+      - link "Blog" [ref=e13] [cursor=pointer]:
+        - /url: ""
+        - generic [ref=e14]: Blog
+      - link "About" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/en/about/
+        - generic [ref=e16]: About
+      - button "EN" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - 'generic "Dream of the Red Chamber Simulator: Thermodynamics and Artistic Choice" [ref=e23]': EN
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - article [ref=e36]:
+        - generic [ref=e37]:
+          - list
+          - 'heading "Dream of the Red Chamber Simulator: Thermodynamics and Artistic Choice" [level=1] [ref=e38]'
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - time [ref=e41]: 29 March 2026
+              - generic [ref=e42]: ·
+              - generic "Reading time" [ref=e43]: 6 mins
+            - generic [ref=e44]:
+              - link "The Workshop" [ref=e45] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/categories/the-workshop/
+                - generic [ref=e47]: The Workshop
+              - link "Thermodynamics" [ref=e48] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/thermodynamics/
+                - generic [ref=e50]: Thermodynamics
+              - link "Dream of the Red Chamber" [ref=e51] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/dream-of-the-red-chamber/
+                - generic [ref=e53]: Dream of the Red Chamber
+              - link "LLM" [ref=e54] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/llm/
+                - generic [ref=e56]: LLM
+              - link "Rule Engine" [ref=e57] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/rule-engine/
+                - generic [ref=e59]: Rule Engine
+              - link "Literary Simulation" [ref=e60] [cursor=pointer]:
+                - /url: /OliverPitBoat/en/tags/literary-simulation/
+                - generic [ref=e62]: Literary Simulation
+          - generic [ref=e63]:
+            - img "Oliver" [ref=e64]
+            - generic [ref=e65]:
+              - generic [ref=e66]: Author
+              - generic [ref=e67]: Oliver
+              - generic [ref=e68]: Will AI compute be monopolized? Will AI capabilities keep breaking through? Regardless of the answer, the best time to start is now. This is a record of a humanities-background Sysadmin developing iOS apps with the assistance of AI.
+              - generic [ref=e70]:
+                - link "Github" [ref=e71] [cursor=pointer]:
+                  - /url: https://github.com/ccqqder
+                  - img [ref=e74]
+                - link "Email" [ref=e76] [cursor=pointer]:
+                  - /url: mailto:qqder339@gmail.com
+                  - img [ref=e79]
+        - generic [ref=e81]:
+          - group [ref=e84]:
+            - generic "Table of Contents" [ref=e85] [cursor=pointer]
+          - generic [ref=e87]:
+            - paragraph [ref=e88]:
+              - text: "App URL:"
+              - link "LINK" [ref=e89] [cursor=pointer]:
+                - /url: https://apps.apple.com/tw/app/%E7%B4%85%E6%A8%93%E5%A4%A2%E6%A8%A1%E6%93%AC%E5%99%A8/id6759855416
+            - heading "Preface Anchor" [level=2] [ref=e90]:
+              - text: Preface
+              - link "Anchor" [ref=e92] [cursor=pointer]:
+                - /url: "#preface"
+                - text: "#"
+            - paragraph [ref=e93]: The key point from the previous installment
+            - paragraph [ref=e94]: was to regard text as fundamentally symbolic –
+            - paragraph [ref=e95]: astronomy, hydrology, the humanities… all the “wen” (文, pattern/text) of heaven, earth, and humankind.
+            - paragraph [ref=e96]: Text maps the world and thought in a cost-effective way,
+            - paragraph [ref=e97]: becoming our primary tool for understanding and interfacing with objective reality.
+            - paragraph [ref=e98]: Once you grasp this, you realize that
+            - paragraph [ref=e99]: although LLMs (Large Language Models) are essentially just next-token predictors,
+            - paragraph [ref=e100]: once their capability reaches a certain level, they become nuclear-grade instruments of national importance.
+            - paragraph [ref=e101]: Their significance made me want to verify their capabilities
+            - paragraph [ref=e102]: and to do so repeatedly as they improve over time.
+            - paragraph [ref=e103]:
+              - text: A near-perfect benchmark for this is
+              - emphasis [ref=e104]: Dream of the Red Chamber
+              - text: (紅樓夢,
+              - emphasis [ref=e105]: Hong Lou Meng
+              - text: ).
+            - paragraph [ref=e106]: Suppose there existed an omniscient, omnipotent LLM –
+            - paragraph [ref=e107]:
+              - text: it could take Cao Xueqin’s original first 80 chapters of
+              - emphasis [ref=e108]: Dream of the Red Chamber
+              - text: as input and output the subsequent chapters.
+            - paragraph [ref=e109]: But because LLM training data is limited,
+            - paragraph [ref=e110]: it is like a Sudoku puzzle with too few given numbers – the answer cannot be determined with certainty.
+            - paragraph [ref=e111]: What current LLMs can do is produce at very high throughput within the scope of what they understand.
+            - paragraph [ref=e112]:
+              - text: What the
+              - emphasis [ref=e113]: Dream of the Red Chamber Simulator
+              - text: aims to do is, with such productivity at hand,
+            - paragraph [ref=e114]: use traditional structured methods to rapidly produce and accumulate results with minimal human effort.
+            - heading "Assumptions Anchor" [level=2] [ref=e115]:
+              - text: Assumptions
+              - link "Anchor" [ref=e117] [cursor=pointer]:
+                - /url: "#assumptions"
+                - text: "#"
+            - paragraph [ref=e118]: We need some assumptions, biases, and theories to make the task of predicting the ending sufficiently feasible and mechanical.
+            - paragraph [ref=e119]: When it comes to accurate prediction, my intuition goes to classical physics – specifically thermodynamics.
+            - paragraph [ref=e120]: In a closed system, if we specify the initial conditions and the governing laws,
+            - paragraph [ref=e121]: the evolution of a thermodynamic system is predictable and deterministic.
+            - paragraph [ref=e122]: Another assumption is that LLM capabilities will keep improving,
+            - paragraph [ref=e123]: but in the foreseeable future we will not gain additional training data from the Qing Dynasty or from Cao Xueqin himself.
+            - paragraph [ref=e124]: Therefore, we can establish a structured workflow that both current and future LLMs can execute.
+            - heading "Initial Conditions Anchor" [level=3] [ref=e125]:
+              - text: Initial Conditions
+              - link "Anchor" [ref=e127] [cursor=pointer]:
+                - /url: "#initial-conditions"
+                - text: "#"
+            - paragraph [ref=e128]: The initial conditions are primarily data extracted from the original novel.
+            - paragraph [ref=e129]: Now we use LLMs to perform what was previously highly labor-intensive work.
+            - paragraph [ref=e130]: In the past, human labor costs were too high, and throwing more people at the problem could not compress the timeline.
+            - paragraph [ref=e131]: If you got halfway through and wanted to tweak the extraction rules and start over, it was simply impractical.
+            - paragraph [ref=e132]: Time and cost are no longer obstacles; extraction quality now depends on model capability.
+            - paragraph [ref=e133]: "For example, I extracted:"
+            - paragraph [ref=e134]: "- Key character profiles, personality dossiers, family genealogies;"
+            - paragraph [ref=e135]: "- Per-chapter snapshots of each character’s economic, social, emotional, health, and interpersonal states across all 120 chapters;"
+            - paragraph [ref=e136]: "- A basic spatial map of the Jia (賈) estate with spatial metadata;"
+            - paragraph [ref=e137]: "- All dialogue records, poetry corpora…"
+            - paragraph [ref=e138]: The approach was to start with broad, not-yet-rigorous extraction that at least achieves high coverage – ensuring every piece of text is classified into some category.
+            - heading "Governing Laws Anchor" [level=3] [ref=e139]:
+              - text: Governing Laws
+              - link "Anchor" [ref=e141] [cursor=pointer]:
+                - /url: "#governing-laws"
+                - text: "#"
+            - paragraph [ref=e142]: "I divide the governing laws into two types by my own judgment: fundamental world rules and the author’s artistic will."
+            - paragraph [ref=e143]: This is admittedly arbitrary, but without making some such judgment the work cannot proceed at all.
+            - paragraph [ref=e144]: "World rules include but are not limited to:"
+            - paragraph [ref=e145]: "- Society: class hierarchy, power dynamics, master-servant relationships, marriage;"
+            - paragraph [ref=e146]: "- Economy: income and expenditure, debt, risk of property confiscation;"
+            - paragraph [ref=e147]: "- Culture: Confucian propriety, festivals, feudal values;"
+            - paragraph [ref=e148]: "- Psychology: character emotions, personality-driven behavior, internal conflict;"
+            - paragraph [ref=e149]: "- Politics: imperial favor, court dynamics, external forces…"
+            - paragraph [ref=e150]:
+              - text: The artistic will is precisely what makes
+              - emphasis [ref=e151]: Dream of the Red Chamber
+              - text: – apart from the fact that it lacks a definitive ending – an ideal prediction target.
+            - paragraph [ref=e152]: Cao Xueqin embedded hints about the characters’ fates throughout the novel, from the very beginning.
+            - paragraph [ref=e153]: "The most iconic example is the 判詞 (prophetic verses / judgment poems) of the 十二金釵 (Twelve Beauties of Jinling), which explicitly foreshadow the fates of the female lead and deuteragonist:"
+            - heading "> 可嘆停機德，堪憐詠絮才。玉帶林中掛，金簪雪裡埋。 Anchor" [level=3] [ref=e154]:
+              - text: "> 可嘆停機德，堪憐詠絮才。玉帶林中掛，金簪雪裡埋。"
+              - link "Anchor" [ref=e156] [cursor=pointer]:
+                - /url: "#-%e5%8f%af%e5%98%86%e5%81%9c%e6%a9%9f%e5%be%b7%e5%a0%aa%e6%86%90%e8%a9%a0%e7%b5%ae%e6%89%8d%e7%8e%89%e5%b8%b6%e6%9e%97%e4%b8%ad%e6%8e%9b%e9%87%91%e7%b0%aa%e9%9b%aa%e8%a3%a1%e5%9f%8b"
+                - text: "#"
+            - paragraph [ref=e157]:
+              - emphasis [ref=e158]: (How lamentable, her virtue of halting the loom; how pitiable, her talent of chanting the willow catkins. A jade belt hangs in the forest; a golden hairpin lies buried in the snow.)
+            - heading "Rule Engine Anchor" [level=3] [ref=e159]:
+              - text: Rule Engine
+              - link "Anchor" [ref=e161] [cursor=pointer]:
+                - /url: "#rule-engine"
+                - text: "#"
+            - paragraph [ref=e162]: Given the initial conditions and governing laws, how do we apply them?
+            - paragraph [ref=e163]: The more ideal approach would be to build a 3D physics engine similar to a game engine, where each character possesses only the information they would know, and let an AI chatbot role-play each character like an actor performing a part.
+            - paragraph [ref=e164]: But first, the cost would be too high and would only increase spectacle – we would not be introducing new information, and the 3D engine would not produce new results.
+            - paragraph [ref=e165]: Second, we are not running a wind-tunnel fluid dynamics simulation; we are trying to guess what Cao Xueqin had in mind. Staying at the textual level is sufficient for now.
+            - paragraph [ref=e166]: Based on the previously extracted data, we derive a set of computational subjects and rules.
+            - paragraph [ref=e167]: In practice, this is the traditional process of evaluating evidence, confidence, and additive/subtractive adjustments for whether an event occurs –
+            - paragraph [ref=e168]: made systematic, repeatable, modifiable, and exhaustively brute-forced.
+            - paragraph [ref=e169]: "The simulation steps for each round are:"
+            - paragraph [ref=e170]: 1. Process delayed effects – check pending_effects; apply any that have reached their due chapter.
+            - paragraph [ref=e171]: 2. Evaluate all laws – check each law’s premises to see if all are satisfied (skip those with confidence < 0.3).
+            - paragraph [ref=e172]: 3. Conflict resolution – simultaneously triggered laws may contradict each other; adjudicate which one wins.
+            - paragraph [ref=e173]: 4. Apply effects – those with a delay go into the queue; those without directly modify state.
+            - paragraph [ref=e174]: 5. Snapshot – compress the current state into a numerical vector.
+            - paragraph [ref=e175]: 6. chapter += 1
+            - paragraph [ref=e176]: A complete example – the death of Lin Daiyu (林黛玉) in Chapter 98 – is appended at the end of this article.
+            - heading "Workflow Summary Anchor" [level=3] [ref=e177]:
+              - text: Workflow Summary
+              - link "Anchor" [ref=e179] [cursor=pointer]:
+                - /url: "#workflow-summary"
+                - text: "#"
+            - paragraph [ref=e180]: Among the several components in the above workflow,
+            - paragraph [ref=e181]:
+              - text: whether the
+              - strong [ref=e182]: extracted data
+              - text: is academically rigorous, whether the
+              - strong [ref=e183]: rules
+              - text: are reasonable and applicable, whether the
+              - strong [ref=e184]: simulation steps
+              - text: are sound –
+            - paragraph [ref=e185]: none of this is critically important, because each part can be improved and regenerated independently.
+            - paragraph [ref=e186]: From a software engineering perspective, my goal is to make this engine work well at the interface level,
+            - heading "and continuously refine prediction results as more information is incorporated and the methodology improves. Anchor" [level=3] [ref=e187]:
+              - text: and continuously refine prediction results as more information is incorporated and the methodology improves.
+              - link "Anchor" [ref=e189] [cursor=pointer]:
+                - /url: "#and-continuously-refine-prediction-results-as-more-information-is-incorporated-and-the-methodology-improves"
+                - text: "#"
+            - 'heading "Current Results: Objective vs. Subjective Parallel Comparison Anchor" [level=3] [ref=e190]':
+              - text: "Current Results: Objective vs. Subjective Parallel Comparison"
+              - link "Anchor" [ref=e192] [cursor=pointer]:
+                - /url: "#current-results-objective-vs-subjective-parallel-comparison"
+                - text: "#"
+            - paragraph [ref=e193]: "Here I must introduce another self-imposed methodology to enable structured comparison:"
+            - paragraph [ref=e194]: dividing the inference engine’s layers into two main parts – objective conditions and artistic choice.
+            - paragraph
+            - figure
+            - figure
+            - paragraph
+            - heading "Objective Conditions Anchor" [level=4] [ref=e195]:
+              - text: Objective Conditions
+              - link "Anchor" [ref=e197] [cursor=pointer]:
+                - /url: "#objective-conditions"
+                - text: "#"
+            - paragraph [ref=e198]: The historical backdrop of the era in which the novel was written – its characters, settings, feudal system, economy, and so on – constitutes the first layer of objective conditions. This can delimit the entire scope of what the story is capable of containing. We have already extracted some objective laws based on period-appropriate historical context and academic literature.
+            - paragraph [ref=e199]: Conversely, anything that actually existed in that era could, in theory, appear and influence the story.
+            - paragraph [ref=e200]: For instance, the novel already features some Western modern objects such as self-striking clocks and pocket watches. What if Western firearms appeared and became a significant plot driver?
+            - paragraph [ref=e201]: Exhaustively exploring such first-layer objective possibilities is a direction for future work, and might achieve an effect that is “within reason yet beyond expectation.”
+            - paragraph [ref=e202]: "#### Artistic Choice"
+            - paragraph [ref=e203]: The second layer is the author Cao Xueqin’s (曹雪芹) cultivation of this fictional world.
+            - paragraph [ref=e204]: Many characters and the overall trajectory of the family carry a heavy fatalistic coloring.
+            - paragraph [ref=e205]: The novel’s countless poems and metaphors – as well as marginal annotations by a friend who reportedly read the ending – hint at this.
+            - paragraph [ref=e206]: Therefore, we can use the author’s background and life experiences
+            - paragraph [ref=e207]: to infer what fates he chose for his characters,
+            - paragraph [ref=e208]: and thereby reveal the values he truly wished to express.
+            - heading "Cross-Comparison Anchor" [level=4] [ref=e209]:
+              - text: Cross-Comparison
+              - link "Anchor" [ref=e211] [cursor=pointer]:
+                - /url: "#cross-comparison"
+                - text: "#"
+            - paragraph [ref=e212]: From here, we can treat the Gao E (高鶚) continuation as the work of the most advanced “player” to date.
+            - paragraph [ref=e213]: "What he did is essentially the same thing I am doing now:"
+            - paragraph [ref=e214]: based on the characters and setting in the novel, attempting to divine Cao Xueqin’s artistic choices as closely as possible.
+            - paragraph [ref=e215]: Moreover, Gao E completed the existing ending, which greatly increased the novel’s circulation, and his version has been widely accepted – so we place his version in a parallel position for comparison.
+            - heading "Realistic Simulation Anchor" [level=4] [ref=e216]:
+              - text: Realistic Simulation
+              - link "Anchor" [ref=e218] [cursor=pointer]:
+                - /url: "#realistic-simulation"
+                - text: "#"
+            - paragraph [ref=e219]: What if we stripped away all artistic treatment and retained only objective laws, letting the story evolve naturally?
+            - paragraph [ref=e220]: The result is that most plot events would not occur within the span of 120 chapters. The narrative would be less dramatic and contain fewer tragedies.
+            - heading "Methods for Improving Prediction Quality Anchor" [level=2] [ref=e221]:
+              - text: Methods for Improving Prediction Quality
+              - link "Anchor" [ref=e223] [cursor=pointer]:
+                - /url: "#methods-for-improving-prediction-quality"
+                - text: "#"
+            - paragraph [ref=e224]: "- Re-extract text when LLM capabilities improve"
+            - paragraph [ref=e225]: "- More human intervention for fine-tuning and experimenting with different prompts"
+            - paragraph [ref=e226]:
+              - text: "- Enlist scholars of Redology (紅學, the academic study of"
+              - emphasis [ref=e227]: Dream of the Red Chamber
+              - text: ) or historians to assist with data cleaning and engine logic adjustments
+            - paragraph [ref=e228]: "- Incorporate newly discovered or previously undigitized materials (if any) into training"
+            - paragraph [ref=e229]: "- Experiment with alternative methodologies"
+            - paragraph [ref=e230]: "- Establish a fixed workflow and let AI agents continuously fine-tune and produce many versions; since there is no clear termination criterion, quality can only be judged manually"
+            - heading "Conclusion Anchor" [level=2] [ref=e231]:
+              - text: Conclusion
+              - link "Anchor" [ref=e233] [cursor=pointer]:
+                - /url: "#conclusion"
+                - text: "#"
+            - paragraph [ref=e234]:
+              - text: Due to the constraints of existing and pre-trained data, and the strong internal consistency of
+              - emphasis [ref=e235]: Dream of the Red Chamber
+              - text: as a work of art,
+            - paragraph [ref=e236]: deus ex machina predictions are unlikely to emerge. What we see instead are internal comparative differences –
+            - paragraph [ref=e237]: for example, the confiscation and decline of the Jia family is fated to happen regardless; the difference lies only in timing.
+            - heading "A Final Reflection Anchor" [level=3] [ref=e238]:
+              - text: A Final Reflection
+              - link "Anchor" [ref=e240] [cursor=pointer]:
+                - /url: "#a-final-reflection"
+                - text: "#"
+            - paragraph [ref=e241]: This kind of work would originally have required at least one to two years and at least one full-time person to complete.
+            - paragraph [ref=e242]: Now I can use my after-work hours to play a different professional role – which also satisfies a regret from when financial pressure forced me to switch fields years ago.
+            - paragraph [ref=e243]:
+              - text: I hope that sharing the thinking process behind building the
+              - emphasis [ref=e244]: Dream of the Red Chamber Simulator
+              - text: is helpful to you,
+            - paragraph [ref=e245]: and I look forward to the social sciences – not just computer science and the natural sciences – benefiting from the rapid advances in AI.
+            - separator [ref=e246]
+            - 'heading "Appendix: Full Simulation Process Example Anchor" [level=3] [ref=e247]':
+              - text: "Appendix: Full Simulation Process Example"
+              - link "Anchor" [ref=e249] [cursor=pointer]:
+                - /url: "#appendix-full-simulation-process-example"
+                - text: "#"
+            - paragraph [ref=e250]: "Chapters 97-98, “The Death of Lin Daiyu” (黛玉之死) – a complete walk-through of all six steps (the following content was generated by AI):"
+            - paragraph [ref=e251]: "-–"
+            - paragraph [ref=e252]: "Example: Chapter 97 – The Switcheroo Plot (掉包計) -> Burning Manuscripts and Severing Ties (焚稿斷情) -> Daiyu’s Death"
+            - paragraph [ref=e253]: Background State (entering Chapter 97)
+            - paragraph [ref=e254]: "After more than a dozen chapters of cumulative decline, Lin Daiyu’s state is:"
+            - paragraph [ref=e255]: "agent.林黛玉: health=0.12, mood=0.08, isolation=0.72, tragedy_risk=0.95, alive=True"
+            - paragraph [ref=e256]: "agent.賈寶玉: monk_tendency=0.35, mood=0.20"
+            - paragraph [ref=e257]: "economy: debt_ratio=0.65"
+            - paragraph [ref=e258]: "politics: family_decides_marriage=True"
+            - paragraph [ref=e259]: "relation.賈寶玉::林黛玉: marriage_probability=0.15"
+            - paragraph [ref=e260]: "relation.賈寶玉::薛寶釵: marriage_probability=0.72"
+            - paragraph [ref=e261]: "Why did Daiyu’s health drop from an initial 0.35 to 0.12? Because this law has been silently triggering every chapter:"
+            - paragraph [ref=e262]: ▎ PSY_E1_DAIYU_DECAY “Daiyu’s health slowly decays”
+            - paragraph [ref=e263]: "▎ Premise: health > 0.0 AND isolation > 0.3 AND alive = True -> Effect: health sub 0.017"
+            - paragraph [ref=e264]: ▎ At -0.017 per chapter, over a dozen chapters this amounts to a lethal chronic drain.
+            - paragraph [ref=e265]: "-–"
+            - paragraph [ref=e266]: ① Process Delayed Effects
+            - paragraph [ref=e267]: "Check the pending_effects queue. Suppose the following was triggered in Chapter 13:"
+            - paragraph [ref=e268]: "▎ FATE_010 “Qin Keqing’s deathbed dream: the peak foretells the fall” delay_chapters: 20"
+            - paragraph [ref=e269]: Its effect, economy.spending_pressure add 0.1, already came due and was executed in Chapter 33. The queue is now empty. Skip.
+            - paragraph [ref=e270]: "-–"
+            - paragraph [ref=e271]: ② Evaluate All 369 Laws
+            - paragraph [ref=e272]: "The engine scans each law in sequence. The key laws that trigger this chapter:"
+            - paragraph [ref=e273]: "Law A – VAR_MARRIAGE_SWAP “The Switcheroo: Secretly marrying Baochai instead” conf=0.95"
+            - paragraph [ref=e274]: "Premise check:"
+            - code [ref=e278]:
+              - generic [ref=e280]: agent.林黛玉.health \< 0.15 -> 0.12 \< 0.15 ✅
+              - generic [ref=e283]: agent.林黛玉.alive == True -> True ✅
+              - generic [ref=e286]: politics.family\_decides\_marriage -> True ✅
+              - generic [ref=e289]: relation.寶玉::黛玉.marriage\_probability \< 0.5 -> 0.15 \< 0.5 ✅
+              - generic [ref=e292]: All passed -> 🔥 Triggered!
+            - paragraph [ref=e293]: Law B – PSY_E1_DAIYU_DECAY “Daiyu’s health decay” conf=0.9
+            - code [ref=e297]:
+              - generic [ref=e299]: health > 0.0 -> 0.12 > 0 ✅
+              - generic [ref=e302]: isolation > 0.3 -> 0.72 > 0.3 ✅
+              - generic [ref=e305]: alive == True ✅
+              - generic [ref=e308]: "-> 🔥 Triggered!"
+            - paragraph [ref=e309]: "Law C – VAR_MARRIAGE_DAIYU “The Stone-and-Wood Bond: Baoyu and Daiyu marry” conf=0.9"
+            - code [ref=e313]:
+              - generic [ref=e315]: relation.寶玉::黛玉.marriage\_probability > 0.7 -> 0.15 > 0.7 ❌
+              - generic [ref=e318]: "-> Not triggered (Baoyu-Daiyu marriage probability too low)"
+            - paragraph [ref=e319]: This chapter also simultaneously triggers over a dozen other laws (economic decline, political risk, etc.), but the above are the ones directly relevant to Daiyu.
+            - paragraph [ref=e320]: "-–"
+            - paragraph [ref=e321]: ③ Conflict Resolution
+            - paragraph [ref=e322]: VAR_MARRIAGE_SWAP, VAR_MARRIAGE_NORMAL_BAOCHAI, and VAR_MARRIAGE_DAIYU belong to the same variant_group (marriage outcomes are mutually exclusive).
+            - paragraph [ref=e323]: Only VAR_MARRIAGE_SWAP passed the premise check, so there is no actual conflict. However, if Daiyu were already dead (alive=False), then VAR_MARRIAGE_NORMAL_BAOCHAI would trigger instead of the switcheroo version –
+            - paragraph [ref=e324]: that would be a different evolutionary path.
+            - paragraph [ref=e325]: PSY_E1_DAIYU_DECAY’s effect is additive (sub), so it does not conflict with other laws. All effects are retained.
+            - paragraph [ref=e326]: "-–"
+            - paragraph [ref=e327]: ④ Apply Effects
+            - paragraph [ref=e328]: "Law A’s effects execute immediately (delay=0):"
+            - paragraph [ref=e329]: marriage trigger_event BAOYU_MARRIED_BAOCHAI -> fate_flags[“BAOYU_MARRIED_BAOCHAI”] = True
+            - paragraph [ref=e330]: relation.寶玉::寶釵.marriage_probability set 1.0 -> 1.0
+            - paragraph [ref=e331]: agent.賈寶玉.mood sub 0.5 -> 0.20 -> 0.00 (clamp)
+            - paragraph [ref=e332]: agent.賈寶玉.monk_tendency add 0.3 -> 0.35 -> 0.65
+            - paragraph [ref=e333]: agent.林黛玉.health sub 0.1 -> 0.12 -> 0.02
+            - paragraph [ref=e334]: "Law B’s effects:"
+            - paragraph [ref=e335]: agent.林黛玉.health sub 0.017 -> 0.02 -> 0.003
+            - paragraph [ref=e336]: At this point Daiyu’s health = 0.003, approaching zero.
+            - paragraph [ref=e337]: "-–"
+            - paragraph [ref=e338]: ⑤ Snapshot
+            - paragraph [ref=e339]: "Compress the current world state into a numerical vector:"
+            - paragraph [ref=e340]: "snapshot = {"
+            - code [ref=e344]:
+              - generic [ref=e346]: "economy\\_vector: \\[0.42, 0.82, 0.65, 0.55, 0.80, 0.35],"
+              - generic [ref=e349]: "agent\\_vectors: {"
+              - generic [ref=e352]: "\"林黛玉\": \\[0.003, 0.08, 0.10, 0.00, 0.30, 0.00, 0.72, 0.95],"
+              - generic [ref=e355]: "\"賈寶玉\": \\[0.80, 0.00, 0.30, 0.72, 0.80, 0.65, 0.42, 0.92],"
+              - generic [ref=e358]: ...
+              - generic [ref=e361]: "},"
+              - generic [ref=e364]: "politics\\_vector: \\[0.0, 0.60, 0.75]"
+            - paragraph [ref=e365]: "}"
+            - paragraph [ref=e366]: This vector will later be compared via Euclidean distance against the actual vector for Chapter 97 in actual_checkpoints.json.
+            - paragraph [ref=e367]: "-–"
+            - paragraph [ref=e368]: ⑥ chapter = 98
+            - paragraph [ref=e369]: Enter the next chapter. At this point Daiyu’s health = 0.003, and BAOYU_MARRIED_BAOCHAI = True.
+            - paragraph [ref=e370]: "When Chapter 98 runs step ② again, two lethal laws trigger simultaneously:"
+            - paragraph [ref=e371]: "▎ VAR_DAIYU_HEARTBREAK “Burning manuscripts, severing ties: Daiyu dies of heartbreak” conf=0.95"
+            - paragraph [ref=e372]: ▎ health ≤ 0.05 -> 0.003 ≤ 0.05 ✅
+            - paragraph [ref=e373]: ▎ BAOYU_MARRIED_BAOCHAI -> True ✅
+            - paragraph [ref=e374]: ▎ -> death trigger_event FATE_DAIYU_DEATH
+            - paragraph [ref=e375]: ▎ -> monk_tendency add 0.4 -> Baoyu 0.65 -> 1.0 (clamp)
+            - paragraph [ref=e376]: ▎ -> alive set False
+            - paragraph [ref=e377]: Then SYS_E19_ZERO_DAIYU triggers (checkpoint.FATE_DAIYU_DEATH = True), zeroing out all of Daiyu’s attributes.
+            - paragraph [ref=e378]: "A few chapters later, Baoyu’s monk_tendency has reached 1.0 and mood ≤ 0.15, triggering VAR_MONK_DESPAIR “All hopes extinguished: Baoyu renounces the world” (萬念俱灰：寶玉出家)."
+        - generic [ref=e380]:
+          - separator [ref=e381]
+          - generic [ref=e383]:
+            - 'link "← Dream of the Red Chamber Simulator: The Holy Grail of Social Science, and LLMs as Prophetic Verse" [ref=e384] [cursor=pointer]':
+              - /url: /OliverPitBoat/en/posts/stonestory_fate/
+              - generic [ref=e385]:
+                - generic [ref=e386]: ←
+                - text: "Dream of the Red Chamber Simulator: The Holy Grail of Social Science, and LLMs as Prophetic Verse"
+            - time [ref=e388]: 22 March 2026
+      - link "Scroll to top" [ref=e390] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e391]:
+      - paragraph [ref=e393]: © 2026 Oliver

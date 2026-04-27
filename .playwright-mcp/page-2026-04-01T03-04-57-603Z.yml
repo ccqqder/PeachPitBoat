@@ -1,0 +1,216 @@
+- generic [active] [ref=e1]:
+  - link "↓ 快轉到主要內容" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "核舟" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/
+    - navigation [ref=e8]:
+      - link "首頁" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/
+        - generic [ref=e10]: 首頁
+      - link "App 矩陣" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/apps/
+        - generic [ref=e12]: App 矩陣
+      - link "部落格" [ref=e13] [cursor=pointer]:
+        - /url: /OliverPitBoat/posts/
+        - generic [ref=e14]: 部落格
+      - link "關於" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/about/
+        - generic [ref=e16]: 關於
+      - button "繁體中文" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - generic "部落格" [ref=e23]: 繁體中文
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - generic [ref=e36]:
+        - list
+        - heading "部落格" [level=1] [ref=e37]
+      - generic [ref=e38]:
+        - heading "2026" [level=2] [ref=e39]
+        - article [ref=e40]:
+          - generic [ref=e41]:
+            - link "紅樓夢模擬器：熱力學與藝術選擇" [ref=e43] [cursor=pointer]:
+              - /url: /OliverPitBoat/posts/stonestory_thermodynamics/
+              - heading "紅樓夢模擬器：熱力學與藝術選擇" [level=2] [ref=e44]
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - time [ref=e47]: 2026年3月29日
+                - generic [ref=e48]: ·
+                - generic "預計閱讀時間" [ref=e49]: 8 分鐘
+              - generic [ref=e50]:
+                - link "The Workshop" [ref=e51] [cursor=pointer]:
+                  - /url: /OliverPitBoat/categories/the-workshop/
+                  - generic [ref=e53]: The Workshop
+                - link "Thermodynamics" [ref=e54] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/thermodynamics/
+                  - generic [ref=e56]: Thermodynamics
+                - link "熱力學" [ref=e57] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%86%B1%E5%8A%9B%E5%AD%B8/
+                  - generic [ref=e59]: 熱力學
+                - link "紅樓夢" [ref=e60] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%B4%85%E6%A8%93%E5%A4%A2/
+                  - generic [ref=e62]: 紅樓夢
+                - link "LLM" [ref=e63] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/llm/
+                  - generic [ref=e65]: LLM
+                - link "規則引擎" [ref=e66] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E8%A6%8F%E5%89%87%E5%BC%95%E6%93%8E/
+                  - generic [ref=e68]: 規則引擎
+        - article [ref=e70]:
+          - generic [ref=e71]:
+            - link "紅樓夢模擬器：社會科學的聖杯，大語言讖判詞" [ref=e73] [cursor=pointer]:
+              - /url: /OliverPitBoat/posts/stonestory_fate/
+              - heading "紅樓夢模擬器：社會科學的聖杯，大語言讖判詞" [level=2] [ref=e74]
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - time [ref=e77]: 2026年3月22日
+                - generic [ref=e78]: ·
+                - generic "預計閱讀時間" [ref=e79]: 7 分鐘
+              - generic [ref=e80]:
+                - link "The Workshop" [ref=e81] [cursor=pointer]:
+                  - /url: /OliverPitBoat/categories/the-workshop/
+                  - generic [ref=e83]: The Workshop
+                - link "本體論" [ref=e84] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E6%9C%AC%E9%AB%94%E8%AB%96/
+                  - generic [ref=e86]: 本體論
+                - link "Ontology" [ref=e87] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/ontology/
+                  - generic [ref=e89]: Ontology
+                - link "張愛玲" [ref=e90] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E5%BC%B5%E6%84%9B%E7%8E%B2/
+                  - generic [ref=e92]: 張愛玲
+                - link "LLM" [ref=e93] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/llm/
+                  - generic [ref=e95]: LLM
+                - link "紅樓夢" [ref=e96] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%B4%85%E6%A8%93%E5%A4%A2/
+                  - generic [ref=e98]: 紅樓夢
+                - link "詩讖" [ref=e99] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E8%A9%A9%E8%AE%96/
+                  - generic [ref=e101]: 詩讖
+        - article [ref=e103]:
+          - generic [ref=e104]:
+            - link "甘特星球：個人開發者的生態位與考量" [ref=e106] [cursor=pointer]:
+              - /url: /OliverPitBoat/posts/gantt-planet-intro/
+              - heading "甘特星球：個人開發者的生態位與考量" [level=2] [ref=e107]
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - time [ref=e110]: 2026年2月25日
+                - generic [ref=e111]: ·
+                - generic "預計閱讀時間" [ref=e112]: 5 分鐘
+              - generic [ref=e113]:
+                - link "The Observatory" [ref=e114] [cursor=pointer]:
+                  - /url: /OliverPitBoat/categories/the-observatory/
+                  - generic [ref=e116]: The Observatory
+                - link "獨立開發者" [ref=e117] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%8D%A8%E7%AB%8B%E9%96%8B%E7%99%BC%E8%80%85/
+                  - generic [ref=e119]: 獨立開發者
+                - link "App Store" [ref=e120] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/app-store/
+                  - generic [ref=e122]: App Store
+                - link "甘特圖" [ref=e123] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%94%98%E7%89%B9%E5%9C%96/
+                  - generic [ref=e125]: 甘特圖
+                - link "產品開發" [ref=e126] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC/
+                  - generic [ref=e128]: 產品開發
+                - link "AI輔助開發" [ref=e129] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/ai%E8%BC%94%E5%8A%A9%E9%96%8B%E7%99%BC/
+                  - generic [ref=e131]: AI輔助開發
+                - link "Side Project" [ref=e132] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/side-project/
+                  - generic [ref=e134]: Side Project
+        - article [ref=e136]:
+          - generic [ref=e137]:
+            - link "假名私塾開發筆記(一)：從聊天機器人到AI代理" [ref=e139] [cursor=pointer]:
+              - /url: /OliverPitBoat/posts/kana_juku_dev_1/
+              - heading "假名私塾開發筆記(一)：從聊天機器人到AI代理" [level=2] [ref=e140]
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - time [ref=e143]: 2026年2月22日
+                - generic [ref=e144]: ·
+                - generic "預計閱讀時間" [ref=e145]: 5 分鐘
+              - generic [ref=e146]:
+                - link "The Workshop" [ref=e147] [cursor=pointer]:
+                  - /url: /OliverPitBoat/categories/the-workshop/
+                  - generic [ref=e149]: The Workshop
+                - link "IOS App" [ref=e150] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/ios-app/
+                  - generic [ref=e152]: IOS App
+                - link "On-Device AI" [ref=e153] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/on-device-ai/
+                  - generic [ref=e155]: On-Device AI
+                - link "手寫辨識" [ref=e156] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98/
+                  - generic [ref=e158]: 手寫辨識
+                - link "Udemy" [ref=e159] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/udemy/
+                  - generic [ref=e161]: Udemy
+                - link "Claude" [ref=e162] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/claude/
+                  - generic [ref=e164]: Claude
+                - link "Claude Code" [ref=e165] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/claude-code/
+                  - generic [ref=e167]: Claude Code
+                - link "Gemini" [ref=e168] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/gemini/
+                  - generic [ref=e170]: Gemini
+                - link "Gemini Cli" [ref=e171] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/gemini-cli/
+                  - generic [ref=e173]: Gemini Cli
+                - link "SwiftUI" [ref=e174] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/swiftui/
+                  - generic [ref=e176]: SwiftUI
+                - link "UIKit" [ref=e177] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/uikit/
+                  - generic [ref=e179]: UIKit
+        - article [ref=e181]:
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - link "聽覺旅伴 — 環境音、白噪音與文學朗讀" [ref=e184] [cursor=pointer]:
+                - /url: /OliverPitBoat/posts/auditory-companion/
+                - heading "聽覺旅伴 — 環境音、白噪音與文學朗讀" [level=2] [ref=e185]
+              - generic [ref=e188] [cursor=pointer]: 草稿
+            - generic [ref=e189]:
+              - generic [ref=e190]:
+                - time [ref=e191]: 2026年2月17日
+                - generic [ref=e192]: ·
+                - generic "預計閱讀時間" [ref=e193]: 1 分鐘
+              - generic [ref=e194]:
+                - link "The Workshop" [ref=e195] [cursor=pointer]:
+                  - /url: /OliverPitBoat/categories/the-workshop/
+                  - generic [ref=e197]: The Workshop
+                - link "IOS App" [ref=e198] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/ios-app/
+                  - generic [ref=e200]: IOS App
+                - link "白噪音" [ref=e201] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%99%BD%E5%99%AA%E9%9F%B3/
+                  - generic [ref=e203]: 白噪音
+                - link "環境音" [ref=e204] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E7%92%B0%E5%A2%83%E9%9F%B3/
+                  - generic [ref=e206]: 環境音
+                - link "TTS" [ref=e207] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/tts/
+                  - generic [ref=e209]: TTS
+                - link "音頻引擎" [ref=e210] [cursor=pointer]:
+                  - /url: /OliverPitBoat/tags/%E9%9F%B3%E9%A0%BB%E5%BC%95%E6%93%8E/
+                  - generic [ref=e212]: 音頻引擎
+      - list [ref=e214]:
+        - listitem [ref=e215]:
+          - link "1" [ref=e216] [cursor=pointer]:
+            - /url: /OliverPitBoat/posts/
+        - listitem [ref=e217]:
+          - link "2" [ref=e218] [cursor=pointer]:
+            - /url: /OliverPitBoat/posts/page/2/
+        - listitem [ref=e219]:
+          - link "→" [ref=e220] [cursor=pointer]:
+            - /url: /OliverPitBoat/posts/page/2/
+      - link "捲動到頁頂" [ref=e222] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e223]:
+      - paragraph [ref=e225]: © 2026 QQder

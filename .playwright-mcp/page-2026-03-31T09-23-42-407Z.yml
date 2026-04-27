@@ -1,0 +1,204 @@
+- generic [active] [ref=e1]:
+  - link "↓ メインコンテンツへスキップ" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "核舟" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/ja/
+    - navigation [ref=e8]:
+      - link "ホーム" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/ja/
+        - generic [ref=e10]: ホーム
+      - link "アプリ" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/ja/apps/
+        - generic [ref=e12]: アプリ
+      - link "ブログ" [ref=e13] [cursor=pointer]:
+        - /url: ""
+        - generic [ref=e14]: ブログ
+      - link "概要" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/ja/about/
+        - generic [ref=e16]: 概要
+      - button "JA" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - generic "ガントプラネット：個人開発者のニッチと考慮すべきこと" [ref=e23]: JA
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - article [ref=e36]:
+        - generic [ref=e37]:
+          - list
+          - heading "ガントプラネット：個人開発者のニッチと考慮すべきこと" [level=1] [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - time [ref=e41]: 2026年2月25日
+              - generic [ref=e42]: ·
+              - generic "読むのに必要な時間" [ref=e43]: 7 分
+            - generic [ref=e44]:
+              - link "The Observatory" [ref=e45] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/categories/the-observatory/
+                - generic [ref=e47]: The Observatory
+              - link "個人開発者" [ref=e48] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/tags/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA%E8%80%85/
+                - generic [ref=e50]: 個人開発者
+              - link "App Store" [ref=e51] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/tags/app-store/
+                - generic [ref=e53]: App Store
+              - link "ガントチャート" [ref=e54] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/tags/%E3%82%AC%E3%83%B3%E3%83%88%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88/
+                - generic [ref=e56]: ガントチャート
+              - link "プロダクト開発" [ref=e57] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/tags/%E3%83%97%E3%83%AD%E3%83%80%E3%82%AF%E3%83%88%E9%96%8B%E7%99%BA/
+                - generic [ref=e59]: プロダクト開発
+              - link "AI支援開発" [ref=e60] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/tags/ai%E6%94%AF%E6%8F%B4%E9%96%8B%E7%99%BA/
+                - generic [ref=e62]: AI支援開発
+              - link "サイドプロジェクト" [ref=e63] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/tags/%E3%82%B5%E3%82%A4%E3%83%89%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88/
+                - generic [ref=e65]: サイドプロジェクト
+          - generic [ref=e66]:
+            - img "Oliver" [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: 著者
+              - generic [ref=e70]: Oliver
+              - generic [ref=e71]: AIの計算資源は独占されるのか？AI能力は突破し続けるのか？答えがどうであれ、早く使い始めるに越したことはない。文系出身のSysadminがAIの力を借りてiOSアプリを開発する記録。
+              - generic [ref=e73]:
+                - link "Github" [ref=e74] [cursor=pointer]:
+                  - /url: https://github.com/ccqqder
+                  - img [ref=e77]
+                - link "Email" [ref=e79] [cursor=pointer]:
+                  - /url: mailto:qqder339@gmail.com
+                  - img [ref=e82]
+        - generic [ref=e84]:
+          - group [ref=e87]:
+            - generic "目次" [ref=e88] [cursor=pointer]
+          - generic [ref=e90]:
+            - figure [ref=e91]
+            - heading "はじめに アンカー" [level=1] [ref=e92]:
+              - text: はじめに
+              - link "アンカー" [ref=e94] [cursor=pointer]:
+                - /url: "#%e3%81%af%e3%81%98%e3%82%81%e3%81%ab"
+                - text: "#"
+            - paragraph [ref=e95]:
+              - text: "今回は個人開発者の市場、リソース、エコシステム、開発プロセスなどについてお話しします。 無理やり宣伝するために、ガントプラネットを例として使わせてください:"
+              - link "URL" [ref=e96] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/%E7%94%98%E7%89%B9%E6%98%9F%E7%90%83/id6757654373
+              - text: 。 まず正直に言うと、これらはあくまで僕のサイドプロジェクトです。これで生計を立てている方とはプレッシャーが違いますので、あくまでリサーチの視点からお話しします。
+            - heading "着想とつまずき アンカー" [level=2] [ref=e97]:
+              - text: 着想とつまずき
+              - link "アンカー" [ref=e99] [cursor=pointer]:
+                - /url: "#%e7%9d%80%e6%83%b3%e3%81%a8%e3%81%a4%e3%81%be%e3%81%9a%e3%81%8d"
+                - text: "#"
+            - paragraph [ref=e100]: ガントプラネットの発想はこうです。ガントチャートって、ソフトウェアでもアプリでもWebサービスでも、無料のものはどれも使いにくいんですよね。 まともに使えそうなものは全部有料なので、じゃあ自分でガントチャートアプリを作ろうと思いました。
+            - paragraph [ref=e101]: でも、作り始めてすぐに、そう簡単ではないことに気づきました：
+            - list [ref=e102]:
+              - listitem [ref=e103]: スマホでスプレッドシートのようなガントチャートを見るのは、画面が狭すぎます
+              - listitem [ref=e104]: 本格的なガントチャートには多くのリソース連携が必要です。メール、連絡先、会議室の予約など
+            - paragraph [ref=e105]: この2つの問題を解決するコストはどちらも高いです。UIの微調整に膨大な時間がかかりますし、理想的な使用フローをあらかじめ設計して、統合できないフローは切り捨てる必要があります。
+            - paragraph [ref=e106]: リソース連携となると、主要なアカウントすべてにログインが必要で、対応すべきインターフェースと認証が多すぎます。しかも将来的にメンテナンスも必要です。
+            - paragraph [ref=e107]: ここでコストの壁にぶつかりました。規模の経済が働かない状況では、ほぼ必然的にこうなります。
+            - heading "方向転換、さらに方向転換 アンカー" [level=2] [ref=e108]:
+              - text: 方向転換、さらに方向転換
+              - link "アンカー" [ref=e110] [cursor=pointer]:
+                - /url: "#%e6%96%b9%e5%90%91%e8%bb%a2%e6%8f%9b%e3%81%95%e3%82%89%e3%81%ab%e6%96%b9%e5%90%91%e8%bb%a2%e6%8f%9b"
+                - text: "#"
+            - paragraph [ref=e111]: こういう時は、各要素をあと一歩か二歩外側に広げて、成立する交差点を見つけられないか考えます。
+            - paragraph [ref=e112]: 趣味で開発している身としては、「成立する」というのは、極めて低いコストに加えて、小さくても明確な価値があることを意味します。
+            - paragraph [ref=e113]: 前者の極めて低いコストは、AIが実現してくれました。
+            - paragraph [ref=e114]: 後者の価値については、基本的に自分で定義するものですが、AIと壁打ちすることで見えてくるものもあります。
+            - paragraph [ref=e115]: 僕にとって大事なのは、まず自分が作りたいと思えること。少なくとも自分で使って楽しめること。さらに、誰もやっていない、無料版がない、明確な差別化ポイントがある、というのも一つの価値です。
+            - paragraph [ref=e116]: その時、ふと思いました。ガントチャートなんだけど、ガントチャートではない何かはないだろうか、と。
+            - paragraph [ref=e117]: 最終的に、一つのイメージが頭に浮かびました。
+            - paragraph [ref=e118]: 僕はガントチャートを使う時、より重要な項目を下の方に配置する癖があります。
+            - paragraph [ref=e119]: 一番下の項目は、大抵プロジェクト全体の最終完了条件か、プロジェクトそのものを表しています。
+            - paragraph [ref=e120]: もし、そのガントチャートの一番下の項目よりもさらに重要な項目があるとしたら、それは何でしょうか？
+            - paragraph [ref=e121]: 実は、もっと重要なものはたくさんあります。でもそれは仕事とは関係なく、自分自身のこと、人生のことです。
+            - paragraph [ref=e122]:
+              - text: そこで方向が定まりました。一般的なビジネス向けガントチャートではなく、
+              - strong [ref=e123]: 人生ガントチャート
+              - text: を作ろう、と。
+            - figure
+            - heading "次のステップ アンカー" [level=2] [ref=e124]:
+              - text: 次のステップ
+              - link "アンカー" [ref=e126] [cursor=pointer]:
+                - /url: "#%e6%ac%a1%e3%81%ae%e3%82%b9%e3%83%86%e3%83%83%e3%83%97"
+                - text: "#"
+            - paragraph [ref=e127]: というわけで、一般的なビジネスシーンとは異なるガントチャートを作ることにしました。
+            - paragraph [ref=e128]: こうすれば、オンラインリソースとの連携が不要になるのも自然なことです。
+            - paragraph [ref=e129]: なぜなら、今やこのアプリはユーザー自身だけに関わるものだからです。
+            - paragraph [ref=e130]: ここまでで一歩前進し、このプロジェクトはひとまず生き延びました。でも、十分な要素につながるのでしょうか？
+            - paragraph [ref=e131]: セルフマネジメントや、人生において重要だけど緊急ではないことについて考えてみました。それらには規則性と頻度があります。
+            - paragraph [ref=e132]: 例えば、健康は大切だから会社は毎年健康診断を実施します。家族は大切だから、間隔が空きすぎる前に家族に会いに行きます。
+            - paragraph [ref=e133]: ガントチャート本来の特性と組み合わせると、やるべき時間範囲内ではその日に重なります。
+            - paragraph [ref=e134]: そして人生全体の長さで考えれば、すべての項目は今日の潜在的な項目です。こうすれば、すべてのコンテンツをUIの中央線に集約できます。
+            - paragraph [ref=e135]: これでUIが窮屈になる問題を解決し、僕が価値があると思う価値観を表現できるようになりました。
+            - heading "完成度 アンカー" [level=2] [ref=e136]:
+              - text: 完成度
+              - link "アンカー" [ref=e138] [cursor=pointer]:
+                - /url: "#%e5%ae%8c%e6%88%90%e5%ba%a6"
+                - text: "#"
+            - paragraph [ref=e139]: App Storeの審査には大前提があります。純粋なテキストベースのWebページでもできる機能だけではダメということです。
+            - paragraph [ref=e140]: 例えば、シンプルなToDoリストは審査を通らないかもしれません。だから、このアプリを単なるスプレッドシートにしてはいけません。そうでなければ、Google Sheetsで同じことができてしまいますから。
+            - paragraph [ref=e141]: このスプレッドシートを上から下に見る感覚から、直感的に地面を掘り下げるイメージが浮かびました。毎日本当に必要な最低限のことだけをしていると、表層しか触れていない。まさに「上滑り」という状態です。
+            - paragraph [ref=e142]: より重要な項目ほど深い層にあるという比喩を、もっとビジュアル化して形にしたいと思いました。地層を掘削する、鉱山を掘るというアクションが自然に思い浮かびました。
+            - paragraph [ref=e143]: ではどう実現するか？ スプレッドシートの各行を少し曲げる？ パースをつけて変形させる？
+            - paragraph [ref=e144]: この人生ガントチャートの、孤独で内省的な世界観と組み合わせると…
+            - paragraph [ref=e145]: 頭に浮かんだのは、地殻の表面で一人孤独に掘削する姿です。それって、あの金髪の少年、バラに水をやり、キツネを飼い慣らしたあの少年じゃないですか？
+            - paragraph [ref=e146]: そこで、ガントチャートの3D立体バージョンを作り、鉱山と宝石をタスクのビジュアルとして使いました。
+            - paragraph [ref=e147]: もっと思い切って、星球バージョンだけ残すこともできましたが、実用性、審査の難易度、理解のしやすさを考慮して、両方のバージョンを残すことにしました。
+            - figure
+            - heading "まだ足りない、一つの机が アンカー" [level=2] [ref=e148]:
+              - text: まだ足りない、一つの机が
+              - link "アンカー" [ref=e150] [cursor=pointer]:
+                - /url: "#%e3%81%be%e3%81%a0%e8%b6%b3%e3%82%8a%e3%81%aa%e3%81%84%e4%b8%80%e3%81%a4%e3%81%ae%e6%9c%ba%e3%81%8c"
+                - text: "#"
+            - paragraph [ref=e151]: 学生時代、書斎の机の前で一人、背筋を伸ばして座っている時間がたくさんありました。勉強するか、何かを書くか。
+            - paragraph [ref=e152]: この人生ガントチャートについて考え、使うことで、もう捨ててしまったあの机の前に戻ったような気持ちになります。
+            - paragraph [ref=e153]: 三ヶ月に一度、あるいは一年に一度しかやらないことを達成した時、ましてや長期的な目標を達成した時、
+            - paragraph [ref=e154]: きっと日記を書きたくなるでしょう。あるいは親友に手紙を書きたくなるはずです。
+            - paragraph [ref=e155]: このガントチャートには、最後の感情の出口がまだ欠けていることに気づきました。でも、SNSへのシェア機能にしてしまうと、ユーザーは十分に正直になれません。
+            - paragraph [ref=e156]: もう一つの案は、アプリユーザー同士で手紙を送る機能です。でも、今もこれからも十分なインストール数は見込めません。Android版もリリースするとしても、少なくとも最初のバージョンでは必要ありません。
+            - paragraph [ref=e157]: 最終的に、一番自然にまとまる機能として思いついたのは、万能なチャットボットでした。
+            - paragraph [ref=e158]: チャットボットに多くの名作文学を読み込ませ、「秘密の穴」のような役割を担わせて、ユーザーにフィードバックを返す、というものです。
+            - heading "おわりに アンカー" [level=2] [ref=e159]:
+              - text: おわりに
+              - link "アンカー" [ref=e161] [cursor=pointer]:
+                - /url: "#%e3%81%8a%e3%82%8f%e3%82%8a%e3%81%ab"
+                - text: "#"
+            - paragraph [ref=e162]: 以上が、このアプリの背後にあるプロダクト開発とマネジメントの話です。
+            - paragraph [ref=e163]: 見た目には、あれこれ変更しながらなんとか完成させただけに見えますが、実際にはボツになった案や却下された機能がたくさんあって、ここでは触れていません。
+            - paragraph [ref=e164]: 興味のある方にプロダクト開発で考慮するポイントを知ってもらうことに加えて、
+            - paragraph [ref=e165]:
+              - text: 最後に強調したいのは、タイトルへの回答です。個人開発者のニッチと考慮すべきことは何か？ それは：
+              - strong [ref=e166]: 楽しいからやる！
+            - paragraph [ref=e167]: ニッチすぎると感じる人や、自分の美的感覚や価値観とは違うと思う人も少なくないでしょう。
+            - paragraph [ref=e168]: でも、たとえそうだとしても、少しの時間さえあれば、AIの助けを借りて、自分が欲しいけどまだ存在しないものを作り出せるのです。
+            - paragraph [ref=e169]: 会社の社長のように、何に価値があるか、やる価値があるかを自分で決められます。
+            - paragraph [ref=e170]: デザイナーのように、好きなフォーマット、色、フォント、画像を使えます。
+            - paragraph [ref=e171]: プロダクトマネージャーのように、どう書くか、機能をどこまで作り込むかを決められます。
+            - paragraph [ref=e172]: AIはどんどん強くなっていきます。今はまだ難しくても、近い将来、あなたもこの楽しさを味わえるようになるはずです。
+            - paragraph [ref=e173]: App Storeは今や新時代の個人ホームページです。誰もが自分の作品を発表できる場所なのです。
+            - paragraph [ref=e174]: もし興味があれば、このブログをフォローしてください。今後もApp Storeへの出品にまつわるリアルな経験や感想を発信していきます。
+        - generic [ref=e176]:
+          - separator [ref=e177]
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - link "← 假名私塾 開発ノート（一）：チャットボットからAIエージェントへ" [ref=e180] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/posts/kana_juku_dev_1/
+                - generic [ref=e181]:
+                  - generic [ref=e182]: ←
+                  - text: 假名私塾 開発ノート（一）：チャットボットからAIエージェントへ
+              - time [ref=e184]: 2026年2月22日
+            - generic [ref=e185]:
+              - link "紅楼夢シミュレーター：社会科学の聖杯、大規模言語モデルによる讖判詞 →" [ref=e186] [cursor=pointer]:
+                - /url: /OliverPitBoat/ja/posts/stonestory_fate/
+                - generic [ref=e187]:
+                  - text: 紅楼夢シミュレーター：社会科学の聖杯、大規模言語モデルによる讖判詞
+                  - generic [ref=e188]: →
+              - time [ref=e190]: 2026年3月22日
+      - link "TOPへスクロール" [ref=e192] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e193]:
+      - paragraph [ref=e195]: © 2026 Oliver

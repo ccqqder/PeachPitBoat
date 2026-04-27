@@ -1,0 +1,391 @@
+- generic [active] [ref=e1]:
+  - link "↓ 快轉到主要內容" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - link "核舟" [ref=e5] [cursor=pointer]:
+      - /url: /OliverPitBoat/
+    - navigation [ref=e8]:
+      - link "首頁" [ref=e9] [cursor=pointer]:
+        - /url: /OliverPitBoat/
+        - generic [ref=e10]: 首頁
+      - link "App 矩陣" [ref=e11] [cursor=pointer]:
+        - /url: /OliverPitBoat/apps/
+        - generic [ref=e12]: App 矩陣
+      - link "部落格" [ref=e13] [cursor=pointer]:
+        - /url: /OliverPitBoat/posts/
+        - generic [ref=e14]: 部落格
+      - link "關於" [ref=e15] [cursor=pointer]:
+        - /url: /OliverPitBoat/about/
+        - generic [ref=e16]: 關於
+      - button "繁體中文" [ref=e18] [cursor=pointer]:
+        - img [ref=e21]
+        - generic "紅樓夢模擬器：熱力學與藝術選擇" [ref=e23]: 繁體中文
+      - button "Search" [ref=e24] [cursor=pointer]:
+        - img [ref=e26]
+      - button "Dark mode switcher" [ref=e29] [cursor=pointer]:
+        - img [ref=e32]
+  - generic [ref=e34]:
+    - main [ref=e35]:
+      - article [ref=e36]:
+        - generic [ref=e37]:
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - link "部落格" [ref=e40] [cursor=pointer]:
+                - /url: /OliverPitBoat/posts/
+              - text: /
+          - heading "紅樓夢模擬器：熱力學與藝術選擇" [level=1] [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - time [ref=e44]: 2026年3月29日
+              - generic [ref=e45]: ·
+              - generic "預計閱讀時間" [ref=e46]: 8 分鐘
+            - generic [ref=e47]:
+              - link "The Workshop" [ref=e48] [cursor=pointer]:
+                - /url: /OliverPitBoat/categories/the-workshop/
+                - generic [ref=e50]: The Workshop
+              - link "Thermodynamics" [ref=e51] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/thermodynamics/
+                - generic [ref=e53]: Thermodynamics
+              - link "熱力學" [ref=e54] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/%E7%86%B1%E5%8A%9B%E5%AD%B8/
+                - generic [ref=e56]: 熱力學
+              - link "紅樓夢" [ref=e57] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/%E7%B4%85%E6%A8%93%E5%A4%A2/
+                - generic [ref=e59]: 紅樓夢
+              - link "LLM" [ref=e60] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/llm/
+                - generic [ref=e62]: LLM
+              - link "規則引擎" [ref=e63] [cursor=pointer]:
+                - /url: /OliverPitBoat/tags/%E8%A6%8F%E5%89%87%E5%BC%95%E6%93%8E/
+                - generic [ref=e65]: 規則引擎
+          - generic [ref=e66]:
+            - img "QQder" [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: 作者
+              - generic [ref=e70]: QQder
+              - generic [ref=e71]: AI 算力以後會被壟斷嗎？AI能力還會持續突破嗎？不管答案是什麼都要越早使用越好。這裡記錄一個文科背景 Sysadmin 靠 AI 協助開發iOS App。
+              - generic [ref=e73]:
+                - link "Github" [ref=e74] [cursor=pointer]:
+                  - /url: https://github.com/ccqqder
+                  - img [ref=e77]
+                - link "Email" [ref=e79] [cursor=pointer]:
+                  - /url: mailto:qqder339@gmail.com
+                  - img [ref=e82]
+        - generic [ref=e84]:
+          - group [ref=e87]:
+            - generic "目錄" [ref=e88] [cursor=pointer]
+          - generic [ref=e90]:
+            - paragraph [ref=e91]:
+              - text: "app url:"
+              - link "LINK" [ref=e92] [cursor=pointer]:
+                - /url: https://apps.apple.com/tw/app/%E7%B4%85%E6%A8%93%E5%A4%A2%E6%A8%A1%E6%93%AC%E5%99%A8/id6759855416
+            - heading "前言 定位點" [level=2] [ref=e93]:
+              - text: 前言
+              - link "定位點" [ref=e95] [cursor=pointer]:
+                - /url: "#%e5%89%8d%e8%a8%80"
+                - text: "#"
+            - paragraph [ref=e96]: 上一回主要強調的點
+            - paragraph [ref=e97]: 是要將文字看作本質的符號
+            - paragraph [ref=e98]: 天文、水文、人文等…所有天地人之文
+            - paragraph [ref=e99]: 它將世界與思想以符合成本的方式映射
+            - paragraph [ref=e100]: 變成我們主要理解以及與客觀世界的工具
+            - paragraph [ref=e101]: 理解這點才會意識到
+            - paragraph [ref=e102]: LLM(大語言模型)雖然本質只是文字接龍
+            - paragraph [ref=e103]: 但是能力高到一個程度便已是核能級的國之重器
+            - paragraph [ref=e104]: 它的重要性讓我想要驗證它的能力
+            - paragraph [ref=e105]: 並且能夠隨著他能力的提升反覆驗證
+            - paragraph [ref=e106]: 一個堪稱完美的目標就是紅樓夢
+            - paragraph [ref=e107]: 假設有個全知全能的LLM
+            - paragraph [ref=e108]: 它可以在輸入曹雪芹原本紅樓夢前八十回，然後輸出後面的章節
+            - paragraph [ref=e109]: 但因為LLM的訓練資料有限
+            - paragraph [ref=e110]: 就如同題目不完整的數獨一樣無法確定答案
+            - paragraph [ref=e111]: 它現有的能力是在它能夠理解的範圍內，生產力非常高
+            - paragraph [ref=e112]: 紅樓夢模擬器要做的是在這種生產力的協助下
+            - paragraph [ref=e113]: 用傳統結構化的方式，用極少的人力快速產出及累積成果
+            - heading "假設 定位點" [level=2] [ref=e114]:
+              - text: 假設
+              - link "定位點" [ref=e116] [cursor=pointer]:
+                - /url: "#%e5%81%87%e8%a8%ad"
+                - text: "#"
+            - paragraph [ref=e117]: 我們需要一些假設、偏見、理論來讓預測結局的工作足夠可行及機械
+            - paragraph [ref=e118]: 講到準確地預測我直覺想到古典物理學其中的熱力學
+            - paragraph [ref=e119]: 在一個封閉的系統中，熱力學系統如果給定初始條件、運作規律
+            - paragraph [ref=e120]: 則系統的演化可預測且必然的
+            - paragraph [ref=e121]: 另一個假設是，LLM的模型能力會越來越強，
+            - paragraph [ref=e122]: 但在可預見的未來我們不會有更多清朝及曹公的訓練資料
+            - paragraph [ref=e123]: 所以我們可以有一個結構化的工作流程，並且可以讓現在和未來的LLM執行
+            - heading "初始條件 定位點" [level=3] [ref=e124]:
+              - text: 初始條件
+              - link "定位點" [ref=e126] [cursor=pointer]:
+                - /url: "#%e5%88%9d%e5%a7%8b%e6%a2%9d%e4%bb%b6"
+                - text: "#"
+            - paragraph [ref=e127]: 初始條件主要是從小說原本萃取的資料，
+            - paragraph [ref=e128]: 現在我們使用LLM做原本高勞力密集的事情，
+            - paragraph [ref=e129]: 以往人力成本太高，並且人力多也是無法壓縮時間的，
+            - paragraph [ref=e130]: 如果做到一半，想要微調萃取規則重新來過太不實際。
+            - paragraph [ref=e131]: 時間跟成本不再是問題，而萃取的品質則取決於模型的能力。
+            - paragraph [ref=e132]: 例如我提取了：
+            - list [ref=e133]:
+              - listitem [ref=e134]:
+                - paragraph [ref=e135]: 主要角色的資訊，性格檔案，家族族譜;
+              - listitem [ref=e136]:
+                - paragraph [ref=e137]: 一百二十回每回角色在那一回的經濟、社會、情緒、健康、人際關係等快照;
+              - listitem [ref=e138]:
+                - paragraph [ref=e139]: 還有基本的賈府的空間地圖，空間資訊;
+              - listitem [ref=e140]:
+                - paragraph [ref=e141]: 所有的對話記錄、詩詞語料…
+            - paragraph [ref=e142]: 先用不嚴謹但至少覆蓋率高的方式，將所有出現的文本都被提取到某個分類。
+            - heading "運作規律 定位點" [level=3] [ref=e143]:
+              - text: 運作規律
+              - link "定位點" [ref=e145] [cursor=pointer]:
+                - /url: "#%e9%81%8b%e4%bd%9c%e8%a6%8f%e5%be%8b"
+                - text: "#"
+            - paragraph [ref=e146]: 運作規律我用我的判斷分為兩種，一是基本的世界法則，二是作者的藝術意志。
+            - paragraph [ref=e147]: 這很武斷，但不做某種判斷的話完全無法進行。
+            - paragraph [ref=e148]: 世界法則則不限於且包含了以下基本的項目
+            - list [ref=e149]:
+              - listitem [ref=e150]:
+                - paragraph [ref=e151]: 社會：階級、權力、主僕關係、婚姻;
+              - listitem [ref=e152]:
+                - paragraph [ref=e153]: 經濟：收支、債務、抄家風險;
+              - listitem [ref=e154]:
+                - paragraph [ref=e155]: "文化 : 禮教、節慶、封建價值觀;"
+              - listitem [ref=e156]:
+                - paragraph [ref=e157]: 心理：角色情緒、性格驅動、內在衝突
+              - listitem [ref=e158]:
+                - paragraph [ref=e159]: "政治: 皇恩、朝廷、外部勢力…"
+            - paragraph [ref=e160]: 藝術意志則是紅樓夢除了沒有結局這個事實，他之所以適合當預測標的的原因，
+            - paragraph [ref=e161]: 那就是曹公在開頭以及全書到處都暗示了角色的命運，
+            - paragraph [ref=e162]: 最具代表性的就是十二金釵的判詞已點出了女一及女二的結局
+            - blockquote [ref=e163]:
+              - paragraph [ref=e164]: 可嘆停機德，堪憐詠絮才。玉帶林中掛，金簪雪裡埋。
+            - heading "規則引擎 定位點" [level=3] [ref=e165]:
+              - text: 規則引擎
+              - link "定位點" [ref=e167] [cursor=pointer]:
+                - /url: "#%e8%a6%8f%e5%89%87%e5%bc%95%e6%93%8e"
+                - text: "#"
+            - paragraph [ref=e168]: 有了初始條件跟運作規律要如何套用呢
+            - paragraph [ref=e169]: 較理想的方式是建造類似遊戲的3D物理引擎，每個角色有自己所知的資訊，並讓一個ai chatbot 像是演員演繹角色那樣扮演互動
+            - paragraph [ref=e170]: 但是一來這樣成本太高，只是提高觀賞性而已，我們並沒有引入新的資訊，在3D引擎裡也不會有新的結果;
+            - paragraph [ref=e171]: 二來是我們不是做風洞流體力學的物理模擬，而是在猜測曹學芹的想法，目前停留在文字就可以了。
+            - paragraph [ref=e172]: 根據前面提取的資料，歸納出一些運算的主體跟規則，
+            - paragraph [ref=e173]: 實際上就是傳統上針對一件事發生與否的證據、信心、加減過程，
+            - paragraph [ref=e174]: 做系統化可重複、可修改的全面性暴力運算。
+            - paragraph [ref=e175]: 每一回合的模擬步驟為：
+            - list [ref=e176]:
+              - listitem [ref=e177]:
+                - paragraph [ref=e178]: 處理延遲效果 — 檢查 pending_effects，到期的立即 apply
+              - listitem [ref=e179]:
+                - paragraph [ref=e180]: 評估所有法則 — 逐條檢查 premises 是否全部滿足（跳過 confidence < 0.3 的）
+              - listitem [ref=e181]:
+                - paragraph [ref=e182]: 衝突解決 — 同時觸發的法則可能矛盾，裁決誰贏
+              - listitem [ref=e183]:
+                - paragraph [ref=e184]: 套用效果 — 有 delay 的排入佇列，沒有的直接修改 state
+              - listitem [ref=e185]:
+                - paragraph [ref=e186]: 快照 — 把當前 state 壓成數值向量
+              - listitem [ref=e187]:
+                - paragraph [ref=e188]: chapter += 1
+            - paragraph [ref=e189]: 文末附上一個完整的範例，九十八回的黛玉之死。
+            - heading "工作流程總結 定位點" [level=3] [ref=e190]:
+              - text: 工作流程總結
+              - link "定位點" [ref=e192] [cursor=pointer]:
+                - /url: "#%e5%b7%a5%e4%bd%9c%e6%b5%81%e7%a8%8b%e7%b8%bd%e7%b5%90"
+                - text: "#"
+            - paragraph [ref=e193]: 以上流程中主要的幾個組件，
+            - paragraph [ref=e194]:
+              - strong [ref=e195]: 萃取的資料
+              - text: 在學術上是不是嚴謹、
+              - strong [ref=e196]: 規則
+              - text: 是否合理適用、
+              - strong [ref=e197]: 模擬步驟
+              - text: 是否合裡，
+            - paragraph [ref=e198]: 其實不是太重要，因為每個部分都可以分別改進及重新產生。
+            - paragraph [ref=e199]: 已軟體工程的思維來看，我的目標是讓這個引擎在介面上可以良好運作，
+            - paragraph [ref=e200]: 並隨著更多資訊的引入以及方法論的改進，不斷的完善預測結果。
+            - heading "目前成果：主客觀層次平行對照 定位點" [level=3] [ref=e201]:
+              - text: 目前成果：主客觀層次平行對照
+              - link "定位點" [ref=e203] [cursor=pointer]:
+                - /url: "#%e7%9b%ae%e5%89%8d%e6%88%90%e6%9e%9c%e4%b8%bb%e5%ae%a2%e8%a7%80%e5%b1%a4%e6%ac%a1%e5%b9%b3%e8%a1%8c%e5%b0%8d%e7%85%a7"
+                - text: "#"
+            - paragraph [ref=e204]: 這裡又要提出一個自己獨斷的方法論，讓它能夠被結構化的比較，
+            - paragraph [ref=e205]: 那就是將推論的引擎的層次主要分為客觀條件以及藝術選擇兩個部分。
+            - paragraph
+            - figure
+            - figure
+            - paragraph
+            - heading "客觀條件 定位點" [level=4] [ref=e206]:
+              - text: 客觀條件
+              - link "定位點" [ref=e208] [cursor=pointer]:
+                - /url: "#%e5%ae%a2%e8%a7%80%e6%a2%9d%e4%bb%b6"
+                - text: "#"
+            - paragraph [ref=e209]: 成書年代的背景，其中的人物、場景、封建制度、經濟等等都是第一層的客觀條件，這可以限定故事能夠發生的所有範疇，目前已經針對該年代背景及學術文章提取一些客觀規律。
+            - paragraph [ref=e210]: 反過來在那時代實際上有的東西，理論上也能出現並對故事產生影響。
+            - paragraph [ref=e211]: 例如書中已經有一些西方現代物品例如自鳴鐘及懷錶，那如果西方的火槍出現並作為推動劇情的重要物品呢？
+            - paragraph [ref=e212]: 這種第一層客觀條件的可能性窮盡，是未來可以補足的方向，也許可以達到某種情理之中意料之外的效果。
+            - heading "藝術選擇 定位點" [level=4] [ref=e213]:
+              - text: 藝術選擇
+              - link "定位點" [ref=e215] [cursor=pointer]:
+                - /url: "#%e8%97%9d%e8%a1%93%e9%81%b8%e6%93%87"
+                - text: "#"
+            - paragraph [ref=e216]: 而第二層則是作者曹雪芹對這個虛構世界的經營，
+            - paragraph [ref=e217]: 書中許多角色以及整個家族的走向帶有濃厚的命運論色彩，
+            - paragraph [ref=e218]: 書中無數的詩詞及隱喻，包括據說看過結局的友人的批注，也暗示這這點。
+            - paragraph [ref=e219]: 所以我們可以依照作者的背景經歷，
+            - paragraph [ref=e220]: 去推測他選擇讓角色有怎樣的命運，
+            - paragraph [ref=e221]: 進而呈現他真正想表達的價值觀。
+            - heading "交叉比對 定位點" [level=4] [ref=e222]:
+              - text: 交叉比對
+              - link "定位點" [ref=e224] [cursor=pointer]:
+                - /url: "#%e4%ba%a4%e5%8f%89%e6%af%94%e5%b0%8d"
+                - text: "#"
+            - paragraph [ref=e225]: 自此我們可以把高鶚的版本，視為一個最領先的玩家，
+            - paragraph [ref=e226]: 他做的事情其實跟我現在做的事情一樣，
+            - paragraph [ref=e227]: 根據書中人物及背景，去盡可能揣測曹雪芹的藝術選擇。
+            - paragraph [ref=e228]: 並且高鶚他補足了現有結局，讓紅樓夢的流傳度更廣，並且此版本已經被廣泛接受，所以把他的版本放在平行的地位比較。
+            - heading "寫實模擬 定位點" [level=4] [ref=e229]:
+              - text: 寫實模擬
+              - link "定位點" [ref=e231] [cursor=pointer]:
+                - /url: "#%e5%af%ab%e5%af%a6%e6%a8%a1%e6%93%ac"
+                - text: "#"
+            - paragraph [ref=e232]: 而如果撇除所有藝術化處裡，只保留客觀的法則，讓故事自然演進會怎樣呢？
+            - paragraph [ref=e233]: 那就是大部分的情節在一百二十回的長度內不會發生，比較不戲劇化，比較少悲劇。
+            - heading "提高預測品質的方法 定位點" [level=2] [ref=e234]:
+              - text: 提高預測品質的方法
+              - link "定位點" [ref=e236] [cursor=pointer]:
+                - /url: "#%e6%8f%90%e9%ab%98%e9%a0%90%e6%b8%ac%e5%93%81%e8%b3%aa%e7%9a%84%e6%96%b9%e6%b3%95"
+                - text: "#"
+            - list [ref=e237]:
+              - listitem [ref=e238]:
+                - paragraph [ref=e239]: LLM的能力提高後重新萃取文本
+              - listitem [ref=e240]:
+                - paragraph [ref=e241]: 更多人為介入細修及嘗試不同的prompt
+              - listitem [ref=e242]:
+                - paragraph [ref=e243]: 請紅學或歷史學者協助資料清理及調整引擎邏輯
+              - listitem [ref=e244]:
+                - paragraph [ref=e245]: 更多相關資料出土或是未數位化的資料(若有)納入訓練
+              - listitem [ref=e246]:
+                - paragraph [ref=e247]: 嘗試其他方法論
+              - listitem [ref=e248]:
+                - paragraph [ref=e249]: 固定工作流程，讓ai agent 不斷微調產生許多版本，因沒有明確的終止條件，只能人工判斷品質
+            - heading "結論 定位點" [level=2] [ref=e250]:
+              - text: 結論
+              - link "定位點" [ref=e252] [cursor=pointer]:
+                - /url: "#%e7%b5%90%e8%ab%96"
+                - text: "#"
+            - paragraph [ref=e253]: 因為現存以及預訓練的資料關係，還有紅樓夢作為藝術作品的強烈自洽性，
+            - paragraph [ref=e254]: 不太會有機械降神的預測產生，更多的是內在的差異比較，
+            - paragraph [ref=e255]: 比如賈家實際上被抄家及破敗注定會發生，只是在時間點上的差異。
+            - heading "最後一點心得 定位點" [level=3] [ref=e256]:
+              - text: 最後一點心得
+              - link "定位點" [ref=e258] [cursor=pointer]:
+                - /url: "#%e6%9c%80%e5%be%8c%e4%b8%80%e9%bb%9e%e5%bf%83%e5%be%97"
+                - text: "#"
+            - paragraph [ref=e259]: 原本這種工作至少要一兩年以上，全職一人以上才有辦法完成，
+            - paragraph [ref=e260]: 現在可以利用下班時間就可以扮演另外一種職業，也算是滿足我當年因為經濟壓力轉領域的缺憾。
+            - paragraph [ref=e261]: 希望我實作紅樓夢模擬器中間的思考過程對你有幫助，
+            - paragraph [ref=e262]: 也期望除了電腦科學及自然科學，社會科學也能受益於AI 快速發展。
+            - separator [ref=e263]
+            - heading "附錄 完整模擬過程範例 定位點" [level=3] [ref=e264]:
+              - text: 附錄 完整模擬過程範例
+              - link "定位點" [ref=e266] [cursor=pointer]:
+                - /url: "#%e9%99%84%e9%8c%84-%e5%ae%8c%e6%95%b4%e6%a8%a1%e6%93%ac%e9%81%8e%e7%a8%8b%e7%af%84%e4%be%8b"
+                - text: "#"
+            - paragraph [ref=e267]: 第 97–98 回「黛玉之死」**走過完整六步的範例(以下內容由AI產生）：
+            - separator [ref=e268]
+            - paragraph [ref=e269]: 範例：第 97 回 — 掉包計 → 焚稿斷情 → 黛死
+            - paragraph [ref=e270]: 背景狀態（進入第 97 回時）
+            - paragraph [ref=e271]: 經過前面十幾回的累積衰退，林黛玉的狀態已經是：
+            - paragraph [ref=e272]: "agent.林黛玉: health=0.12, mood=0.08, isolation=0.72, tragedy_risk=0.95, alive=True"
+            - paragraph [ref=e273]: "agent.賈寶玉: monk_tendency=0.35, mood=0.20"
+            - paragraph [ref=e274]: "economy: debt_ratio=0.65"
+            - paragraph [ref=e275]: "politics: family_decides_marriage=True"
+            - paragraph [ref=e276]: "relation.賈寶玉::林黛玉: marriage_probability=0.15"
+            - paragraph [ref=e277]: "relation.賈寶玉::薛寶釵: marriage_probability=0.72"
+            - paragraph [ref=e278]: 黛玉的 health 為什麼會從初始的 0.35 掉到 0.12？因為每一回都有這條法則在默默觸發：
+            - paragraph [ref=e279]: ▎ PSY_E1_DAIYU_DECAY 「黛玉健康緩慢衰退」
+            - paragraph [ref=e280]: "▎ 前提: health > 0.0 AND isolation > 0.3 AND alive = True → 效果: health sub 0.017"
+            - paragraph [ref=e281]: ▎ 每回 -0.017，十幾回下來就是致命的慢性消耗。
+            - separator [ref=e282]
+            - paragraph [ref=e283]: ① 處理延遲效果
+            - paragraph [ref=e284]: 檢查 pending_effects 佇列。假設第 13 回觸發的：
+            - paragraph [ref=e285]: "▎ FATE_010 「秦可卿托夢：盛極必衰」 delay_chapters: 20"
+            - paragraph [ref=e286]: 其效果 economy.spending_pressure add 0.1 早在第 33 回就已到期執行過了。此刻佇列已無待處理項。跳過。
+            - separator [ref=e287]
+            - paragraph [ref=e288]: ② 評估所有 369 條法則
+            - paragraph [ref=e289]: 引擎逐條掃描。以下是本回會觸發的關鍵法則：
+            - paragraph [ref=e290]: 法則 A — VAR_MARRIAGE_SWAP「掉包計：瞞天過海嫁寶釵」 conf=0.95
+            - paragraph [ref=e291]: "前提檢查:"
+            - code [ref=e295]:
+              - generic [ref=e297]: agent.林黛玉.health \< 0.15 → 0.12 \< 0.15 ✅
+              - generic [ref=e300]: agent.林黛玉.alive == True → True ✅
+              - generic [ref=e303]: politics.family\_decides\_marriage → True ✅
+              - generic [ref=e306]: relation.寶玉::黛玉.marriage\_probability \< 0.5 → 0.15 \< 0.5 ✅
+              - generic [ref=e309]: 全部通過 → 🔥 觸發!
+            - paragraph [ref=e310]: 法則 B — PSY_E1_DAIYU_DECAY「黛玉健康衰退」 conf=0.9
+            - code [ref=e314]:
+              - generic [ref=e316]: health > 0.0 → 0.12 > 0 ✅
+              - generic [ref=e319]: isolation > 0.3 → 0.72 > 0.3 ✅
+              - generic [ref=e322]: alive == True ✅
+              - generic [ref=e325]: → 🔥 觸發!
+            - paragraph [ref=e326]: 法則 C — VAR_MARRIAGE_DAIYU「木石前盟：寶黛終成眷屬」 conf=0.9
+            - code [ref=e330]:
+              - generic [ref=e332]: relation.寶玉::黛玉.marriage\_probability > 0.7 → 0.15 > 0.7 ❌
+              - generic [ref=e335]: → 不觸發 (寶黛婚姻概率太低)
+            - paragraph [ref=e336]: 本回同時還觸發了十幾條其他法則（經濟衰退、政治風險等），但以上是跟黛玉直接相關的。
+            - separator [ref=e337]
+            - paragraph [ref=e338]: ③ 衝突解決
+            - paragraph [ref=e339]: VAR_MARRIAGE_SWAP、VAR_MARRIAGE_NORMAL_BAOCHAI、VAR_MARRIAGE_DAIYU 三條屬於同一個 variant_group（婚姻結局互斥）。
+            - paragraph [ref=e340]: 只有 VAR_MARRIAGE_SWAP 通過了前提檢查，所以沒有實際衝突。但如果黛玉已死（alive=False），則 VAR_MARRIAGE_NORMAL_BAOCHAI 會觸發而非掉包計版本 —
+            - paragraph [ref=e341]: 那是另一條演化路徑。
+            - paragraph [ref=e342]: PSY_E1_DAIYU_DECAY 的效果是 sub（加法類），跟其他法則不衝突，全部保留。
+            - separator [ref=e343]
+            - paragraph [ref=e344]: ④ 套用效果
+            - paragraph [ref=e345]: 法則 A 的效果立即執行（delay=0）：
+            - paragraph [ref=e346]: marriage trigger_event BAOYU_MARRIED_BAOCHAI → fate_flags[“BAOYU_MARRIED_BAOCHAI”] = True
+            - paragraph [ref=e347]: relation.寶玉::寶釵.marriage_probability set 1.0 → 1.0
+            - paragraph [ref=e348]: agent.賈寶玉.mood sub 0.5 → 0.20 → 0.00 (clamp)
+            - paragraph [ref=e349]: agent.賈寶玉.monk_tendency add 0.3 → 0.35 → 0.65
+            - paragraph [ref=e350]: agent.林黛玉.health sub 0.1 → 0.12 → 0.02
+            - paragraph [ref=e351]: 法則 B 的效果：
+            - paragraph [ref=e352]: agent.林黛玉.health sub 0.017 → 0.02 → 0.003
+            - paragraph [ref=e353]: 此時黛玉 health = 0.003，已接近零。
+            - separator [ref=e354]
+            - paragraph [ref=e355]: ⑤ 快照
+            - paragraph [ref=e356]: 將當前世界狀態壓成數值向量：
+            - paragraph [ref=e357]: "snapshot = {"
+            - code [ref=e361]:
+              - generic [ref=e363]: "economy\\_vector: \\[0.42, 0.82, 0.65, 0.55, 0.80, 0.35],"
+              - generic [ref=e366]: "agent\\_vectors: {"
+              - generic [ref=e369]: "\"林黛玉\": \\[0.003, 0.08, 0.10, 0.00, 0.30, 0.00, 0.72, 0.95],"
+              - generic [ref=e372]: "\"賈寶玉\": \\[0.80, 0.00, 0.30, 0.72, 0.80, 0.65, 0.42, 0.92],"
+              - generic [ref=e375]: ...
+              - generic [ref=e378]: "},"
+              - generic [ref=e381]: "politics\\_vector: \\[0.0, 0.60, 0.75]"
+            - paragraph [ref=e382]: "}"
+            - paragraph [ref=e383]: 這個向量之後會跟 actual_checkpoints.json 裡第 97 回的實際向量做歐氏距離比對。
+            - separator [ref=e384]
+            - paragraph [ref=e385]: ⑥ chapter = 98
+            - paragraph [ref=e386]: 進入下一回。此時黛玉 health = 0.003，BAOYU_MARRIED_BAOCHAI = True。
+            - paragraph [ref=e387]: 第 98 回再次跑 ② 時，兩條致命法則同時觸發：
+            - paragraph [ref=e388]: ▎ VAR_DAIYU_HEARTBREAK「焚稿斷情：黛玉心碎而亡」 conf=0.95
+            - paragraph [ref=e389]: ▎ health ≤ 0.05 → 0.003 ≤ 0.05 ✅
+            - paragraph [ref=e390]: ▎ BAOYU_MARRIED_BAOCHAI → True ✅
+            - paragraph [ref=e391]: ▎ → death trigger_event FATE_DAIYU_DEATH
+            - paragraph [ref=e392]: ▎ → monk_tendency add 0.4 → 寶玉 0.65 → 1.0 (clamp)
+            - paragraph [ref=e393]: ▎ → alive set False
+            - paragraph [ref=e394]: 接著 SYS_E19_ZERO_DAIYU 觸發（checkpoint.FATE_DAIYU_DEATH = True），將黛玉所有屬性歸零。
+            - paragraph [ref=e395]: 再過幾回，寶玉的 monk_tendency 到了 1.0 且 mood ≤ 0.15，觸發 VAR_MONK_DESPAIR「萬念俱灰：寶玉出家」。
+        - generic [ref=e397]:
+          - separator [ref=e398]
+          - generic [ref=e400]:
+            - link "← 紅樓夢模擬器：社會科學的聖杯，大語言讖判詞" [ref=e401] [cursor=pointer]:
+              - /url: /OliverPitBoat/posts/stonestory_fate/
+              - generic [ref=e402]:
+                - generic [ref=e403]: ←
+                - text: 紅樓夢模擬器：社會科學的聖杯，大語言讖判詞
+            - time [ref=e405]: 2026年3月22日
+      - link "捲動到頁頂" [ref=e407] [cursor=pointer]:
+        - /url: "#the-top"
+        - text: ↑
+    - contentinfo [ref=e408]:
+      - paragraph [ref=e410]: © 2026 QQder
